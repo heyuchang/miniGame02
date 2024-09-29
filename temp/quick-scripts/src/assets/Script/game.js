@@ -126,7 +126,7 @@ cc.Class({
         canFall = 0;
 
         for (var i = _this4.rowNum - 1; i >= 0; i--) {
-          if (_this4.map[i][j].getComponent('cell')._status == 2) {
+          if (_this4.map[i][j].getComponent('element')._status == 2) {
             _this4.blockPool.put(_this4.map[i][j]);
 
             _this4.map[i][j] = null;
@@ -136,7 +136,7 @@ cc.Class({
               _this4.map[i + canFall][j] = _this4.map[i][j];
               _this4.map[i][j] = null;
 
-              _this4.map[i + canFall][j].getComponent('cell').playFallAction(canFall, {
+              _this4.map[i + canFall][j].getComponent('element').playFallAction(canFall, {
                 x: j,
                 y: i + canFall
               });
@@ -155,7 +155,7 @@ cc.Class({
             y: -canFall + k
           });
 
-          _this4.map[k][j].getComponent('cell').playFallAction(canFall, null);
+          _this4.map[k][j].getComponent('element').playFallAction(canFall, null);
         }
       }
 
@@ -313,11 +313,11 @@ cc.Class({
           //行
           for (var j = 0; j < this.rowNum; j++) {
             //列
-            if (this.map[i][j] && this.map[i][j].getComponent('cell')._status == 1) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               var distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2));
 
               if (distance != 0) {
-                this.map[i][j].getComponent('cell').surfaceAction(distance);
+                this.map[i][j].getComponent('element').surfaceAction(distance);
               }
             }
           }
@@ -343,8 +343,8 @@ cc.Class({
           //行
           for (var _j = 0; _j < this.rowNum; _j++) {
             //列
-            if (this.map[_i][_j] && this.map[_i][_j].getComponent('cell').color == color && this.map[_i][_j] && this.map[_i][_j].getComponent('cell')._status != 2) {
-              this.map[_i][_j].getComponent('cell').onTouched(color, false, true);
+            if (this.map[_i][_j] && this.map[_i][_j].getComponent('element').color == color && this.map[_i][_j] && this.map[_i][_j].getComponent('element')._status != 2) {
+              this.map[_i][_j].getComponent('element').onTouched(color, false, true);
             } else {
               this.map[_i][_j].runAction(AC.rockAction(0.2, 10));
             }
@@ -363,11 +363,11 @@ cc.Class({
           //行
           for (var _j2 = 0; _j2 < this.rowNum; _j2++) {
             //列
-            if (this.map[_i2][_j2] && this.map[_i2][_j2].getComponent('cell')._status == 1) {
+            if (this.map[_i2][_j2] && this.map[_i2][_j2].getComponent('element')._status == 1) {
               var _distance = Math.sqrt(Math.pow(pos.x - this.map[_i2][_j2].x, 2) + Math.pow(pos.y - this.map[_i2][_j2].y, 2));
 
               if (_distance != 0) {
-                this.map[_i2][_j2].getComponent('cell').surfaceAction(_distance);
+                this.map[_i2][_j2].getComponent('element').surfaceAction(_distance);
               }
             }
           }
@@ -389,12 +389,12 @@ cc.Class({
           //行
           for (var _j3 = 0; _j3 < this.rowNum; _j3++) {
             //列
-            if (this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('cell').isSingle && this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('cell')._status != 2) {
+            if (this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('element').isSingle && this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('element')._status != 2) {
               var _distance2 = Math.sqrt(Math.pow(pos.x - this.map[_i3][_j3].x, 2) + Math.pow(pos.y - this.map[_i3][_j3].y, 2));
 
-              this.map[_i3][_j3].getComponent('cell').onTouched(color, false, true, _distance2);
+              this.map[_i3][_j3].getComponent('element').onTouched(color, false, true, _distance2);
 
-              console.log("魔法棒触发的点", _i3, _j3, this.map[_i3][_j3].getComponent('cell').color, this.map[_i3][_j3].getComponent('cell').isSingle);
+              console.log("魔法棒触发的点", _i3, _j3, this.map[_i3][_j3].getComponent('element').color, this.map[_i3][_j3].getComponent('element').isSingle);
             }
           }
         }
@@ -431,7 +431,7 @@ cc.Class({
     block.scale = 1;
     block.x = 0;
     block.y = 0;
-    block.getComponent('cell').init(self, data, this.blockWidth, itemType, pos);
+    block.getComponent('element').init(self, data, this.blockWidth, itemType, pos);
     return block;
   },
   // 回收所有节点

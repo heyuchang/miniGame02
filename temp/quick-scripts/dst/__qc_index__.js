@@ -12,10 +12,10 @@
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
 require('./assets/Script/GameAct');
 require('./assets/Script/building');
-require('./assets/Script/cell');
 require('./assets/Script/character');
 require('./assets/Script/check');
 require('./assets/Script/controller');
+require('./assets/Script/element');
 require('./assets/Script/game');
 require('./assets/Script/musicMgr');
 require('./assets/Script/pageMgr');

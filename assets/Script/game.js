@@ -107,7 +107,7 @@ cc.Class({
       for (let j = this.rowNum - 1; j >= 0; j--) {
         canFall = 0
         for (let i = this.rowNum - 1; i >= 0; i--) {
-          if (this.map[i][j].getComponent('cell')._status == 2) {
+          if (this.map[i][j].getComponent('element')._status == 2) {
             this.blockPool.put(this.map[i][j])
             this.map[i][j] = null
             canFall++
@@ -115,7 +115,7 @@ cc.Class({
             if (canFall != 0) {
               this.map[i + canFall][j] = this.map[i][j]
               this.map[i][j] = null
-              this.map[i + canFall][j].getComponent('cell').playFallAction(canFall, {
+              this.map[i + canFall][j].getComponent('element').playFallAction(canFall, {
                 x: j,
                 y: i + canFall,
               })
@@ -132,7 +132,7 @@ cc.Class({
             x: j,
             y: -canFall + k
           })
-          this.map[k][j].getComponent('cell').playFallAction(canFall, null)
+          this.map[k][j].getComponent('element').playFallAction(canFall, null)
         }
       }
       setTimeout(() => {
@@ -261,10 +261,10 @@ cc.Class({
         this._controller.musicMgr.onDouble()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('cell')._status == 1) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
-                this.map[i][j].getComponent('cell').surfaceAction(distance)
+                this.map[i][j].getComponent('element').surfaceAction(distance)
               }
 
             }
@@ -282,8 +282,8 @@ cc.Class({
         this._controller.musicMgr.onBoom()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('cell').color == color && this.map[i][j] && this.map[i][j].getComponent('cell')._status != 2) {
-              this.map[i][j].getComponent('cell').onTouched(color, false, true)
+            if (this.map[i][j] && this.map[i][j].getComponent('element').color == color && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
+              this.map[i][j].getComponent('element').onTouched(color, false, true)
             }
             else {
               this.map[i][j].runAction(AC.rockAction(0.2, 10))
@@ -296,10 +296,10 @@ cc.Class({
         this._controller.musicMgr.onDouble()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('cell')._status == 1) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
-                this.map[i][j].getComponent('cell').surfaceAction(distance)
+                this.map[i][j].getComponent('element').surfaceAction(distance)
               }
             }
           }
@@ -312,10 +312,10 @@ cc.Class({
         this._controller.musicMgr.onMagic()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('cell').isSingle && this.map[i][j] && this.map[i][j].getComponent('cell')._status != 2) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element').isSingle && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
-              this.map[i][j].getComponent('cell').onTouched(color, false, true, distance)
-              console.log("魔法棒触发的点", i,j,this.map[i][j].getComponent('cell').color, this.map[i][j].getComponent('cell').isSingle)
+              this.map[i][j].getComponent('element').onTouched(color, false, true, distance)
+              console.log("魔法棒触发的点", i,j,this.map[i][j].getComponent('element').color, this.map[i][j].getComponent('element').isSingle)
             }
           }
         }
@@ -347,7 +347,7 @@ cc.Class({
     block.scale = 1
     block.x = 0
     block.y = 0
-    block.getComponent('cell').init(self, data, this.blockWidth, itemType, pos)
+    block.getComponent('element').init(self, data, this.blockWidth, itemType, pos)
     return block
   },
   // 回收所有节点

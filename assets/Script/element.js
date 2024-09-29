@@ -173,16 +173,16 @@ cc.Class({
     // 连锁状态
     if (isChain) {
       if ((self.iid - 1) >= 0) {
-        self._game.map[self.iid - 1][self.jid].getComponent('cell').onTouched(color)
+        self._game.map[self.iid - 1][self.jid].getComponent('element').onTouched(color)
       }
       if ((self.iid + 1) < this._game.rowNum) {
-        self._game.map[self.iid + 1][self.jid].getComponent('cell').onTouched(color)
+        self._game.map[self.iid + 1][self.jid].getComponent('element').onTouched(color)
       }
       if ((self.jid - 1) >= 0) {
-        self._game.map[self.iid][self.jid - 1].getComponent('cell').onTouched(color)
+        self._game.map[self.iid][self.jid - 1].getComponent('element').onTouched(color)
       }
       if ((self.jid + 1) < this._game.rowNum) {
-        self._game.map[self.iid][self.jid + 1].getComponent('cell').onTouched(color)
+        self._game.map[self.iid][self.jid + 1].getComponent('element').onTouched(color)
       }
     }
   },

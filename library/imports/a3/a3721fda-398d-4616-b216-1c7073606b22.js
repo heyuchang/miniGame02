@@ -26,12 +26,12 @@ cc.Class({
 
       for (var j = 0; j < this.mapLength; j++) {
         //列
-        // this.map[i][j].getComponent('cell').growInit() //全部初始化
+        // this.map[i][j].getComponent('element').growInit() //全部初始化
         if (!this.map[i][j]) {//    cc.log('报错x,y:', i, j)
         }
 
-        this.map[i][j].getComponent('cell').isSingle = false;
-        this.map[i][j].getComponent('cell').warningInit();
+        this.map[i][j].getComponent('element').isSingle = false;
+        this.map[i][j].getComponent('element').warningInit();
         this.groups[i][j] = [];
       }
     }
@@ -54,28 +54,28 @@ cc.Class({
         //列
         this.pushPop(this.map[_i][j], _i, j);
         var target = this.map[_i][j];
-        var x = target.getComponent('cell').iid;
-        var y = target.getComponent('cell').jid;
+        var x = target.getComponent('element').iid;
+        var y = target.getComponent('element').jid;
         var isSingle = true;
 
-        if (x - 1 >= 0 && this.map[x - 1][y].getComponent('cell').color == target.getComponent('cell').color) {
+        if (x - 1 >= 0 && this.map[x - 1][y].getComponent('element').color == target.getComponent('element').color) {
           isSingle = false;
         }
 
-        if (x + 1 < this.mapLength && this.map[x + 1][y].getComponent('cell').color == target.getComponent('cell').color) {
+        if (x + 1 < this.mapLength && this.map[x + 1][y].getComponent('element').color == target.getComponent('element').color) {
           isSingle = false;
         }
 
-        if (y - 1 >= 0 && this.map[x][y - 1].getComponent('cell').color == target.getComponent('cell').color) {
+        if (y - 1 >= 0 && this.map[x][y - 1].getComponent('element').color == target.getComponent('element').color) {
           isSingle = false;
         }
 
-        if (y + 1 < this.mapLength && this.map[x][y + 1].getComponent('cell').color == target.getComponent('cell').color) {
+        if (y + 1 < this.mapLength && this.map[x][y + 1].getComponent('element').color == target.getComponent('element').color) {
           isSingle = false;
         }
 
-        this.map[_i][j].getComponent('cell').isSingle = isSingle;
-        console.log(_i, j, this.map[_i][j].getComponent('cell').isSingle, this.map[_i][j].getComponent('cell').color);
+        this.map[_i][j].getComponent('element').isSingle = isSingle;
+        console.log(_i, j, this.map[_i][j].getComponent('element').isSingle, this.map[_i][j].getComponent('element').color);
 
         if (this.groups[_i][j].length >= min) {
           for (var z = 0; z < propConfig.length; z++) {
@@ -89,34 +89,34 @@ cc.Class({
   },
   pushPop: function pushPop(target, i, j) {
     //用于判断一个方块四个方向上的方块颜色是否一样 如果一样则加入组 如果组长度小于1则返回false?
-    // if (target.getComponent('cell').isPush==true) {
+    // if (target.getComponent('element').isPush==true) {
     //   return
     // }
-    target.getComponent('cell').isPush = true;
+    target.getComponent('element').isPush = true;
     this.groups[i][j].push(target);
-    var x = target.getComponent('cell').iid;
-    var y = target.getComponent('cell').jid;
+    var x = target.getComponent('element').iid;
+    var y = target.getComponent('element').jid;
 
     if (x - 1 >= 0) {
-      if (!this.map[x - 1][y].getComponent('cell').isPush && this.map[x - 1][y].getComponent('cell').color == target.getComponent('cell').color) {
+      if (!this.map[x - 1][y].getComponent('element').isPush && this.map[x - 1][y].getComponent('element').color == target.getComponent('element').color) {
         this.pushPop(this.map[x - 1][y], i, j);
       }
     }
 
     if (x + 1 < this.mapLength) {
-      if (!this.map[x + 1][y].getComponent('cell').isPush && this.map[x + 1][y].getComponent('cell').color == target.getComponent('cell').color) {
+      if (!this.map[x + 1][y].getComponent('element').isPush && this.map[x + 1][y].getComponent('element').color == target.getComponent('element').color) {
         this.pushPop(this.map[x + 1][y], i, j);
       }
     }
 
     if (y - 1 >= 0) {
-      if (!this.map[x][y - 1].getComponent('cell').isPush && this.map[x][y - 1].getComponent('cell').color == target.getComponent('cell').color) {
+      if (!this.map[x][y - 1].getComponent('element').isPush && this.map[x][y - 1].getComponent('element').color == target.getComponent('element').color) {
         this.pushPop(this.map[x][y - 1], i, j);
       }
     }
 
     if (y + 1 < this.mapLength) {
-      if (!this.map[x][y + 1].getComponent('cell').isPush && this.map[x][y + 1].getComponent('cell').color == target.getComponent('cell').color) {
+      if (!this.map[x][y + 1].getComponent('element').isPush && this.map[x][y + 1].getComponent('element').color == target.getComponent('element').color) {
         this.pushPop(this.map[x][y + 1], i, j);
       }
     } // 判断方块是否单身
@@ -124,7 +124,7 @@ cc.Class({
   },
   warning: function warning(type, group) {
     group.map(function (item) {
-      item.getComponent('cell').onWarning(type);
+      item.getComponent('element').onWarning(type);
     });
   }
 });
