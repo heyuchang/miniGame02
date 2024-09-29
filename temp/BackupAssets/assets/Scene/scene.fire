@@ -201,7 +201,7 @@
       "array": [
         0,
         0,
-        343.8120853024222,
+        338.61593287971556,
         0,
         0,
         0,
@@ -982,13 +982,13 @@
       "__id__": 18
     },
     "_enabled": true,
-    "musicMgr": {
+    "musicManager": {
       "__id__": 20
     },
     "game": {
       "__id__": 35
     },
-    "pageMgr": {
+    "pageManager": {
       "__id__": 260
     },
     "social": {
@@ -1015,7 +1015,7 @@
     "navNode": {
       "__id__": 180
     },
-    "pictorial": {
+    "illustrative": {
       "__id__": 262
     },
     "helpPage": {

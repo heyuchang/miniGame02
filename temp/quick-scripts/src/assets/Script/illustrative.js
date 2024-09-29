@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '0e40bxKGytLiJwQbi3sCcB6', 'pictorial');
-// Script/pictorial.js
+cc._RF.push(module, '0e40bxKGytLiJwQbi3sCcB6', 'illustrative');
+// Script/illustrative.js
 
 "use strict";
 

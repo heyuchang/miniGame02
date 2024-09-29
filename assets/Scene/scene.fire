@@ -1015,7 +1015,7 @@
     "navNode": {
       "__id__": 180
     },
-    "pictorial": {
+    "illustrative": {
       "__id__": 262
     },
     "helpPage": {
@@ -12960,7 +12960,9 @@
     "avatar": {
       "__id__": 277
     },
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "3c9ed32c-2c78-4ed5-9f70-2b34814055e5"
+    },
     "_id": "c0DZh+jiFJl4Ryxd5T6v4z"
   },
   {

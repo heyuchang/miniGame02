@@ -16,12 +16,12 @@ cc.Class({
     groupRank: cc.Node,
     startPage: require('startPage'),
     navNode: cc.Node,
-    pictorial: cc.Node,
+    illustrative: cc.Node,
     helpPage: cc.Node,
   },
   start() {
     this.totalRank.active = false
-    this.pictorial.active = false
+    this.illustrative.active = false
     this.game.init(this)
     if (this.social.node.active) {
       this.social.init(this)
@@ -33,7 +33,7 @@ cc.Class({
     if (this.social.node.active) {
       this.social.closeBannerAdv()
     }
-    this.pictorial.getComponent('pictorial').init(this)
+    this.illustrative.getComponent('illustrative').init(this)
     this.startPage.bannerNode.scale = 1
     this.pageManager.onOpenPage(0)
   },
@@ -80,10 +80,10 @@ cc.Class({
     }
   },
   openPictorial() {
-    this.pictorial.active = true
+    this.illustrative.active = true
   },
   closePictorial() {
-    this.pictorial.active = false
+    this.illustrative.active = false
   },
   openHelpPage() {
     this.helpPage.active = true
