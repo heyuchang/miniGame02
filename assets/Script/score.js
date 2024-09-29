@@ -2,7 +2,7 @@
  * @author heyuchang
  * @file  UI 分数控制器
  */
-var AC = require('action')
+var AC = require('GameAct')
 
 cc.Class({
   extends: cc.Component,

@@ -8,7 +8,7 @@ cc._RF.push(module, '47c77yOeKpPiJVINXipHohs', 'game');
  * @author heyuchang
  * @file 游戏控制
  */
-var AC = require('action');
+var AC = require('GameAct');
 
 cc.Class({
   "extends": cc.Component,

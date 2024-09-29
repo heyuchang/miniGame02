@@ -10,7 +10,7 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
-require('./assets/Script/action');
+require('./assets/Script/GameAct');
 require('./assets/Script/building');
 require('./assets/Script/cell');
 require('./assets/Script/character');

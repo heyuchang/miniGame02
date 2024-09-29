@@ -2,7 +2,7 @@
  * @author heyuchang
  * @file  通用页面控制器和适配
  */
-var AC = require('action')
+var AC = require('GameAct')
 cc.Class({
   extends: cc.Component,
   properties: {

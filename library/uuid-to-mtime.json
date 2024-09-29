@@ -619,11 +619,6 @@
     "meta": 1722961083688,
     "relativePath": "Script\\wx111.js"
   },
-  "a1bb7c5a-0efb-475c-b4ee-228d0c44812e": {
-    "asset": 1723036677871,
-    "meta": 1723036910627,
-    "relativePath": "Script\\pageMgr.js"
-  },
   "2572025e-d666-4e39-bede-3b1f2aa1166d": {
     "asset": 1723190580384,
     "meta": 1723363137389,
@@ -1184,11 +1179,6 @@
     "meta": 1723376753086,
     "relativePath": "Script\\pictorial.js"
   },
-  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
-    "asset": 1723376617957,
-    "meta": 1723376753166,
-    "relativePath": "Script\\score.js"
-  },
   "33cd2dee-67a2-43e2-94cb-a4ab608db6d2": {
     "asset": 1723379964234,
     "meta": 1723379971220,
@@ -1695,13 +1685,23 @@
     "relativePath": "model\\primitives.fbx"
   },
   "9d371d4a-1551-4267-a6bf-f3a063539794": {
-    "asset": 1727576809937,
-    "meta": 1727576816551,
-    "relativePath": "Script\\action.js"
+    "asset": 1727577086361,
+    "meta": 1727596652519,
+    "relativePath": "Script\\GameAct.js"
   },
   "47c77c8e-78aa-4f88-9548-3578a91e886c": {
-    "asset": 1727576607636,
-    "meta": 1727576816733,
+    "asset": 1727596796579,
+    "meta": 1727596799317,
     "relativePath": "Script\\game.js"
+  },
+  "a1bb7c5a-0efb-475c-b4ee-228d0c44812e": {
+    "asset": 1727596796606,
+    "meta": 1727596799354,
+    "relativePath": "Script\\pageMgr.js"
+  },
+  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
+    "asset": 1727596796605,
+    "meta": 1727596799463,
+    "relativePath": "Script\\score.js"
   }
 }

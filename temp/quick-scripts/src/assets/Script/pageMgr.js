@@ -8,7 +8,7 @@ cc._RF.push(module, 'a1bb7xaDvtHXLTuIo0MRIEu', 'pageMgr');
  * @author heyuchang
  * @file  通用页面控制器和适配
  */
-var AC = require('action');
+var AC = require('GameAct');
 
 cc.Class({
   "extends": cc.Component,

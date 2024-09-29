@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '9d3711KFVFCZ6a/86BjU5eU', 'action');
-// Script/action.js
+cc._RF.push(module, '9d3711KFVFCZ6a/86BjU5eU', 'GameAct');
+// Script/GameAct.js
 
 "use strict";
 
