@@ -284,7 +284,8 @@ cc.Class({
           for (let j = 0; j < this.rowNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('cell').color == color && this.map[i][j] && this.map[i][j].getComponent('cell')._status != 2) {
               this.map[i][j].getComponent('cell').onTouched(color, false, true)
-            } else {
+            }
+            else {
               this.map[i][j].runAction(AC.rockAction(0.2, 10))
             }
           }

@@ -624,11 +624,6 @@
     "meta": 1723036910627,
     "relativePath": "Script\\pageMgr.js"
   },
-  "9d371d4a-1551-4267-a6bf-f3a063539794": {
-    "asset": 1723365523843,
-    "meta": 1723382155765,
-    "relativePath": "Script\\action.js"
-  },
   "2572025e-d666-4e39-bede-3b1f2aa1166d": {
     "asset": 1723190580384,
     "meta": 1723363137389,
@@ -1153,11 +1148,6 @@
     "asset": 1723372039319,
     "meta": 1723372039322,
     "relativePath": "game\\heroPrefab\\heroSpine16.prefab"
-  },
-  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
-    "asset": 1723372410673,
-    "meta": 1723372412128,
-    "relativePath": "Script\\game.js"
   },
   "6b5b1091-f47b-48c0-a067-98e8bef44d2a": {
     "asset": 1723372566366,
@@ -1703,5 +1693,15 @@
     "asset": 1719408015497,
     "meta": 1727574653352,
     "relativePath": "model\\primitives.fbx"
+  },
+  "9d371d4a-1551-4267-a6bf-f3a063539794": {
+    "asset": 1727576809937,
+    "meta": 1727576816551,
+    "relativePath": "Script\\action.js"
+  },
+  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
+    "asset": 1727576607636,
+    "meta": 1727576816733,
+    "relativePath": "Script\\game.js"
   }
 }

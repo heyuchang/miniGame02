@@ -47,12 +47,12 @@ var createZeroRotationTween = function createZeroRotationTween(duration) {
 
 
 function rockAction(time, range) {
-  var action1 = createRotationTween(time, range, range);
-  var action2 = createRotationTween(time, -2 * range, -2 * range);
-  var action3 = createRotationTween(time * 0.8, 2 * range * 0.8, 2 * range * 0.8);
-  var action6 = createRotationTween(time * 0.6, -2 * range * 0.6, -2 * range * 0.6);
-  var action7 = createRotationTween(time * 0.4, 2 * range * 0.4, 2 * range * 0.4);
-  var action10 = createZeroRotationTween(time * 0.2);
+  var action1 = cc.rotateBy(time, range, range);
+  var action2 = cc.rotateBy(time, -2 * range, -2 * range);
+  var action3 = cc.rotateBy(time * 0.8, 2 * range * 0.8, 2 * range * 0.8);
+  var action6 = cc.rotateBy(time * 0.6, -2 * range * 0.6, -2 * range * 0.6);
+  var action7 = cc.rotateBy(time * 0.4, 2 * range * 0.4, 2 * range * 0.4);
+  var action10 = cc.rotateTo(time * 0.2, 0, 0);
   var sq = cc.sequence(action1, action2, action3, action6, action7, action10);
   return sq;
 } // 弹出效果
