@@ -1,0 +1,279 @@
+
+hero18.png
+size: 846,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shadow
+  rotate: true
+  xy: 318, 39
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1
+arm_B_low
+  rotate: false
+  xy: 816, 67
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+arm_B_up
+  rotate: false
+  xy: 816, 9
+  size: 16, 33
+  orig: 16, 33
+  offset: 0, 0
+  index: -1
+arm_F_low
+  rotate: true
+  xy: 765, 51
+  size: 44, 34
+  orig: 44, 34
+  offset: 0, 0
+  index: -1
+arm_F_low(Die)
+  rotate: false
+  xy: 755, 2
+  size: 39, 40
+  orig: 41, 42
+  offset: 1, 1
+  index: -1
+arm_F_up
+  rotate: false
+  xy: 368, 2
+  size: 16, 37
+  orig: 16, 37
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 432, 65
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1
+cake
+  rotate: true
+  xy: 696, 44
+  size: 51, 48
+  orig: 53, 50
+  offset: 1, 1
+  index: -1
+cakeParts(Die)
+  rotate: false
+  xy: 381, 41
+  size: 52, 19
+  orig: 54, 21
+  offset: 1, 1
+  index: -1
+cakeShadow
+  rotate: true
+  xy: 746, 44
+  size: 51, 17
+  orig: 51, 17
+  offset: 0, 0
+  index: -1
+cake_F
+  rotate: true
+  xy: 580, 74
+  size: 65, 49
+  orig: 65, 49
+  offset: 0, 0
+  index: -1
+candy
+  rotate: true
+  xy: 344, 2
+  size: 37, 22
+  orig: 39, 24
+  offset: 1, 1
+  index: -1
+choco
+  rotate: false
+  xy: 713, 2
+  size: 40, 40
+  orig: 42, 42
+  offset: 1, 1
+  index: -1
+cloths
+  rotate: true
+  xy: 338, 41
+  size: 98, 41
+  orig: 98, 41
+  offset: 0, 0
+  index: -1
+eye Close
+  rotate: false
+  xy: 277, 3
+  size: 65, 19
+  orig: 65, 19
+  offset: 0, 0
+  index: -1
+eye Hurt
+  rotate: true
+  xy: 435, 2
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+eye Open
+  rotate: true
+  xy: 534, 5
+  size: 66, 28
+  orig: 66, 28
+  offset: 0, 0
+  index: -1
+eye Skill
+  rotate: true
+  xy: 459, 5
+  size: 58, 28
+  orig: 58, 28
+  offset: 0, 0
+  index: -1
+gear_B
+  rotate: false
+  xy: 685, 97
+  size: 153, 42
+  orig: 153, 42
+  offset: 0, 0
+  index: -1
+gear_B_effect
+  rotate: false
+  xy: 693, 6
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+gear_B_low
+  rotate: true
+  xy: 489, 9
+  size: 57, 43
+  orig: 57, 43
+  offset: 0, 0
+  index: -1
+gear_B_ring
+  rotate: false
+  xy: 386, 2
+  size: 39, 16
+  orig: 39, 16
+  offset: 0, 0
+  index: -1
+gear_B_top
+  rotate: true
+  xy: 631, 86
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+gear_F
+  rotate: true
+  xy: 381, 62
+  size: 77, 49
+  orig: 77, 49
+  offset: 0, 0
+  index: -1
+gear_F_effect
+  rotate: true
+  xy: 816, 44
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+gear_F_ring
+  rotate: false
+  xy: 386, 20
+  size: 46, 19
+  orig: 46, 19
+  offset: 0, 0
+  index: -1
+hairBack
+  rotate: false
+  xy: 2, 3
+  size: 116, 136
+  orig: 116, 136
+  offset: 0, 0
+  index: -1
+hand(L)
+  rotate: false
+  xy: 644, 2
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1
+hand(L)2
+  rotate: false
+  xy: 670, 2
+  size: 21, 27
+  orig: 23, 29
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 120, 8
+  size: 155, 131
+  orig: 155, 131
+  offset: 0, 0
+  index: -1
+leg_B
+  rotate: false
+  xy: 552, 73
+  size: 26, 66
+  orig: 26, 66
+  offset: 0, 0
+  index: -1
+leg_F
+  rotate: false
+  xy: 487, 68
+  size: 30, 71
+  orig: 30, 71
+  offset: 0, 0
+  index: -1
+mo1
+  rotate: false
+  xy: 318, 27
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+mo2
+  rotate: true
+  xy: 796, 16
+  size: 33, 18
+  orig: 33, 18
+  offset: 0, 0
+  index: -1
+stick
+  rotate: false
+  xy: 277, 24
+  size: 39, 115
+  orig: 39, 115
+  offset: 0, 0
+  index: -1
+weapon02Ribbon
+  rotate: true
+  xy: 519, 73
+  size: 66, 31
+  orig: 66, 31
+  offset: 0, 0
+  index: -1
+weapon02_low
+  rotate: true
+  xy: 564, 5
+  size: 66, 25
+  orig: 66, 25
+  offset: 0, 0
+  index: -1
+weapon02_up
+  rotate: true
+  xy: 644, 31
+  size: 53, 50
+  orig: 53, 50
+  offset: 0, 0
+  index: -1
+weapon02_up_open
+  rotate: false
+  xy: 591, 18
+  size: 51, 54
+  orig: 51, 54
+  offset: 0, 0
+  index: -1

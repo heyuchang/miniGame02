@@ -1,0 +1,265 @@
+
+hero20.png
+size: 913,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shadow
+  rotate: true
+  xy: 181, 14
+  size: 140, 26
+  orig: 140, 26
+  offset: 0, 0
+  index: -1
+b arm
+  rotate: true
+  xy: 814, 26
+  size: 61, 23
+  orig: 61, 23
+  offset: 0, 0
+  index: -1
+b box
+  rotate: false
+  xy: 653, 64
+  size: 63, 90
+  orig: 63, 90
+  offset: 0, 0
+  index: -1
+b hair
+  rotate: false
+  xy: 2, 6
+  size: 177, 148
+  orig: 177, 148
+  offset: 0, 0
+  index: -1
+b hat
+  rotate: true
+  xy: 752, 77
+  size: 77, 44
+  orig: 77, 44
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: true
+  xy: 319, 34
+  size: 18, 44
+  orig: 18, 44
+  offset: 0, 0
+  index: -1
+b leg thick
+  rotate: true
+  xy: 819, 89
+  size: 45, 27
+  orig: 45, 27
+  offset: 0, 0
+  index: -1
+b robot arm A
+  rotate: true
+  xy: 877, 2
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+b robot arm B
+  rotate: false
+  xy: 877, 101
+  size: 33, 15
+  orig: 33, 15
+  offset: 0, 0
+  index: -1
+bell
+  rotate: true
+  xy: 877, 46
+  size: 53, 31
+  orig: 53, 31
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 650, 3
+  size: 34, 59
+  orig: 34, 59
+  offset: 0, 0
+  index: -1
+box bell
+  rotate: false
+  xy: 574, 2
+  size: 74, 59
+  orig: 74, 59
+  offset: 0, 0
+  index: -1
+box leg A
+  rotate: false
+  xy: 229, 3
+  size: 16, 29
+  orig: 16, 29
+  offset: 0, 0
+  index: -1
+box leg B
+  rotate: false
+  xy: 209, 3
+  size: 18, 29
+  orig: 18, 29
+  offset: 0, 0
+  index: -1
+box leg C
+  rotate: false
+  xy: 331, 8
+  size: 14, 24
+  orig: 14, 24
+  offset: 0, 0
+  index: -1
+chest
+  rotate: true
+  xy: 839, 48
+  size: 39, 36
+  orig: 39, 36
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 247, 4
+  size: 60, 28
+  orig: 60, 28
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: true
+  xy: 798, 89
+  size: 65, 19
+  orig: 65, 19
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 814, 2
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+f arm
+  rotate: false
+  xy: 877, 118
+  size: 33, 16
+  orig: 33, 16
+  offset: 0, 0
+  index: -1
+f arm2
+  rotate: true
+  xy: 309, 4
+  size: 28, 20
+  orig: 28, 20
+  offset: 0, 0
+  index: -1
+f box
+  rotate: false
+  xy: 503, 63
+  size: 56, 91
+  orig: 56, 91
+  offset: 0, 0
+  index: -1
+f hand cloth
+  rotate: true
+  xy: 319, 54
+  size: 100, 99
+  orig: 100, 99
+  offset: 0, 0
+  index: -1
+f hand1
+  rotate: true
+  xy: 839, 26
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+f hand2
+  rotate: false
+  xy: 752, 64
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+f hat
+  rotate: false
+  xy: 365, 3
+  size: 207, 49
+  orig: 207, 49
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: false
+  xy: 718, 73
+  size: 32, 81
+  orig: 32, 81
+  offset: 0, 0
+  index: -1
+f robot arm A
+  rotate: false
+  xy: 770, 2
+  size: 42, 73
+  orig: 42, 73
+  offset: 0, 0
+  index: -1
+f robot arm B
+  rotate: false
+  xy: 848, 101
+  size: 27, 53
+  orig: 27, 53
+  offset: 0, 0
+  index: -1
+hat fur
+  rotate: true
+  xy: 420, 59
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+hat main
+  rotate: true
+  xy: 582, 64
+  size: 90, 69
+  orig: 90, 69
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 209, 34
+  size: 120, 108
+  orig: 120, 108
+  offset: 0, 0
+  index: -1
+mask
+  rotate: false
+  xy: 686, 8
+  size: 82, 54
+  orig: 82, 54
+  offset: 0, 0
+  index: -1
+mo1
+  rotate: true
+  xy: 347, 14
+  size: 18, 14
+  orig: 18, 14
+  offset: 0, 0
+  index: -1
+mo2
+  rotate: false
+  xy: 181, 2
+  size: 18, 10
+  orig: 18, 10
+  offset: 0, 0
+  index: -1
+mo3
+  rotate: false
+  xy: 877, 136
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+stick
+  rotate: false
+  xy: 561, 63
+  size: 19, 91
+  orig: 19, 91
+  offset: 0, 0
+  index: -1

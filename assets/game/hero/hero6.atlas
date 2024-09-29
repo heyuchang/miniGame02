@@ -1,0 +1,160 @@
+
+hero6.png
+size: 548,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B1
+  rotate: false
+  xy: 279, 39
+  size: 96, 100
+  orig: 102, 102
+  offset: 3, 1
+  index: -1
+B_hair
+  rotate: false
+  xy: 2, 4
+  size: 164, 135
+  orig: 164, 135
+  offset: 0, 0
+  index: -1
+Eye Close
+  rotate: true
+  xy: 451, 2
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+Eye Hurt
+  rotate: true
+  xy: 497, 11
+  size: 59, 19
+  orig: 59, 20
+  offset: 0, 1
+  index: -1
+Eye Open
+  rotate: false
+  xy: 377, 11
+  size: 71, 26
+  orig: 71, 26
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 168, 18
+  size: 121, 109
+  orig: 121, 109
+  offset: 0, 0
+  index: -1
+Head2
+  rotate: false
+  xy: 279, 5
+  size: 37, 32
+  orig: 37, 32
+  offset: 0, 0
+  index: -1
+Head3
+  rotate: true
+  xy: 518, 33
+  size: 37, 19
+  orig: 39, 19
+  offset: 1, 0
+  index: -1
+L hand1
+  rotate: false
+  xy: 518, 13
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+L hand2
+  rotate: true
+  xy: 338, 9
+  size: 28, 15
+  orig: 28, 15
+  offset: 0, 0
+  index: -1
+L hand3
+  rotate: true
+  xy: 247, 7
+  size: 9, 25
+  orig: 10, 25
+  offset: 1, 0
+  index: -1
+Mouth Open
+  rotate: false
+  xy: 200, 3
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+R hand1
+  rotate: false
+  xy: 318, 6
+  size: 18, 31
+  orig: 18, 31
+  offset: 0, 0
+  index: -1
+R hand2
+  rotate: true
+  xy: 217, 4
+  size: 12, 28
+  orig: 12, 29
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 377, 39
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: true
+  xy: 397, 39
+  size: 20, 52
+  orig: 20, 52
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 435, 67
+  size: 58, 72
+  orig: 58, 72
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: false
+  xy: 470, 5
+  size: 25, 60
+  orig: 25, 60
+  offset: 0, 0
+  index: -1
+guitar
+  rotate: true
+  xy: 495, 72
+  size: 67, 51
+  orig: 67, 51
+  offset: 0, 0
+  index: -1
+guitar1
+  rotate: true
+  xy: 355, 10
+  size: 27, 20
+  orig: 27, 21
+  offset: 0, 1
+  index: -1
+guitar2
+  rotate: false
+  xy: 168, 3
+  size: 30, 13
+  orig: 30, 13
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 397, 61
+  size: 78, 36
+  orig: 78, 37
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,160 @@
+
+hero15.png
+size: 204,267
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B_Arm
+  rotate: false
+  xy: 189, 66
+  size: 13, 34
+  orig: 13, 36
+  offset: 0, 1
+  index: -1
+B_Leg
+  rotate: false
+  xy: 179, 210
+  size: 23, 55
+  orig: 23, 55
+  offset: 0, 0
+  index: -1
+B_LowerArm
+  rotate: false
+  xy: 121, 18
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+B_Pony
+  rotate: false
+  xy: 116, 166
+  size: 61, 99
+  orig: 61, 99
+  offset: 0, 0
+  index: -1
+B_Robbin
+  rotate: true
+  xy: 159, 34
+  size: 46, 22
+  orig: 46, 22
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 96, 102
+  size: 74, 62
+  orig: 74, 62
+  offset: 0, 0
+  index: -1
+Eye4(Close)
+  rotate: true
+  xy: 172, 102
+  size: 62, 24
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+Eye6(Hurt)
+  rotate: false
+  xy: 96, 53
+  size: 61, 27
+  orig: 61, 27
+  offset: 0, 0
+  index: -1
+EyeOpen
+  rotate: false
+  xy: 2, 29
+  size: 64, 31
+  orig: 64, 31
+  offset: 0, 0
+  index: -1
+F_Leg
+  rotate: true
+  xy: 2, 2
+  size: 25, 55
+  orig: 25, 55
+  offset: 0, 0
+  index: -1
+F_Pony
+  rotate: false
+  xy: 2, 62
+  size: 72, 103
+  orig: 72, 103
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 167
+  size: 112, 98
+  orig: 112, 98
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 183, 33
+  size: 31, 16
+  orig: 31, 16
+  offset: 0, 0
+  index: -1
+Mouth1
+  rotate: true
+  xy: 59, 2
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+Mouth2
+  rotate: false
+  xy: 73, 4
+  size: 22, 12
+  orig: 22, 12
+  offset: 0, 0
+  index: -1
+R hand
+  rotate: false
+  xy: 179, 187
+  size: 23, 21
+  orig: 24, 21
+  offset: 0, 0
+  index: -1
+R hand2
+  rotate: true
+  xy: 154, 14
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+R hand3
+  rotate: false
+  xy: 179, 167
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 76, 65
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1
+Stick1
+  rotate: false
+  xy: 96, 82
+  size: 91, 18
+  orig: 91, 18
+  offset: 0, 0
+  index: -1
+Stick2
+  rotate: false
+  xy: 68, 18
+  size: 51, 33
+  orig: 51, 33
+  offset: 0, 0
+  index: -1
+Stick3
+  rotate: false
+  xy: 182, 14
+  size: 15, 17
+  orig: 19, 17
+  offset: 4, 0
+  index: -1

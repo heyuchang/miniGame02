@@ -1,0 +1,223 @@
+
+hero5.png
+size: 598,267
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Chain
+  rotate: false
+  xy: 328, 239
+  size: 200, 26
+  orig: 200, 26
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: true
+  xy: 479, 165
+  size: 72, 43
+  orig: 72, 43
+  offset: 0, 0
+  index: -1
+Eye4(Close)
+  rotate: false
+  xy: 530, 232
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+Eye6(Hurt)
+  rotate: true
+  xy: 479, 102
+  size: 61, 40
+  orig: 61, 40
+  offset: 0, 0
+  index: -1
+Mo1
+  rotate: false
+  xy: 580, 168
+  size: 16, 7
+  orig: 16, 7
+  offset: 0, 0
+  index: -1
+Mo2
+  rotate: true
+  xy: 457, 140
+  size: 33, 18
+  orig: 33, 18
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 164, 133
+  size: 140, 26
+  orig: 140, 26
+  offset: 0, 0
+  index: -1
+b arm
+  rotate: true
+  xy: 443, 7
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
+  index: -1
+b hair
+  rotate: false
+  xy: 2, 140
+  size: 160, 125
+  orig: 160, 125
+  offset: 0, 0
+  index: -1
+b head access
+  rotate: false
+  xy: 431, 61
+  size: 46, 75
+  orig: 46, 75
+  offset: 0, 0
+  index: -1
+b head access b
+  rotate: true
+  xy: 563, 112
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: false
+  xy: 98, 4
+  size: 40, 67
+  orig: 40, 67
+  offset: 0, 0
+  index: -1
+b waist access
+  rotate: true
+  xy: 529, 63
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+b wire
+  rotate: true
+  xy: 2, 73
+  size: 65, 158
+  orig: 65, 158
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 479, 62
+  size: 38, 48
+  orig: 38, 48
+  offset: 0, 0
+  index: -1
+book
+  rotate: true
+  xy: 538, 12
+  size: 49, 44
+  orig: 49, 44
+  offset: 0, 0
+  index: -1
+chest
+  rotate: true
+  xy: 140, 3
+  size: 31, 49
+  orig: 31, 49
+  offset: 0, 0
+  index: -1
+dress
+  rotate: true
+  xy: 191, 3
+  size: 31, 43
+  orig: 31, 43
+  offset: 0, 0
+  index: -1
+f arm
+  rotate: true
+  xy: 521, 102
+  size: 37, 40
+  orig: 37, 40
+  offset: 0, 0
+  index: -1
+f hair
+  rotate: true
+  xy: 162, 36
+  size: 95, 109
+  orig: 95, 109
+  offset: 0, 0
+  index: -1
+f hand
+  rotate: false
+  xy: 306, 144
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+f head access
+  rotate: false
+  xy: 273, 18
+  size: 54, 113
+  orig: 54, 113
+  offset: 0, 0
+  index: -1
+f head access b
+  rotate: true
+  xy: 524, 141
+  size: 34, 54
+  orig: 34, 54
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: true
+  xy: 524, 177
+  size: 53, 71
+  orig: 53, 71
+  offset: 0, 0
+  index: -1
+f waist access
+  rotate: true
+  xy: 491, 7
+  size: 53, 45
+  orig: 53, 45
+  offset: 0, 0
+  index: -1
+f wire a
+  rotate: true
+  xy: 329, 9
+  size: 50, 112
+  orig: 50, 112
+  offset: 0, 0
+  index: -1
+f wire b
+  rotate: true
+  xy: 328, 138
+  size: 35, 127
+  orig: 35, 127
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 2
+  size: 94, 69
+  orig: 94, 69
+  offset: 0, 0
+  index: -1
+lace
+  rotate: false
+  xy: 328, 175
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+robot
+  rotate: false
+  xy: 164, 161
+  size: 162, 104
+  orig: 165, 104
+  offset: 0, 0
+  index: -1
+robot_light
+  rotate: false
+  xy: 329, 61
+  size: 100, 75
+  orig: 100, 76
+  offset: 0, 0
+  index: -1

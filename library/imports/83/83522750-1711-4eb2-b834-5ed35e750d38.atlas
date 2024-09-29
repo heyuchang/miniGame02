@@ -1,0 +1,125 @@
+
+hero17.png
+size: 407,109
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B_Leg
+  rotate: true
+  xy: 285, 2
+  size: 25, 57
+  orig: 25, 57
+  offset: 0, 0
+  index: -1
+B_Pony
+  rotate: true
+  xy: 97, 28
+  size: 48, 116
+  orig: 48, 116
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 215, 8
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+Eye Close
+  rotate: true
+  xy: 346, 25
+  size: 62, 17
+  orig: 63, 17
+  offset: 1, 0
+  index: -1
+Eye Hurt
+  rotate: true
+  xy: 365, 28
+  size: 59, 19
+  orig: 59, 19
+  offset: 0, 0
+  index: -1
+Eye Open
+  rotate: false
+  xy: 97, 3
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+F_Leg
+  rotate: false
+  xy: 285, 29
+  size: 30, 58
+  orig: 30, 58
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 14
+  size: 93, 93
+  orig: 93, 93
+  offset: 0, 0
+  index: -1
+Head1
+  rotate: true
+  xy: 344, 3
+  size: 20, 36
+  orig: 20, 36
+  offset: 0, 0
+  index: -1
+Head2
+  rotate: false
+  xy: 163, 2
+  size: 23, 24
+  orig: 23, 25
+  offset: 0, 1
+  index: -1
+Head4
+  rotate: false
+  xy: 386, 46
+  size: 19, 41
+  orig: 19, 41
+  offset: 0, 0
+  index: -1
+L hand
+  rotate: true
+  xy: 358, 89
+  size: 18, 36
+  orig: 18, 37
+  offset: 0, 0
+  index: -1
+L hand2
+  rotate: false
+  xy: 188, 3
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+Mouth open
+  rotate: true
+  xy: 386, 16
+  size: 28, 13
+  orig: 28, 13
+  offset: 0, 0
+  index: -1
+R Hair
+  rotate: false
+  xy: 317, 29
+  size: 27, 58
+  orig: 27, 58
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 256, 89
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1
+Weapon
+  rotate: false
+  xy: 97, 78
+  size: 157, 29
+  orig: 157, 30
+  offset: 0, 0
+  index: -1

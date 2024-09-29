@@ -1,0 +1,153 @@
+
+hero8.png
+size: 508,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B_Hair
+  rotate: false
+  xy: 2, 6
+  size: 105, 133
+  orig: 105, 133
+  offset: 0, 0
+  index: -1
+B_Leg
+  rotate: true
+  xy: 450, 55
+  size: 25, 56
+  orig: 25, 56
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 343, 2
+  size: 63, 67
+  orig: 63, 67
+  offset: 0, 0
+  index: -1
+ChainSaw1
+  rotate: false
+  xy: 297, 2
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1
+Chainsaw2
+  rotate: true
+  xy: 272, 45
+  size: 94, 31
+  orig: 94, 31
+  offset: 0, 0
+  index: -1
+Chainsaw3
+  rotate: true
+  xy: 305, 45
+  size: 94, 31
+  orig: 94, 31
+  offset: 0, 0
+  index: -1
+Eye Open
+  rotate: true
+  xy: 402, 75
+  size: 64, 25
+  orig: 64, 25
+  offset: 0, 0
+  index: -1
+Eye4(Close)
+  rotate: true
+  xy: 412, 9
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+Eye6(Hurt)
+  rotate: true
+  xy: 429, 80
+  size: 59, 19
+  orig: 59, 19
+  offset: 0, 0
+  index: -1
+F_Leg
+  rotate: true
+  xy: 109, 3
+  size: 26, 61
+  orig: 26, 61
+  offset: 0, 0
+  index: -1
+Flower1
+  rotate: false
+  xy: 450, 82
+  size: 56, 57
+  orig: 56, 57
+  offset: 0, 0
+  index: -1
+Flower2
+  rotate: true
+  xy: 431, 5
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 154, 32
+  size: 107, 96
+  orig: 107, 96
+  offset: 0, 0
+  index: -1
+L hand1
+  rotate: false
+  xy: 172, 2
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+L hand2
+  rotate: true
+  xy: 234, 4
+  size: 26, 33
+  orig: 27, 34
+  offset: 0, 1
+  index: -1
+L neck
+  rotate: true
+  xy: 338, 67
+  size: 72, 62
+  orig: 72, 62
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 431, 47
+  size: 31, 16
+  orig: 31, 16
+  offset: 0, 0
+  index: -1
+R Hand1
+  rotate: false
+  xy: 203, 2
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+R Neck
+  rotate: true
+  xy: 109, 31
+  size: 108, 43
+  orig: 108, 43
+  offset: 0, 0
+  index: -1
+R hand2
+  rotate: false
+  xy: 269, 4
+  size: 26, 33
+  orig: 26, 33
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 252, 39
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,314 @@
+
+hero13.png
+size: 772,204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shadow
+  rotate: true
+  xy: 278, 62
+  size: 140, 26
+  orig: 140, 26
+  offset: 0, 0
+  index: -1
+attack finger
+  rotate: false
+  xy: 712, 16
+  size: 22, 24
+  orig: 22, 24
+  offset: 0, 0
+  index: -1
+b arm
+  rotate: false
+  xy: 714, 141
+  size: 42, 61
+  orig: 42, 61
+  offset: 0, 0
+  index: -1
+b finger
+  rotate: true
+  xy: 736, 18
+  size: 22, 24
+  orig: 22, 24
+  offset: 0, 0
+  index: -1
+b hair
+  rotate: true
+  xy: 2, 23
+  size: 179, 150
+  orig: 179, 150
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: true
+  xy: 646, 175
+  size: 27, 66
+  orig: 27, 66
+  offset: 0, 0
+  index: -1
+b moter
+  rotate: false
+  xy: 482, 2
+  size: 71, 89
+  orig: 71, 89
+  offset: 0, 0
+  index: -1
+b outer collar
+  rotate: false
+  xy: 214, 3
+  size: 28, 48
+  orig: 28, 48
+  offset: 0, 0
+  index: -1
+b outer down
+  rotate: true
+  xy: 709, 42
+  size: 36, 60
+  orig: 36, 60
+  offset: 0, 0
+  index: -1
+b_mo_light1
+  rotate: true
+  xy: 687, 6
+  size: 14, 23
+  orig: 14, 23
+  offset: 0, 0
+  index: -1
+b_mo_light2
+  rotate: false
+  xy: 154, 29
+  size: 11, 22
+  orig: 11, 22
+  offset: 0, 0
+  index: -1
+b_mo_light3
+  rotate: false
+  xy: 306, 53
+  size: 27, 25
+  orig: 27, 25
+  offset: 0, 0
+  index: -1
+b_mo_light4
+  rotate: true
+  xy: 757, 110
+  size: 29, 13
+  orig: 29, 13
+  offset: 0, 0
+  index: -1
+b_mo_light5
+  rotate: true
+  xy: 687, 22
+  size: 21, 15
+  orig: 21, 15
+  offset: 0, 0
+  index: -1
+bell
+  rotate: false
+  xy: 646, 72
+  size: 61, 32
+  orig: 61, 32
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 713, 80
+  size: 42, 59
+  orig: 42, 59
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 646, 2
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 646, 106
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 583, 94
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 2, 2
+  size: 66, 19
+  orig: 66, 19
+  offset: 0, 0
+  index: -1
+f arm
+  rotate: true
+  xy: 646, 134
+  size: 39, 65
+  orig: 39, 65
+  offset: 0, 0
+  index: -1
+f finger
+  rotate: false
+  xy: 679, 45
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: false
+  xy: 611, 11
+  size: 33, 81
+  orig: 33, 81
+  offset: 0, 0
+  index: -1
+f moter
+  rotate: false
+  xy: 363, 92
+  size: 83, 110
+  orig: 89, 110
+  offset: 0, 0
+  index: -1
+f_mo_light1
+  rotate: false
+  xy: 757, 84
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+f_mo_light2
+  rotate: false
+  xy: 70, 2
+  size: 26, 19
+  orig: 26, 19
+  offset: 0, 0
+  index: -1
+f_mo_light3
+  rotate: false
+  xy: 133, 6
+  size: 33, 15
+  orig: 33, 15
+  offset: 0, 0
+  index: -1
+f_mo_light4
+  rotate: false
+  xy: 646, 43
+  size: 31, 27
+  orig: 31, 27
+  offset: 0, 0
+  index: -1
+f_mo_light5
+  rotate: false
+  xy: 758, 180
+  size: 11, 22
+  orig: 11, 22
+  offset: 0, 0
+  index: -1
+glasses
+  rotate: true
+  xy: 335, 2
+  size: 76, 22
+  orig: 76, 22
+  offset: 0, 0
+  index: -1
+green rope
+  rotate: true
+  xy: 448, 93
+  size: 109, 70
+  orig: 109, 70
+  offset: 0, 0
+  index: -1
+hair_f
+  rotate: false
+  xy: 168, 2
+  size: 44, 49
+  orig: 44, 49
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 154, 53
+  size: 149, 122
+  orig: 149, 122
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 416, 2
+  size: 64, 88
+  orig: 64, 88
+  offset: 0, 0
+  index: -1
+light2
+  rotate: true
+  xy: 244, 8
+  size: 43, 64
+  orig: 43, 64
+  offset: 0, 0
+  index: -1
+mo1
+  rotate: false
+  xy: 310, 2
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: -1
+mo2
+  rotate: false
+  xy: 278, 54
+  size: 25, 6
+  orig: 25, 6
+  offset: 0, 0
+  index: -1
+mo3
+  rotate: false
+  xy: 98, 3
+  size: 33, 18
+  orig: 33, 18
+  offset: 0, 0
+  index: -1
+outer back
+  rotate: true
+  xy: 306, 80
+  size: 122, 55
+  orig: 122, 61
+  offset: 0, 6
+  index: -1
+outer collar
+  rotate: false
+  xy: 310, 12
+  size: 23, 39
+  orig: 23, 39
+  offset: 0, 0
+  index: -1
+outer down
+  rotate: false
+  xy: 555, 3
+  size: 54, 89
+  orig: 54, 89
+  offset: 0, 0
+  index: -1
+pink rope
+  rotate: false
+  xy: 520, 94
+  size: 61, 108
+  orig: 61, 108
+  offset: 0, 0
+  index: -1
+water gun green
+  rotate: true
+  xy: 359, 3
+  size: 75, 55
+  orig: 75, 55
+  offset: 0, 0
+  index: -1
+water gun pink
+  rotate: true
+  xy: 583, 118
+  size: 84, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1

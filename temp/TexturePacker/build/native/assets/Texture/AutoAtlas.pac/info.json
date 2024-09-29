@@ -1,0 +1,2101 @@
+{
+  "projectPath": "G:\\cocos\\RPG01Douyin",
+  "actualPlatform": "bytedance",
+  "mtimes": {
+    "f59b9b9e-e578-4ae9-aea3-484dc4416baa": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345299
+    },
+    "03454f35-c355-4a8b-9161-014495b5597b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345471
+    },
+    "a14001b1-4838-43a6-b82c-f96116919a0b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345471
+    },
+    "0681e35d-19c2-43f9-9536-7606795e4de7": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345255
+    },
+    "1466360e-b55f-4445-a0de-4070362ca6d4": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345255
+    },
+    "0706478d-6e33-442e-9056-108d59ca1378": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345389
+    },
+    "bc139303-cf73-4029-98d5-c7b0ca789875": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345389
+    },
+    "07cb5ff6-4cfc-490d-bca2-160ce6f958d9": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345167
+    },
+    "6737f5f0-dcbb-4648-974b-f8158527de6c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345167
+    },
+    "09b7267e-4d16-4679-ad96-03c02d49ff3d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345514
+    },
+    "935b6431-7d9c-4a96-b825-6054ccbca3b0": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345514
+    },
+    "09f1f917-2fee-47e9-bdf6-069dc771ec10": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345589
+    },
+    "fddf121a-f575-4761-831e-490e61fe6f1d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345589
+    },
+    "0cb17bd3-4ddf-4731-bda8-c2feb3e4ac4d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345426
+    },
+    "f5d526f5-85c6-4163-a580-d71e1f846958": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345426
+    },
+    "0cf70568-8bf3-4d76-9eaa-4494d8a31bfc": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345170
+    },
+    "98e48571-6ade-4578-a255-5cadf0f66831": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345170
+    },
+    "12fd0ab8-33f6-44e3-9337-c035b9aa7525": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345456
+    },
+    "db9c060b-7563-4a45-be32-d9bfa048772c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345456
+    },
+    "1c6d6256-e22a-47f3-9753-ea8a59ce2583": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345225
+    },
+    "a0c6e9a8-c2e6-4fc7-b512-bc30943d9a7d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345225
+    },
+    "1dd9358f-0489-494e-9cf5-84371bdd86af": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345645
+    },
+    "ed651ec6-d155-4ebe-a008-cf7cba0f62e8": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345645
+    },
+    "28e187c0-7af4-4ca2-baaf-a0443edd890d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345410
+    },
+    "4982a02b-1a9d-410a-be2e-b2102ba58e5d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345410
+    },
+    "33d0cfcf-c5a8-430f-8116-858c725da12c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345359
+    },
+    "f5efab48-447a-4331-b259-6cce2f407e3d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345359
+    },
+    "38488265-36f4-4d81-a69a-7b6ecf2dfb04": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345500
+    },
+    "e86ee5c7-0dd6-474a-b39a-0f943dda190e": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345500
+    },
+    "393ac1a8-7fc3-4127-b4fd-d138ec7d984b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345375
+    },
+    "0064b193-9933-4717-a7d1-09632c7142d0": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345375
+    },
+    "3e5b7d3e-9995-4088-9237-73ea3e0cb941": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345572
+    },
+    "9f606596-0024-466f-b37a-97622e05f3dc": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345572
+    },
+    "40255fff-6fe6-4ab8-a1ca-abc211657430": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345211
+    },
+    "a7f345e9-ac13-47fa-b92e-bf787c61a1a3": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345211
+    },
+    "45f214e9-3fa0-470e-9521-a13edfd2b7c0": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345390
+    },
+    "13906c67-d31e-4307-a565-ad51349d6c62": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345390
+    },
+    "46a8fa4a-2c94-47d4-83f3-8d11cf49bd4a": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345702
+    },
+    "89260284-38d9-401e-b172-b3432a6086df": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345702
+    },
+    "4871f4fb-cb04-4984-a908-b3db7ff63021": {
+      "assetMtime": 1723200849735,
+      "metaMtime": 1723363555686
+    },
+    "b94af39f-e421-437f-8727-03c703320ddf": {
+      "assetMtime": 1723200849735,
+      "metaMtime": 1723363555686
+    },
+    "4fbf8df3-b863-4c49-ada2-c190e3cf12c2": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345240
+    },
+    "09372406-8732-4687-a5f1-38a966c9eca0": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345240
+    },
+    "511ca3c6-6ead-4877-8d6c-5e83b3900e72": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345632
+    },
+    "f63c4e49-a94c-4cd8-aa65-702d7b8153e0": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345632
+    },
+    "52d79ee1-2087-4b81-9200-020189158cb7": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345659
+    },
+    "5b38e742-9e66-4da6-af63-c57b366af822": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345659
+    },
+    "52fd3def-a5ed-4c2c-8027-8e70acfb3140": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345442
+    },
+    "7ae1439c-f583-4d81-9f77-1f3246ff9f7b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345442
+    },
+    "53d4b33b-1f44-4d1f-8cbc-cf4d006388eb": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345712
+    },
+    "a7a1efc0-b342-49ff-939a-330fcd29ca5b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345712
+    },
+    "56333ac3-59d7-4a9b-8ccb-d56d9d4fda7e": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345472
+    },
+    "840f939f-346c-44b4-b617-b89aefbc5872": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345472
+    },
+    "5ee173e5-cf3d-4282-b2a5-668617ecb8d9": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345194
+    },
+    "63e6f57a-de76-4073-a85b-508bb2028b8c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345194
+    },
+    "657d750c-cd1c-4d4c-9a94-a1d2df11a6cf": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345284
+    },
+    "03ffd00a-834d-4398-be9d-67780a0a9188": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345284
+    },
+    "6ff4a620-f727-4a6c-84a2-dfe7b324bdf6": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345617
+    },
+    "2392c450-bb60-43f3-857a-623bc5309b78": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345617
+    },
+    "72fd7f95-62f3-4fff-9bfb-df344003d059": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345573
+    },
+    "01c1aa35-31d2-4f99-abfd-026d6aca0297": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345573
+    },
+    "7561eb3e-7728-4a86-85ad-077206b097d1": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345154
+    },
+    "46bf6ed6-b53f-4c53-8e34-f4287ed14b0c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345154
+    },
+    "79f59b38-59da-450b-9bfd-2cfae65f529c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345587
+    },
+    "d3568d6a-8d11-4e7a-9720-aececa08a1c1": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345587
+    },
+    "7a44b744-30a1-4035-a0df-7ff73ac0e587": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345296
+    },
+    "8ce9770c-4871-4ece-93a7-0280b1571156": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345296
+    },
+    "888fe7aa-212c-4a2b-8a5c-37db222f222e": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345602
+    },
+    "86420cfb-9627-4896-9982-08f5e6974091": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345602
+    },
+    "8a8ec7d0-d6d3-449e-adb9-ac58425ff750": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345687
+    },
+    "452cf243-f340-4f02-aa06-c9c58db242d6": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345687
+    },
+    "92fdef0c-e573-4d6e-a41a-c473b43c510f": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345458
+    },
+    "753d253b-f782-462e-8d05-1429fc48bba7": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345458
+    },
+    "953a7bdf-3b76-49d5-9831-c70e95163dd4": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345336
+    },
+    "d81ef909-1630-473f-8cb8-5b63db78579a": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345336
+    },
+    "9f87bfd7-dff9-46d8-9bcb-2fd4dc2b10f5": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345377
+    },
+    "28972c30-b65b-4e12-bd48-4f7bda9be71a": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345377
+    },
+    "a22e11b3-dbe4-416b-a123-5b2086d947e3": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345314
+    },
+    "ee1036a2-0126-409b-81a8-83872952a79e": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345314
+    },
+    "a5491008-d2e1-4632-ab3a-66a3a4572d2c": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345501
+    },
+    "75d85408-a110-4654-8bfe-79338f2217af": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345501
+    },
+    "a7a08b18-ddbe-440f-862c-70626961c6c7": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345700
+    },
+    "e711a37d-4f5f-4d80-8d21-cf64964637e3": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345700
+    },
+    "b12948e6-6025-4efe-865f-df9034a1e459": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345647
+    },
+    "4d54690f-4d7c-4daf-ba34-ee708241115f": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345647
+    },
+    "b221d77f-7545-47fe-bad0-1e540b5f82b6": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345631
+    },
+    "cfd70cd1-110e-4a91-88de-50f5acade1d6": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345631
+    },
+    "bd8aa757-893f-45fe-b212-d004c99aad1b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345298
+    },
+    "b9099020-01ee-4121-bb12-31b51d49f1cc": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345298
+    },
+    "be879a55-c98f-4f64-b69b-7ab1cc9c8536": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345181
+    },
+    "dca9cb3f-377a-4c2d-98a9-0eb8c8cb4bad": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345181
+    },
+    "c369c7ad-cdb0-4cb5-98f2-1c42419251af": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345182
+    },
+    "bf4a5331-4564-40ed-8787-555436e24823": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345182
+    },
+    "c67caf16-381f-459d-a30b-81bed846e851": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345267
+    },
+    "dac96767-6f0c-4e57-9a8e-26cf2bb98936": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345267
+    },
+    "c6f13935-51e6-471e-831f-3e9689a493f7": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345325
+    },
+    "6a063df3-972d-46c2-9f16-1ebe56931770": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345325
+    },
+    "c76df38f-ac58-4abf-9c01-413b42e7751a": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345616
+    },
+    "02249a9d-7597-4628-a2be-d8758417b922": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345616
+    },
+    "cb492436-20b4-4861-8deb-07e075838102": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345674
+    },
+    "a1cce985-552c-4113-8b50-8201966725bf": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345674
+    },
+    "cf9c9465-34b6-4be3-a935-368066e9491e": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345269
+    },
+    "ad34effe-5b9e-470f-99e5-8c526b4644a4": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345269
+    },
+    "d2980aa4-7562-4d24-8551-5d4085036d0b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345254
+    },
+    "eeb60250-fb46-4388-a127-1af3055c4746": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345254
+    },
+    "d4c7cd86-9449-4550-b7a1-1acc3bb03188": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345441
+    },
+    "bc9487b0-26d5-4aab-9f92-f9361f475933": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345441
+    },
+    "d69e60c9-8596-434a-a465-926cb4c7734a": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345347
+    },
+    "ea6e952d-5cc2-4264-a44a-56bc0cf010a9": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345347
+    },
+    "db948d8a-dcd0-4188-a8ad-b49f90806848": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345210
+    },
+    "56d36e2a-bba8-4c38-9163-f7508a8e6bad": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345210
+    },
+    "e78b5dde-820f-472c-b035-00f7e0f31012": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345516
+    },
+    "63b811a2-d3db-4a47-a346-a0981fba31c6": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345516
+    },
+    "ec80c9fa-e346-4ba0-a300-95abe71c0528": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345487
+    },
+    "056f3033-b5fa-4a22-b57b-54fee92969c4": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345487
+    },
+    "ee5bf543-5b21-4e5c-bc8b-58f448cce4d1": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345487
+    },
+    "27da2501-2dc7-4917-a92c-8b28a3331283": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345487
+    },
+    "f42026ae-4016-42e1-a9bc-d8b9f705edb1": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345603
+    },
+    "e9c5fc4a-8bd9-4cec-9d47-956eace4d347": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345603
+    },
+    "f464d4f7-09da-4455-9270-146d9a39359b": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345241
+    },
+    "120f7c6f-cdf5-46c3-bad3-f65b8c7f6221": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345241
+    },
+    "f519d00d-2c4a-4ec6-ad11-abe7a501409d": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345283
+    },
+    "406a2669-4bc5-4914-9f50-20883a5c79e9": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345283
+    },
+    "f751ff59-8e3c-404f-acb8-510e0b415b76": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345559
+    },
+    "ead00d74-812b-47eb-a068-de62e75813ec": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345559
+    },
+    "fa4c1170-9b3a-49de-9f3c-a2accdbb6fbe": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345313
+    },
+    "719f200f-ffd6-4dfe-8da3-6cfe2bbfd968": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345313
+    },
+    "fc71736c-1811-4807-8a4e-8667e4453c49": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345661
+    },
+    "e12efa35-1df5-47a8-90bc-310fd68f8c92": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345661
+    },
+    "fdffba35-959b-4e03-8e3e-b9b973282106": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345409
+    },
+    "577e6412-1119-4436-a1e3-248aa6b77403": {
+      "assetMtime": 1558539774000,
+      "metaMtime": 1723363345409
+    }
+  },
+  "result": {
+    "name": "AutoAtlas-2",
+    "width": 676,
+    "height": 1023,
+    "ver": "1.2.1",
+    "uuid": "f59b9b9e-e578-4ae9-aea3-484dc4416baa",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "bg02",
+            "uuid": "4871f4fb-cb04-4984-a908-b3db7ff63021",
+            "textureUuid": "b94af39f-e421-437f-8727-03c703320ddf",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_19.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 339,
+              "height": 580,
+              "rotatedWidth": 339,
+              "rotatedHeight": 580
+            },
+            "rawWidth": 339,
+            "rawHeight": 580,
+            "width": 345,
+            "height": 586,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/b9/b94af39f-e421-437f-8727-03c703320ddf.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 345,
+            "rotatedHeight": 586
+          },
+          {
+            "name": "组 3",
+            "uuid": "bd8aa757-893f-45fe-b212-d004c99aad1b",
+            "textureUuid": "b9099020-01ee-4121-bb12-31b51d49f1cc",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_43.png",
+            "trim": {
+              "x": 3,
+              "y": 589,
+              "width": 477,
+              "height": 345,
+              "rotatedWidth": 477,
+              "rotatedHeight": 345
+            },
+            "rawWidth": 477,
+            "rawHeight": 345,
+            "width": 483,
+            "height": 351,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/b9/b9099020-01ee-4121-bb12-31b51d49f1cc.png",
+            "x": 0,
+            "y": 586,
+            "rotatedWidth": 483,
+            "rotatedHeight": 351
+          },
+          {
+            "name": "shipin (1)",
+            "uuid": "1c6d6256-e22a-47f3-9753-ea8a59ce2583",
+            "textureUuid": "a0c6e9a8-c2e6-4fc7-b512-bc30943d9a7d",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_9.png",
+            "trim": {
+              "x": 3,
+              "y": 940,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 223,
+              "rotatedHeight": 76
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/a0/a0c6e9a8-c2e6-4fc7-b512-bc30943d9a7d.png",
+            "x": 0,
+            "y": 937,
+            "rotatedWidth": 229,
+            "rotatedHeight": 82
+          },
+          {
+            "name": "addStepAdv",
+            "uuid": "38488265-36f4-4d81-a69a-7b6ecf2dfb04",
+            "textureUuid": "e86ee5c7-0dd6-474a-b39a-0f943dda190e",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_13.png",
+            "trim": {
+              "x": 232,
+              "y": 940,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 223,
+              "rotatedHeight": 76
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/e8/e86ee5c7-0dd6-474a-b39a-0f943dda190e.png",
+            "x": 229,
+            "y": 937,
+            "rotatedWidth": 229,
+            "rotatedHeight": 82
+          },
+          {
+            "name": "组 3 拷贝",
+            "uuid": "5ee173e5-cf3d-4282-b2a5-668617ecb8d9",
+            "textureUuid": "63e6f57a-de76-4073-a85b-508bb2028b8c",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_26.png",
+            "trim": {
+              "x": 461,
+              "y": 940,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 223,
+              "rotatedHeight": 76
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/63/63e6f57a-de76-4073-a85b-508bb2028b8c.png",
+            "x": 458,
+            "y": 937,
+            "rotatedWidth": 229,
+            "rotatedHeight": 82
+          },
+          {
+            "name": "组 27",
+            "uuid": "fc71736c-1811-4807-8a4e-8667e4453c49",
+            "textureUuid": "e12efa35-1df5-47a8-90bc-310fd68f8c92",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_63.png",
+            "trim": {
+              "x": 348,
+              "y": 3,
+              "width": 409,
+              "height": 357,
+              "rotatedWidth": 357,
+              "rotatedHeight": 409
+            },
+            "rawWidth": 427,
+            "rawHeight": 365,
+            "width": 415,
+            "height": 363,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/e1/e12efa35-1df5-47a8-90bc-310fd68f8c92.png",
+            "x": 345,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 363,
+            "rotatedHeight": 415
+          },
+          {
+            "name": "组 24",
+            "uuid": "b12948e6-6025-4efe-865f-df9034a1e459",
+            "textureUuid": "4d54690f-4d7c-4daf-ba34-ee708241115f",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_41.png",
+            "trim": {
+              "x": 348,
+              "y": 418,
+              "width": 461,
+              "height": 128,
+              "rotatedWidth": 461,
+              "rotatedHeight": 128
+            },
+            "rawWidth": 461,
+            "rawHeight": 128,
+            "width": 467,
+            "height": 134,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/4d/4d54690f-4d7c-4daf-ba34-ee708241115f.png",
+            "x": 345,
+            "y": 415,
+            "rotatedWidth": 467,
+            "rotatedHeight": 134
+          },
+          {
+            "name": "progressBG",
+            "uuid": "09b7267e-4d16-4679-ad96-03c02d49ff3d",
+            "textureUuid": "935b6431-7d9c-4a96-b825-6054ccbca3b0",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_4.png",
+            "trim": {
+              "x": 348,
+              "y": 552,
+              "width": 376,
+              "height": 26,
+              "rotatedWidth": 376,
+              "rotatedHeight": 26
+            },
+            "rawWidth": 376,
+            "rawHeight": 26,
+            "width": 382,
+            "height": 32,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/93/935b6431-7d9c-4a96-b825-6054ccbca3b0.png",
+            "x": 345,
+            "y": 549,
+            "rotatedWidth": 382,
+            "rotatedHeight": 32
+          },
+          {
+            "name": "huan",
+            "uuid": "40255fff-6fe6-4ab8-a1ca-abc211657430",
+            "textureUuid": "a7f345e9-ac13-47fa-b92e-bf787c61a1a3",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_16.png",
+            "trim": {
+              "x": 711,
+              "y": 3,
+              "width": 303,
+              "height": 303,
+              "rotatedWidth": 303,
+              "rotatedHeight": 303
+            },
+            "rawWidth": 305,
+            "rawHeight": 305,
+            "width": 309,
+            "height": 309,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/a7/a7f345e9-ac13-47fa-b92e-bf787c61a1a3.png",
+            "x": 708,
+            "y": 0,
+            "rotatedWidth": 309,
+            "rotatedHeight": 309
+          },
+          {
+            "name": "矩形 1",
+            "uuid": "4fbf8df3-b863-4c49-ada2-c190e3cf12c2",
+            "textureUuid": "09372406-8732-4687-a5f1-38a966c9eca0",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113202_image_20.png",
+            "trim": {
+              "x": 711,
+              "y": 312,
+              "width": 274,
+              "height": 83,
+              "rotatedWidth": 274,
+              "rotatedHeight": 83
+            },
+            "rawWidth": 274,
+            "rawHeight": 83,
+            "width": 280,
+            "height": 89,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/09/09372406-8732-4687-a5f1-38a966c9eca0.png",
+            "x": 708,
+            "y": 309,
+            "rotatedWidth": 280,
+            "rotatedHeight": 89
+          },
+          {
+            "name": "progress",
+            "uuid": "e78b5dde-820f-472c-b035-00f7e0f31012",
+            "textureUuid": "63b811a2-d3db-4a47-a346-a0981fba31c6",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_55.png",
+            "trim": {
+              "x": 991,
+              "y": 312,
+              "width": 372,
+              "height": 22,
+              "rotatedWidth": 22,
+              "rotatedHeight": 372
+            },
+            "rawWidth": 376,
+            "rawHeight": 26,
+            "width": 378,
+            "height": 28,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/63/63b811a2-d3db-4a47-a346-a0981fba31c6.png",
+            "x": 988,
+            "y": 309,
+            "rotated": true,
+            "rotatedWidth": 28,
+            "rotatedHeight": 378
+          },
+          {
+            "name": "圆角矩形 4 拷贝",
+            "uuid": "cf9c9465-34b6-4be3-a935-368066e9491e",
+            "textureUuid": "ad34effe-5b9e-470f-99e5-8c526b4644a4",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_50.png",
+            "trim": {
+              "x": 730,
+              "y": 552,
+              "width": 226,
+              "height": 352,
+              "rotatedWidth": 226,
+              "rotatedHeight": 352
+            },
+            "rawWidth": 226,
+            "rawHeight": 352,
+            "width": 232,
+            "height": 358,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ad/ad34effe-5b9e-470f-99e5-8c526b4644a4.png",
+            "x": 727,
+            "y": 549,
+            "rotatedWidth": 232,
+            "rotatedHeight": 358
+          },
+          {
+            "name": "开始游戏",
+            "uuid": "f464d4f7-09da-4455-9270-146d9a39359b",
+            "textureUuid": "120f7c6f-cdf5-46c3-bad3-f65b8c7f6221",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_59.png",
+            "trim": {
+              "x": 690,
+              "y": 910,
+              "width": 316,
+              "height": 105,
+              "rotatedWidth": 316,
+              "rotatedHeight": 105
+            },
+            "rawWidth": 316,
+            "rawHeight": 105,
+            "width": 322,
+            "height": 111,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/12/120f7c6f-cdf5-46c3-bad3-f65b8c7f6221.png",
+            "x": 687,
+            "y": 907,
+            "rotatedWidth": 322,
+            "rotatedHeight": 111
+          },
+          {
+            "name": "11",
+            "uuid": "7561eb3e-7728-4a86-85ad-077206b097d1",
+            "textureUuid": "46bf6ed6-b53f-4c53-8e34-f4287ed14b0c",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_30.png",
+            "trim": {
+              "x": 962,
+              "y": 690,
+              "width": 201,
+              "height": 44,
+              "rotatedWidth": 44,
+              "rotatedHeight": 201
+            },
+            "rawWidth": 201,
+            "rawHeight": 44,
+            "width": 207,
+            "height": 50,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/46/46bf6ed6-b53f-4c53-8e34-f4287ed14b0c.png",
+            "x": 959,
+            "y": 687,
+            "rotated": true,
+            "rotatedWidth": 50,
+            "rotatedHeight": 207
+          },
+          {
+            "name": "z",
+            "uuid": "8a8ec7d0-d6d3-449e-adb9-ac58425ff750",
+            "textureUuid": "452cf243-f340-4f02-aa06-c9c58db242d6",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_34.png",
+            "trim": {
+              "x": 815,
+              "y": 401,
+              "width": 160,
+              "height": 125,
+              "rotatedWidth": 160,
+              "rotatedHeight": 125
+            },
+            "rawWidth": 163,
+            "rawHeight": 127,
+            "width": 166,
+            "height": 131,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/45/452cf243-f340-4f02-aa06-c9c58db242d6.png",
+            "x": 812,
+            "y": 398,
+            "rotatedWidth": 166,
+            "rotatedHeight": 131
+          },
+          {
+            "name": "tipbox (2)",
+            "uuid": "46a8fa4a-2c94-47d4-83f3-8d11cf49bd4a",
+            "textureUuid": "89260284-38d9-401e-b172-b3432a6086df",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_18.png",
+            "trim": {
+              "x": 486,
+              "y": 584,
+              "width": 264,
+              "height": 190,
+              "rotatedWidth": 190,
+              "rotatedHeight": 264
+            },
+            "rawWidth": 303,
+            "rawHeight": 234,
+            "width": 270,
+            "height": 196,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/89/89260284-38d9-401e-b172-b3432a6086df.png",
+            "x": 483,
+            "y": 581,
+            "rotated": true,
+            "rotatedWidth": 196,
+            "rotatedHeight": 270
+          },
+          {
+            "name": "stepleft",
+            "uuid": "a7a08b18-ddbe-440f-862c-70626961c6c7",
+            "textureUuid": "e711a37d-4f5f-4d80-8d21-cf64964637e3",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_40.png",
+            "trim": {
+              "x": 486,
+              "y": 854,
+              "width": 159,
+              "height": 79,
+              "rotatedWidth": 159,
+              "rotatedHeight": 79
+            },
+            "rawWidth": 159,
+            "rawHeight": 79,
+            "width": 165,
+            "height": 85,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/e7/e711a37d-4f5f-4d80-8d21-cf64964637e3.png",
+            "x": 483,
+            "y": 851,
+            "rotatedWidth": 165,
+            "rotatedHeight": 85
+          },
+          {
+            "name": "X2 拷贝 2",
+            "uuid": "888fe7aa-212c-4a2b-8a5c-37db222f222e",
+            "textureUuid": "86420cfb-9627-4896-9982-08f5e6974091",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_33.png",
+            "trim": {
+              "x": 651,
+              "y": 854,
+              "width": 40,
+              "height": 25,
+              "rotatedWidth": 25,
+              "rotatedHeight": 40
+            },
+            "rawWidth": 40,
+            "rawHeight": 25,
+            "width": 46,
+            "height": 31,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/86/86420cfb-9627-4896-9982-08f5e6974091.png",
+            "x": 648,
+            "y": 851,
+            "rotated": true,
+            "rotatedWidth": 31,
+            "rotatedHeight": 46
+          },
+          {
+            "name": "组 29",
+            "uuid": "d4c7cd86-9449-4550-b7a1-1acc3bb03188",
+            "textureUuid": "bc9487b0-26d5-4aab-9f92-f9361f475933",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_52.png",
+            "trim": {
+              "x": 651,
+              "y": 900,
+              "width": 31,
+              "height": 26,
+              "rotatedWidth": 31,
+              "rotatedHeight": 26
+            },
+            "rawWidth": 31,
+            "rawHeight": 26,
+            "width": 37,
+            "height": 32,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/bc/bc9487b0-26d5-4aab-9f92-f9361f475933.png",
+            "x": 648,
+            "y": 897,
+            "rotatedWidth": 37,
+            "rotatedHeight": 32
+          },
+          {
+            "name": "gameover",
+            "uuid": "fdffba35-959b-4e03-8e3e-b9b973282106",
+            "textureUuid": "577e6412-1119-4436-a1e3-248aa6b77403",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_64.png",
+            "trim": {
+              "x": 682,
+              "y": 584,
+              "width": 158,
+              "height": 40,
+              "rotatedWidth": 40,
+              "rotatedHeight": 158
+            },
+            "rawWidth": 158,
+            "rawHeight": 40,
+            "width": 164,
+            "height": 46,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/57/577e6412-1119-4436-a1e3-248aa6b77403.png",
+            "x": 679,
+            "y": 581,
+            "rotated": true,
+            "rotatedWidth": 46,
+            "rotatedHeight": 164
+          },
+          {
+            "name": "图鉴1",
+            "uuid": "d2980aa4-7562-4d24-8551-5d4085036d0b",
+            "textureUuid": "eeb60250-fb46-4388-a127-1af3055c4746",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_51.png",
+            "trim": {
+              "x": 682,
+              "y": 748,
+              "width": 76,
+              "height": 39,
+              "rotatedWidth": 39,
+              "rotatedHeight": 76
+            },
+            "rawWidth": 76,
+            "rawHeight": 39,
+            "width": 82,
+            "height": 45,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ee/eeb60250-fb46-4388-a127-1af3055c4746.png",
+            "x": 679,
+            "y": 745,
+            "rotated": true,
+            "rotatedWidth": 45,
+            "rotatedHeight": 82
+          },
+          {
+            "name": "组 11",
+            "uuid": "09f1f917-2fee-47e9-bdf6-069dc771ec10",
+            "textureUuid": "fddf121a-f575-4761-831e-490e61fe6f1d",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_5.png",
+            "trim": {
+              "x": 688,
+              "y": 830,
+              "width": 35,
+              "height": 40,
+              "rotatedWidth": 35,
+              "rotatedHeight": 40
+            },
+            "rawWidth": 35,
+            "rawHeight": 40,
+            "width": 41,
+            "height": 46,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/fd/fddf121a-f575-4761-831e-490e61fe6f1d.png",
+            "x": 685,
+            "y": 827,
+            "rotatedWidth": 41,
+            "rotatedHeight": 46
+          },
+          {
+            "name": "组 33 拷贝 7",
+            "uuid": "52fd3def-a5ed-4c2c-8027-8e70acfb3140",
+            "textureUuid": "7ae1439c-f583-4d81-9f77-1f3246ff9f7b",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_23.png",
+            "trim": {
+              "x": 688,
+              "y": 876,
+              "width": 28,
+              "height": 28,
+              "rotatedWidth": 28,
+              "rotatedHeight": 28
+            },
+            "rawWidth": 28,
+            "rawHeight": 28,
+            "width": 34,
+            "height": 34,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/7a/7ae1439c-f583-4d81-9f77-1f3246ff9f7b.png",
+            "x": 685,
+            "y": 873,
+            "rotatedWidth": 34,
+            "rotatedHeight": 34
+          }
+        ],
+        "width": 1017,
+        "height": 1019,
+        "name": "AutoAtlas-1",
+        "imagePath": "G:\\cocos\\RPG01Douyin\\temp\\TexturePacker\\build\\native\\assets\\Texture\\AutoAtlas.pac\\AutoAtlas-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "G:\\cocos\\RPG01Douyin\\temp\\TexturePacker\\build\\native\\assets\\Texture\\AutoAtlas.pac\\compressed\\AutoAtlas-1"
+        }
+      },
+      {
+        "files": [
+          {
+            "name": "alty",
+            "uuid": "a22e11b3-dbe4-416b-a123-5b2086d947e3",
+            "textureUuid": "ee1036a2-0126-409b-81a8-83872952a79e",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_38.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 755,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 755
+            },
+            "rawWidth": 760,
+            "rawHeight": 108,
+            "width": 761,
+            "height": 106,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ee/ee1036a2-0126-409b-81a8-83872952a79e.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 106,
+            "rotatedHeight": 761
+          },
+          {
+            "name": "bg",
+            "uuid": "c6f13935-51e6-471e-831f-3e9689a493f7",
+            "textureUuid": "6a063df3-972d-46c2-9f16-1ebe56931770",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_47.png",
+            "trim": {
+              "x": 3,
+              "y": 764,
+              "width": 134,
+              "height": 307,
+              "rotatedWidth": 307,
+              "rotatedHeight": 134
+            },
+            "rawWidth": 134,
+            "rawHeight": 307,
+            "width": 140,
+            "height": 313,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/6a/6a063df3-972d-46c2-9f16-1ebe56931770.png",
+            "x": 0,
+            "y": 761,
+            "rotated": true,
+            "rotatedWidth": 313,
+            "rotatedHeight": 140
+          },
+          {
+            "name": "tiancai",
+            "uuid": "cb492436-20b4-4861-8deb-07e075838102",
+            "textureUuid": "a1cce985-552c-4113-8b50-8201966725bf",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_49.png",
+            "trim": {
+              "x": 3,
+              "y": 904,
+              "width": 261,
+              "height": 116,
+              "rotatedWidth": 261,
+              "rotatedHeight": 116
+            },
+            "rawWidth": 262,
+            "rawHeight": 117,
+            "width": 267,
+            "height": 122,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/a1/a1cce985-552c-4113-8b50-8201966725bf.png",
+            "x": 0,
+            "y": 901,
+            "rotatedWidth": 267,
+            "rotatedHeight": 122
+          },
+          {
+            "name": "组 3",
+            "uuid": "52d79ee1-2087-4b81-9200-020189158cb7",
+            "textureUuid": "5b38e742-9e66-4da6-af63-c57b366af822",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113203_image_22.png",
+            "trim": {
+              "x": 270,
+              "y": 904,
+              "width": 244,
+              "height": 108,
+              "rotatedWidth": 244,
+              "rotatedHeight": 108
+            },
+            "rawWidth": 244,
+            "rawHeight": 108,
+            "width": 250,
+            "height": 114,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/5b/5b38e742-9e66-4da6-af63-c57b366af822.png",
+            "x": 267,
+            "y": 901,
+            "rotatedWidth": 250,
+            "rotatedHeight": 114
+          },
+          {
+            "name": "3",
+            "uuid": "511ca3c6-6ead-4877-8d6c-5e83b3900e72",
+            "textureUuid": "f63c4e49-a94c-4cd8-aa65-702d7b8153e0",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113202_image_21.png",
+            "trim": {
+              "x": 520,
+              "y": 3,
+              "width": 262,
+              "height": 118,
+              "rotatedWidth": 118,
+              "rotatedHeight": 262
+            },
+            "rawWidth": 262,
+            "rawHeight": 118,
+            "width": 268,
+            "height": 124,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/f6/f63c4e49-a94c-4cd8-aa65-702d7b8153e0.png",
+            "x": 517,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 124,
+            "rotatedHeight": 268
+          },
+          {
+            "name": "按钮",
+            "uuid": "07cb5ff6-4cfc-490d-bca2-160ce6f958d9",
+            "textureUuid": "6737f5f0-dcbb-4648-974b-f8158527de6c",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113199_image_3.png",
+            "trim": {
+              "x": 520,
+              "y": 271,
+              "width": 256,
+              "height": 86,
+              "rotatedWidth": 86,
+              "rotatedHeight": 256
+            },
+            "rawWidth": 256,
+            "rawHeight": 86,
+            "width": 262,
+            "height": 92,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/67/6737f5f0-dcbb-4648-974b-f8158527de6c.png",
+            "x": 517,
+            "y": 268,
+            "rotated": true,
+            "rotatedWidth": 92,
+            "rotatedHeight": 262
+          },
+          {
+            "name": "圆角矩形 512",
+            "uuid": "1dd9358f-0489-494e-9cf5-84371bdd86af",
+            "textureUuid": "ed651ec6-d155-4ebe-a008-cf7cba0f62e8",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_10.png",
+            "trim": {
+              "x": 612,
+              "y": 271,
+              "width": 277,
+              "height": 45,
+              "rotatedWidth": 45,
+              "rotatedHeight": 277
+            },
+            "rawWidth": 277,
+            "rawHeight": 45,
+            "width": 283,
+            "height": 51,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ed/ed651ec6-d155-4ebe-a008-cf7cba0f62e8.png",
+            "x": 609,
+            "y": 268,
+            "rotated": true,
+            "rotatedWidth": 51,
+            "rotatedHeight": 283
+          },
+          {
+            "name": "组 27",
+            "uuid": "be879a55-c98f-4f64-b69b-7ab1cc9c8536",
+            "textureUuid": "dca9cb3f-377a-4c2d-98a9-0eb8c8cb4bad",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_44.png",
+            "trim": {
+              "x": 520,
+              "y": 533,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 76,
+              "rotatedHeight": 223
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/dc/dca9cb3f-377a-4c2d-98a9-0eb8c8cb4bad.png",
+            "x": 517,
+            "y": 530,
+            "rotated": true,
+            "rotatedWidth": 82,
+            "rotatedHeight": 229
+          },
+          {
+            "name": "组 29",
+            "uuid": "c369c7ad-cdb0-4cb5-98f2-1c42419251af",
+            "textureUuid": "bf4a5331-4564-40ed-8787-555436e24823",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_45.png",
+            "trim": {
+              "x": 520,
+              "y": 762,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 76,
+              "rotatedHeight": 223
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/bf/bf4a5331-4564-40ed-8787-555436e24823.png",
+            "x": 517,
+            "y": 759,
+            "rotated": true,
+            "rotatedWidth": 82,
+            "rotatedHeight": 229
+          },
+          {
+            "name": "椭圆 1(1)",
+            "uuid": "c67caf16-381f-459d-a30b-81bed846e851",
+            "textureUuid": "dac96767-6f0c-4e57-9a8e-26cf2bb98936",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_46.png",
+            "trim": {
+              "x": 602,
+              "y": 554,
+              "width": 120,
+              "height": 71,
+              "rotatedWidth": 71,
+              "rotatedHeight": 120
+            },
+            "rawWidth": 127,
+            "rawHeight": 76,
+            "width": 126,
+            "height": 77,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/da/dac96767-6f0c-4e57-9a8e-26cf2bb98936.png",
+            "x": 599,
+            "y": 551,
+            "rotated": true,
+            "rotatedWidth": 77,
+            "rotatedHeight": 126
+          },
+          {
+            "name": "btn-red",
+            "uuid": "953a7bdf-3b76-49d5-9831-c70e95163dd4",
+            "textureUuid": "d81ef909-1630-473f-8cb8-5b63db78579a",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_36.png",
+            "trim": {
+              "x": 602,
+              "y": 680,
+              "width": 71,
+              "height": 76,
+              "rotatedWidth": 71,
+              "rotatedHeight": 76
+            },
+            "rawWidth": 71,
+            "rawHeight": 76,
+            "width": 77,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/d8/d81ef909-1630-473f-8cb8-5b63db78579a.png",
+            "x": 599,
+            "y": 677,
+            "rotatedWidth": 77,
+            "rotatedHeight": 82
+          },
+          {
+            "name": "查看好友排行",
+            "uuid": "0cf70568-8bf3-4d76-9eaa-4494d8a31bfc",
+            "textureUuid": "98e48571-6ade-4578-a255-5cadf0f66831",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_7.png",
+            "trim": {
+              "x": 602,
+              "y": 762,
+              "width": 161,
+              "height": 30,
+              "rotatedWidth": 30,
+              "rotatedHeight": 161
+            },
+            "rawWidth": 161,
+            "rawHeight": 30,
+            "width": 167,
+            "height": 36,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/98/98e48571-6ade-4578-a255-5cadf0f66831.png",
+            "x": 599,
+            "y": 759,
+            "rotated": true,
+            "rotatedWidth": 36,
+            "rotatedHeight": 167
+          },
+          {
+            "name": "level-bg",
+            "uuid": "28e187c0-7af4-4ca2-baaf-a0443edd890d",
+            "textureUuid": "4982a02b-1a9d-410a-be2e-b2102ba58e5d",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_11.png",
+            "trim": {
+              "x": 602,
+              "y": 929,
+              "width": 50,
+              "height": 91,
+              "rotatedWidth": 50,
+              "rotatedHeight": 91
+            },
+            "rawWidth": 50,
+            "rawHeight": 91,
+            "width": 56,
+            "height": 97,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/49/4982a02b-1a9d-410a-be2e-b2102ba58e5d.png",
+            "x": 599,
+            "y": 926,
+            "rotatedWidth": 56,
+            "rotatedHeight": 97
+          },
+          {
+            "name": "组 7(1)",
+            "uuid": "db948d8a-dcd0-4188-a8ad-b49f90806848",
+            "textureUuid": "56d36e2a-bba8-4c38-9163-f7508a8e6bad",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_54.png",
+            "trim": {
+              "x": 316,
+              "y": 3,
+              "width": 223,
+              "height": 76,
+              "rotatedWidth": 76,
+              "rotatedHeight": 223
+            },
+            "rawWidth": 223,
+            "rawHeight": 76,
+            "width": 229,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/56/56d36e2a-bba8-4c38-9163-f7508a8e6bad.png",
+            "x": 313,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 82,
+            "rotatedHeight": 229
+          },
+          {
+            "name": "图鉴",
+            "uuid": "0681e35d-19c2-43f9-9536-7606795e4de7",
+            "textureUuid": "1466360e-b55f-4445-a0de-4070362ca6d4",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113199_image_1.png",
+            "trim": {
+              "x": 398,
+              "y": 3,
+              "width": 90,
+              "height": 122,
+              "rotatedWidth": 90,
+              "rotatedHeight": 122
+            },
+            "rawWidth": 90,
+            "rawHeight": 122,
+            "width": 96,
+            "height": 128,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/14/1466360e-b55f-4445-a0de-4070362ca6d4.png",
+            "x": 395,
+            "y": 0,
+            "rotatedWidth": 96,
+            "rotatedHeight": 128
+          },
+          {
+            "name": "组 4 拷贝 2",
+            "uuid": "657d750c-cd1c-4d4c-9a94-a1d2df11a6cf",
+            "textureUuid": "03ffd00a-834d-4398-be9d-67780a0a9188",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_27.png",
+            "trim": {
+              "x": 398,
+              "y": 131,
+              "width": 90,
+              "height": 122,
+              "rotatedWidth": 90,
+              "rotatedHeight": 122
+            },
+            "rawWidth": 90,
+            "rawHeight": 122,
+            "width": 96,
+            "height": 128,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/03/03ffd00a-834d-4398-be9d-67780a0a9188.png",
+            "x": 395,
+            "y": 128,
+            "rotatedWidth": 96,
+            "rotatedHeight": 128
+          },
+          {
+            "name": "btn-y",
+            "uuid": "d69e60c9-8596-434a-a465-926cb4c7734a",
+            "textureUuid": "ea6e952d-5cc2-4264-a44a-56bc0cf010a9",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_53.png",
+            "trim": {
+              "x": 316,
+              "y": 232,
+              "width": 75,
+              "height": 76,
+              "rotatedWidth": 76,
+              "rotatedHeight": 75
+            },
+            "rawWidth": 75,
+            "rawHeight": 76,
+            "width": 81,
+            "height": 82,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ea/ea6e952d-5cc2-4264-a44a-56bc0cf010a9.png",
+            "x": 313,
+            "y": 229,
+            "rotated": true,
+            "rotatedWidth": 82,
+            "rotatedHeight": 81
+          },
+          {
+            "name": "share",
+            "uuid": "7a44b744-30a1-4035-a0df-7ff73ac0e587",
+            "textureUuid": "8ce9770c-4871-4ece-93a7-0280b1571156",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_32.png",
+            "trim": {
+              "x": 398,
+              "y": 259,
+              "width": 90,
+              "height": 122,
+              "rotatedWidth": 90,
+              "rotatedHeight": 122
+            },
+            "rawWidth": 90,
+            "rawHeight": 122,
+            "width": 96,
+            "height": 128,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/8c/8ce9770c-4871-4ece-93a7-0280b1571156.png",
+            "x": 395,
+            "y": 256,
+            "rotatedWidth": 96,
+            "rotatedHeight": 128
+          },
+          {
+            "name": "back",
+            "uuid": "fa4c1170-9b3a-49de-9f3c-a2accdbb6fbe",
+            "textureUuid": "719f200f-ffd6-4dfe-8da3-6cfe2bbfd968",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_62.png",
+            "trim": {
+              "x": 316,
+              "y": 313,
+              "width": 54,
+              "height": 54,
+              "rotatedWidth": 54,
+              "rotatedHeight": 54
+            },
+            "rawWidth": 54,
+            "rawHeight": 54,
+            "width": 60,
+            "height": 60,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/71/719f200f-ffd6-4dfe-8da3-6cfe2bbfd968.png",
+            "x": 313,
+            "y": 310,
+            "rotatedWidth": 60,
+            "rotatedHeight": 60
+          },
+          {
+            "name": "组 4 拷贝 3",
+            "uuid": "f519d00d-2c4a-4ec6-ad11-abe7a501409d",
+            "textureUuid": "406a2669-4bc5-4914-9f50-20883a5c79e9",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_60.png",
+            "trim": {
+              "x": 316,
+              "y": 387,
+              "width": 90,
+              "height": 122,
+              "rotatedWidth": 122,
+              "rotatedHeight": 90
+            },
+            "rawWidth": 90,
+            "rawHeight": 122,
+            "width": 96,
+            "height": 128,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/40/406a2669-4bc5-4914-9f50-20883a5c79e9.png",
+            "x": 313,
+            "y": 384,
+            "rotated": true,
+            "rotatedWidth": 128,
+            "rotatedHeight": 96
+          },
+          {
+            "name": "组 40",
+            "uuid": "03454f35-c355-4a8b-9161-014495b5597b",
+            "textureUuid": "a14001b1-4838-43a6-b82c-f96116919a0b",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113197_image_0.png",
+            "trim": {
+              "x": 316,
+              "y": 483,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/a1/a14001b1-4838-43a6-b82c-f96116919a0b.png",
+            "x": 313,
+            "y": 480,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "蓝",
+            "uuid": "0cb17bd3-4ddf-4731-bda8-c2feb3e4ac4d",
+            "textureUuid": "f5d526f5-85c6-4163-a580-d71e1f846958",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_6.png",
+            "trim": {
+              "x": 416,
+              "y": 483,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/f5/f5d526f5-85c6-4163-a580-d71e1f846958.png",
+            "x": 413,
+            "y": 480,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 38",
+            "uuid": "12fd0ab8-33f6-44e3-9337-c035b9aa7525",
+            "textureUuid": "db9c060b-7563-4a45-be32-d9bfa048772c",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113200_image_8.png",
+            "trim": {
+              "x": 316,
+              "y": 583,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/db/db9c060b-7563-4a45-be32-d9bfa048772c.png",
+            "x": 313,
+            "y": 580,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "cell1",
+            "uuid": "33d0cfcf-c5a8-430f-8116-858c725da12c",
+            "textureUuid": "f5efab48-447a-4331-b259-6cce2f407e3d",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_12.png",
+            "trim": {
+              "x": 416,
+              "y": 583,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/f5/f5efab48-447a-4331-b259-6cce2f407e3d.png",
+            "x": 413,
+            "y": 580,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "cell2",
+            "uuid": "393ac1a8-7fc3-4127-b4fd-d138ec7d984b",
+            "textureUuid": "0064b193-9933-4717-a7d1-09632c7142d0",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_14.png",
+            "trim": {
+              "x": 316,
+              "y": 683,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/00/0064b193-9933-4717-a7d1-09632c7142d0.png",
+            "x": 313,
+            "y": 680,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "炸弹-拷贝-5",
+            "uuid": "3e5b7d3e-9995-4088-9237-73ea3e0cb941",
+            "textureUuid": "9f606596-0024-466f-b37a-97622e05f3dc",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_15.png",
+            "trim": {
+              "x": 416,
+              "y": 683,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/9f/9f606596-0024-466f-b37a-97622e05f3dc.png",
+            "x": 413,
+            "y": 680,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "cell4",
+            "uuid": "45f214e9-3fa0-470e-9521-a13edfd2b7c0",
+            "textureUuid": "13906c67-d31e-4307-a565-ad51349d6c62",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113201_image_17.png",
+            "trim": {
+              "x": 316,
+              "y": 783,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/13/13906c67-d31e-4307-a565-ad51349d6c62.png",
+            "x": 313,
+            "y": 780,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 39",
+            "uuid": "56333ac3-59d7-4a9b-8ccb-d56d9d4fda7e",
+            "textureUuid": "840f939f-346c-44b4-b617-b89aefbc5872",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_25.png",
+            "trim": {
+              "x": 416,
+              "y": 783,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/84/840f939f-346c-44b4-b617-b89aefbc5872.png",
+            "x": 413,
+            "y": 780,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "X2黄",
+            "uuid": "6ff4a620-f727-4a6c-84a2-dfe7b324bdf6",
+            "textureUuid": "2392c450-bb60-43f3-857a-623bc5309b78",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_28.png",
+            "trim": {
+              "x": 109,
+              "y": 3,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/23/2392c450-bb60-43f3-857a-623bc5309b78.png",
+            "x": 106,
+            "y": 0,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "炸弹绿-拷贝",
+            "uuid": "72fd7f95-62f3-4fff-9bfb-df344003d059",
+            "textureUuid": "01c1aa35-31d2-4f99-abfd-026d6aca0297",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_29.png",
+            "trim": {
+              "x": 209,
+              "y": 3,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/01/01c1aa35-31d2-4f99-abfd-026d6aca0297.png",
+            "x": 206,
+            "y": 0,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "炸弹绿",
+            "uuid": "79f59b38-59da-450b-9bfd-2cfae65f529c",
+            "textureUuid": "d3568d6a-8d11-4e7a-9720-aececa08a1c1",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_31.png",
+            "trim": {
+              "x": 109,
+              "y": 103,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/d3/d3568d6a-8d11-4e7a-9720-aececa08a1c1.png",
+            "x": 106,
+            "y": 100,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 37",
+            "uuid": "92fdef0c-e573-4d6e-a41a-c473b43c510f",
+            "textureUuid": "753d253b-f782-462e-8d05-1429fc48bba7",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_35.png",
+            "trim": {
+              "x": 209,
+              "y": 103,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/75/753d253b-f782-462e-8d05-1429fc48bba7.png",
+            "x": 206,
+            "y": 100,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "cell3",
+            "uuid": "9f87bfd7-dff9-46d8-9bcb-2fd4dc2b10f5",
+            "textureUuid": "28972c30-b65b-4e12-bd48-4f7bda9be71a",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113207_image_37.png",
+            "trim": {
+              "x": 109,
+              "y": 203,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/28/28972c30-b65b-4e12-bd48-4f7bda9be71a.png",
+            "x": 106,
+            "y": 200,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 43",
+            "uuid": "a5491008-d2e1-4632-ab3a-66a3a4572d2c",
+            "textureUuid": "75d85408-a110-4654-8bfe-79338f2217af",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_39.png",
+            "trim": {
+              "x": 209,
+              "y": 203,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/75/75d85408-a110-4654-8bfe-79338f2217af.png",
+            "x": 206,
+            "y": 200,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "X2绿",
+            "uuid": "b221d77f-7545-47fe-bad0-1e540b5f82b6",
+            "textureUuid": "cfd70cd1-110e-4a91-88de-50f5acade1d6",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113208_image_42.png",
+            "trim": {
+              "x": 109,
+              "y": 303,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/cf/cfd70cd1-110e-4a91-88de-50f5acade1d6.png",
+            "x": 106,
+            "y": 300,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "X2蓝",
+            "uuid": "c76df38f-ac58-4abf-9c01-413b42e7751a",
+            "textureUuid": "02249a9d-7597-4628-a2be-d8758417b922",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_48.png",
+            "trim": {
+              "x": 209,
+              "y": 303,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/02/02249a9d-7597-4628-a2be-d8758417b922.png",
+            "x": 206,
+            "y": 300,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 41",
+            "uuid": "ec80c9fa-e346-4ba0-a300-95abe71c0528",
+            "textureUuid": "056f3033-b5fa-4a22-b57b-54fee92969c4",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113209_image_56.png",
+            "trim": {
+              "x": 109,
+              "y": 403,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/05/056f3033-b5fa-4a22-b57b-54fee92969c4.png",
+            "x": 106,
+            "y": 400,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "组 42",
+            "uuid": "ee5bf543-5b21-4e5c-bc8b-58f448cce4d1",
+            "textureUuid": "27da2501-2dc7-4917-a92c-8b28a3331283",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_57.png",
+            "trim": {
+              "x": 209,
+              "y": 403,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/27/27da2501-2dc7-4917-a92c-8b28a3331283.png",
+            "x": 206,
+            "y": 400,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "X2红",
+            "uuid": "f42026ae-4016-42e1-a9bc-d8b9f705edb1",
+            "textureUuid": "e9c5fc4a-8bd9-4cec-9d47-956eace4d347",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_58.png",
+            "trim": {
+              "x": 109,
+              "y": 503,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/e9/e9c5fc4a-8bd9-4cec-9d47-956eace4d347.png",
+            "x": 106,
+            "y": 500,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "炸弹-拷贝-4",
+            "uuid": "f751ff59-8e3c-404f-acb8-510e0b415b76",
+            "textureUuid": "ead00d74-812b-47eb-a068-de62e75813ec",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113210_image_61.png",
+            "trim": {
+              "x": 209,
+              "y": 503,
+              "width": 94,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 94
+            },
+            "rawWidth": 94,
+            "rawHeight": 94,
+            "width": 100,
+            "height": 100,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/ea/ead00d74-812b-47eb-a068-de62e75813ec.png",
+            "x": 206,
+            "y": 500,
+            "rotatedWidth": 100,
+            "rotatedHeight": 100
+          },
+          {
+            "name": "x",
+            "uuid": "53d4b33b-1f44-4d1f-8cbc-cf4d006388eb",
+            "textureUuid": "a7a1efc0-b342-49ff-939a-330fcd29ca5b",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113206_image_24.png",
+            "trim": {
+              "x": 109,
+              "y": 603,
+              "width": 82,
+              "height": 99,
+              "rotatedWidth": 82,
+              "rotatedHeight": 99
+            },
+            "rawWidth": 86,
+            "rawHeight": 108,
+            "width": 88,
+            "height": 105,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/a7/a7a1efc0-b342-49ff-939a-330fcd29ca5b.png",
+            "x": 106,
+            "y": 600,
+            "rotatedWidth": 88,
+            "rotatedHeight": 105
+          },
+          {
+            "name": "close",
+            "uuid": "0706478d-6e33-442e-9056-108d59ca1378",
+            "textureUuid": "bc139303-cf73-4029-98d5-c7b0ca789875",
+            "path": "G:\\cocos\\RPG01Douyin\\temp\\trimImages\\spritesheet_js_1723383113199_image_2.png",
+            "trim": {
+              "x": 197,
+              "y": 603,
+              "width": 81,
+              "height": 84,
+              "rotatedWidth": 84,
+              "rotatedHeight": 81
+            },
+            "rawWidth": 81,
+            "rawHeight": 84,
+            "width": 87,
+            "height": 90,
+            "originalPath": "G:/cocos/RPG01Douyin/library/imports/bc/bc139303-cf73-4029-98d5-c7b0ca789875.png",
+            "x": 194,
+            "y": 600,
+            "rotated": true,
+            "rotatedWidth": 90,
+            "rotatedHeight": 87
+          }
+        ],
+        "width": 676,
+        "height": 1023,
+        "name": "AutoAtlas-2",
+        "imagePath": "G:\\cocos\\RPG01Douyin\\temp\\TexturePacker\\build\\native\\assets\\Texture\\AutoAtlas.pac\\AutoAtlas-2.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "G:\\cocos\\RPG01Douyin\\temp\\TexturePacker\\build\\native\\assets\\Texture\\AutoAtlas.pac\\compressed\\AutoAtlas-2"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

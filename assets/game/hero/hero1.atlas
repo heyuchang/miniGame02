@@ -1,0 +1,265 @@
+
+hero1.png
+size: 992,235
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shadow
+  rotate: false
+  xy: 609, 77
+  size: 140, 26
+  orig: 140, 26
+  offset: 0, 0
+  index: -1
+b arm
+  rotate: false
+  xy: 209, 11
+  size: 38, 48
+  orig: 38, 48
+  offset: 0, 0
+  index: -1
+b arm2
+  rotate: true
+  xy: 393, 17
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+b hair
+  rotate: true
+  xy: 250, 40
+  size: 193, 196
+  orig: 201, 196
+  offset: 0, 0
+  index: -1
+b head lace
+  rotate: false
+  xy: 754, 36
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: false
+  xy: 808, 18
+  size: 28, 78
+  orig: 28, 78
+  offset: 0, 0
+  index: -1
+b robot
+  rotate: false
+  xy: 838, 149
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+b robot ice
+  rotate: true
+  xy: 917, 2
+  size: 22, 26
+  orig: 22, 26
+  offset: 0, 0
+  index: -1
+b robot_b
+  rotate: false
+  xy: 945, 13
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+b robot_sword
+  rotate: false
+  xy: 838, 72
+  size: 79, 75
+  orig: 79, 75
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 682, 4
+  size: 42, 71
+  orig: 42, 71
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 919, 69
+  size: 52, 37
+  orig: 52, 37
+  offset: 0, 0
+  index: -1
+down dress
+  rotate: false
+  xy: 2, 3
+  size: 114, 56
+  orig: 114, 56
+  offset: 0, 0
+  index: -1
+down head lace
+  rotate: false
+  xy: 2, 61
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: true
+  xy: 555, 2
+  size: 74, 38
+  orig: 74, 38
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 764, 98
+  size: 72, 25
+  orig: 72, 25
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 838, 15
+  size: 77, 22
+  orig: 77, 22
+  offset: 0, 0
+  index: -1
+f arm
+  rotate: false
+  xy: 918, 26
+  size: 47, 41
+  orig: 47, 41
+  offset: 0, 0
+  index: -1
+f arm2
+  rotate: false
+  xy: 351, 13
+  size: 40, 25
+  orig: 40, 25
+  offset: 0, 0
+  index: -1
+f dress
+  rotate: true
+  xy: 924, 108
+  size: 46, 58
+  orig: 46, 58
+  offset: 0, 0
+  index: -1
+f dress2
+  rotate: true
+  xy: 924, 156
+  size: 77, 60
+  orig: 77, 60
+  offset: 0, 0
+  index: -1
+f head lace
+  rotate: false
+  xy: 118, 19
+  size: 89, 40
+  orig: 89, 40
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: true
+  xy: 838, 39
+  size: 31, 78
+  orig: 31, 78
+  offset: 0, 0
+  index: -1
+f robot
+  rotate: false
+  xy: 764, 125
+  size: 72, 108
+  orig: 72, 108
+  offset: 0, 0
+  index: -1
+f robot b
+  rotate: false
+  xy: 393, 2
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+f robot ice1
+  rotate: true
+  xy: 118, 2
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+f robot ice2
+  rotate: false
+  xy: 967, 40
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+f robot_sword
+  rotate: true
+  xy: 448, 2
+  size: 74, 105
+  orig: 74, 105
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 609, 105
+  size: 153, 128
+  orig: 153, 128
+  offset: 0, 0
+  index: -1
+head ice
+  rotate: false
+  xy: 448, 78
+  size: 159, 155
+  orig: 159, 155
+  offset: 0, 0
+  index: -1
+head ribbon
+  rotate: false
+  xy: 595, 4
+  size: 85, 71
+  orig: 85, 71
+  offset: 0, 0
+  index: -1
+mo1
+  rotate: false
+  xy: 789, 4
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+mo2
+  rotate: true
+  xy: 789, 14
+  size: 20, 17
+  orig: 20, 17
+  offset: 0, 0
+  index: -1
+waist access
+  rotate: false
+  xy: 303, 18
+  size: 46, 20
+  orig: 46, 20
+  offset: 0, 0
+  index: -1
+waist crystal
+  rotate: true
+  xy: 249, 11
+  size: 27, 52
+  orig: 27, 52
+  offset: 0, 0
+  index: -1
+waist ribbon
+  rotate: false
+  xy: 754, 2
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+waist ribbon down
+  rotate: true
+  xy: 726, 4
+  size: 71, 26
+  orig: 71, 26
+  offset: 0, 0
+  index: -1

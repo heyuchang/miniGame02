@@ -1,0 +1,139 @@
+
+hero7.png
+size: 466,109
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ANGRY
+  rotate: true
+  xy: 241, 2
+  size: 38, 43
+  orig: 38, 43
+  offset: 0, 0
+  index: -1
+B_Leg
+  rotate: true
+  xy: 358, 17
+  size: 25, 57
+  orig: 25, 57
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 162, 38
+  size: 69, 62
+  orig: 69, 62
+  offset: 0, 0
+  index: -1
+Eye open
+  rotate: true
+  xy: 226, 42
+  size: 65, 23
+  orig: 65, 23
+  offset: 0, 0
+  index: -1
+Eye4(Close)
+  rotate: false
+  xy: 286, 4
+  size: 63, 7
+  orig: 63, 7
+  offset: 0, 0
+  index: -1
+Eye6(Hurt)
+  rotate: true
+  xy: 398, 48
+  size: 59, 19
+  orig: 59, 19
+  offset: 0, 0
+  index: -1
+F_Leg
+  rotate: true
+  xy: 180, 6
+  size: 30, 59
+  orig: 30, 59
+  offset: 0, 0
+  index: -1
+Gun
+  rotate: true
+  xy: 419, 51
+  size: 56, 45
+  orig: 56, 45
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 2
+  size: 138, 105
+  orig: 138, 105
+  offset: 0, 0
+  index: -1
+L hand
+  rotate: true
+  xy: 417, 3
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+L hand2
+  rotate: false
+  xy: 286, 13
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+L hand3
+  rotate: false
+  xy: 417, 23
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+Light
+  rotate: true
+  xy: 251, 44
+  size: 63, 145
+  orig: 63, 145
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 162, 5
+  size: 31, 16
+  orig: 31, 16
+  offset: 0, 0
+  index: -1
+R hand reverse
+  rotate: true
+  xy: 435, 3
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+R hand1
+  rotate: true
+  xy: 439, 32
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+R hand2
+  rotate: false
+  xy: 330, 16
+  size: 26, 26
+  orig: 26, 29
+  offset: 0, 2
+  index: -1
+R hand3
+  rotate: false
+  xy: 315, 15
+  size: 13, 27
+  orig: 14, 27
+  offset: 1, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 142, 7
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1

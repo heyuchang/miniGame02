@@ -1,0 +1,142 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "gameData",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "动画分数配置": "",
+    "levelData": [
+      {
+        "name": "萌心悦",
+        "score": 10000,
+        "giftStep": 1,
+        "step": 5
+      },
+      {
+        "name": "甜梓萱",
+        "score": 20000,
+        "giftStep": 2,
+        "step": 6
+      },
+      {
+        "name": "梦琪儿",
+        "score": 25000,
+        "giftStep": 3,
+        "step": 7
+      },
+      {
+        "name": "可心怡",
+        "score": 30000,
+        "giftStep": 4,
+        "step": 8
+      },
+      {
+        "name": "秋水仙",
+        "score": 35000,
+        "giftStep": 5,
+        "step": 9
+      },
+      {
+        "name": "月清歌",
+        "score": 45000,
+        "giftStep": 6,
+        "step": 10
+      },
+      {
+        "name": "萌小桃",
+        "score": 55000,
+        "giftStep": 7,
+        "step": 10
+      },
+      {
+        "name": "芷若馨",
+        "score": 60000,
+        "giftStep": 8,
+        "step": 10
+      },
+      {
+        "name": "心悦诗",
+        "score": 70000,
+        "giftStep": 9,
+        "step": 10
+      },
+      {
+        "name": "甜蕊儿",
+        "score": 90000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "萧玉笛",
+        "score": 100000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "瑶梦露",
+        "score": 150000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "苏梦蝶",
+        "score": 200000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "墨玉轩",
+        "score": 250000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "烟雨梦",
+        "score": 300000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "花满楼",
+        "score": 350000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "梅映雪",
+        "score": 400000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "云初霁",
+        "score": 450000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "琴心韵",
+        "score": 500000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "紫凝香",
+        "score": 550000,
+        "giftStep": 10,
+        "step": 10
+      },
+      {
+        "name": "芷兰心",
+        "score": 600000,
+        "giftStep": 10,
+        "step": 10
+      }
+    ],
+    "buildingData": [
+      {
+        "name": "通天塔"
+      }
+    ]
+  }
+}

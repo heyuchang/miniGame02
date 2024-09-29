@@ -1,0 +1,146 @@
+
+hero9.png
+size: 250,263
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Eye Close
+  rotate: false
+  xy: 68, 23
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+Eye Hurt
+  rotate: false
+  xy: 133, 19
+  size: 60, 20
+  orig: 60, 20
+  offset: 0, 0
+  index: -1
+Eye Open
+  rotate: false
+  xy: 143, 41
+  size: 66, 23
+  orig: 66, 23
+  offset: 0, 0
+  index: -1
+L Hand2
+  rotate: false
+  xy: 235, 81
+  size: 13, 28
+  orig: 13, 28
+  offset: 0, 0
+  index: -1
+L Hand3
+  rotate: true
+  xy: 214, 104
+  size: 47, 18
+  orig: 48, 18
+  offset: 0, 0
+  index: -1
+L Hand4
+  rotate: true
+  xy: 234, 132
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+L hand1
+  rotate: false
+  xy: 234, 111
+  size: 13, 19
+  orig: 13, 19
+  offset: 0, 0
+  index: -1
+Mouth Open
+  rotate: true
+  xy: 195, 8
+  size: 31, 16
+  orig: 31, 16
+  offset: 0, 0
+  index: -1
+R Hand1
+  rotate: true
+  xy: 68, 2
+  size: 19, 40
+  orig: 19, 40
+  offset: 0, 0
+  index: -1
+R Hand2
+  rotate: true
+  xy: 235, 45
+  size: 34, 12
+  orig: 34, 13
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 215, 2
+  size: 100, 18
+  orig: 100, 18
+  offset: 0, 0
+  index: -1
+b ear
+  rotate: false
+  xy: 89, 100
+  size: 70, 44
+  orig: 70, 44
+  offset: 0, 0
+  index: -1
+b hair
+  rotate: true
+  xy: 2, 100
+  size: 161, 85
+  orig: 161, 85
+  offset: 0, 0
+  index: -1
+b leg
+  rotate: true
+  xy: 2, 14
+  size: 26, 64
+  orig: 26, 64
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 161, 102
+  size: 51, 49
+  orig: 51, 49
+  offset: 0, 0
+  index: -1
+f ear
+  rotate: true
+  xy: 2, 42
+  size: 56, 75
+  orig: 56, 75
+  offset: 0, 0
+  index: -1
+f leg
+  rotate: true
+  xy: 143, 66
+  size: 32, 70
+  orig: 32, 70
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 89, 146
+  size: 115, 50
+  orig: 115, 50
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 141, 153
+  size: 108, 102
+  orig: 108, 102
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 79, 42
+  size: 62, 56
+  orig: 62, 56
+  offset: 0, 0
+  index: -1
