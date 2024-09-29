@@ -20,7 +20,7 @@ cc.Class({
     //todo: 换成动态生成 暂不处理
     warningSpriteFrame: [cc.SpriteFrame],
     propSpriteFrame: [cc.SpriteFrame],
-    checkMgr: require("check"),
+    checkMgr: require("elementCheck"),
     revivePage: cc.Node
   },
   start: function start() {
@@ -91,7 +91,7 @@ cc.Class({
       setTimeout(function () {
         resolve('200 OK');
 
-        _this2.checkMgr.check(_this2);
+        _this2.checkMgr.elementCheck(_this2);
       }, self._controller.config.json.startAnimationTime * num / 2 / 1 //  (cc.game.getFrameRate() / 60)
       );
     });
@@ -162,7 +162,7 @@ cc.Class({
       setTimeout(function () {
         _this4.checkMgr.init(_this4);
 
-        _this4.checkMgr.check(_this4);
+        _this4.checkMgr.elementCheck(_this4);
 
         _this4._status = 1;
       }, 250);
@@ -307,7 +307,7 @@ cc.Class({
 
         this._score.addMult(color, pos);
 
-        this._controller.musicMgr.onDouble();
+        this._controller.musicManager.onDouble();
 
         for (var i = 0; i < this.rowNum; i++) {
           //行
@@ -337,7 +337,7 @@ cc.Class({
 
         this.isPropChain = true;
 
-        this._controller.musicMgr.onBoom();
+        this._controller.musicManager.onBoom();
 
         for (var _i = 0; _i < this.rowNum; _i++) {
           //行
@@ -357,7 +357,7 @@ cc.Class({
         //:  加步数
         this._score.tipBox.init(this._score, 4);
 
-        this._controller.musicMgr.onDouble();
+        this._controller.musicManager.onDouble();
 
         for (var _i2 = 0; _i2 < this.rowNum; _i2++) {
           //行
@@ -383,7 +383,7 @@ cc.Class({
 
         this.isPropChain = true;
 
-        this._controller.musicMgr.onMagic();
+        this._controller.musicManager.onMagic();
 
         for (var _i3 = 0; _i3 < this.rowNum; _i3++) {
           //行

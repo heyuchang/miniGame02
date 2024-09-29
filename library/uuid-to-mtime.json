@@ -569,15 +569,10 @@
     "meta": 1721565624574,
     "relativePath": "lib.wx.api.d.ts"
   },
-  "feefc6ff-557b-45a7-82fe-66a6ba0ab059": {
-    "asset": 1721653690591,
-    "meta": 1721659953246,
-    "relativePath": "Script\\controller.js"
-  },
   "0fd3e9a0-0efd-4f73-aad1-ecd895278abf": {
     "asset": 1721653690591,
-    "meta": 1721659953372,
-    "relativePath": "Script\\musicMgr.js"
+    "meta": 1727597754571,
+    "relativePath": "Script\\musicManager.js"
   },
   "b55a7d96-04f8-41a2-bbe7-496e0a4f9b6e": {
     "asset": 1721653690591,
@@ -593,11 +588,6 @@
     "asset": 1722069247501,
     "meta": 1722164345178,
     "relativePath": "Script\\building.js"
-  },
-  "53b05733-0f8c-4681-9f03-d292e9523f4c": {
-    "asset": 1722961077911,
-    "meta": 1722961083636,
-    "relativePath": "Script\\social.js"
   },
   "f33c5bfc-1660-45e3-b90f-348e1532328c": {
     "asset": 1572923246000,
@@ -1679,24 +1669,34 @@
     "meta": 1727596799354,
     "relativePath": "Script\\pageMgr.js"
   },
-  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
-    "asset": 1727596796605,
-    "meta": 1727596799463,
-    "relativePath": "Script\\score.js"
-  },
   "a3721fda-398d-4616-b216-1c7073606b22": {
-    "asset": 1727597117105,
-    "meta": 1727597119673,
-    "relativePath": "Script\\check.js"
+    "asset": 1727597556538,
+    "meta": 1727597561361,
+    "relativePath": "Script\\elementCheck.js"
+  },
+  "feefc6ff-557b-45a7-82fe-66a6ba0ab059": {
+    "asset": 1727597849390,
+    "meta": 1727597851610,
+    "relativePath": "Script\\controller.js"
   },
   "dbc3c431-b47a-4f8f-bed3-9dcc81d7c810": {
-    "asset": 1727597117105,
-    "meta": 1727597119815,
+    "asset": 1727597849396,
+    "meta": 1727597851733,
     "relativePath": "Script\\element.js"
   },
   "47c77c8e-78aa-4f88-9548-3578a91e886c": {
-    "asset": 1727597117094,
-    "meta": 1727597119934,
+    "asset": 1727597849388,
+    "meta": 1727597851851,
     "relativePath": "Script\\game.js"
+  },
+  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
+    "asset": 1727597849390,
+    "meta": 1727597851920,
+    "relativePath": "Script\\score.js"
+  },
+  "53b05733-0f8c-4681-9f03-d292e9523f4c": {
+    "asset": 1727597849391,
+    "meta": 1727597851977,
+    "relativePath": "Script\\social.js"
   }
 }

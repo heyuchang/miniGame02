@@ -184,7 +184,7 @@ cc.Class({
 
     self._game._status = 5;
 
-    self._controller.musicMgr.onPlayAudio(0 //self._game._score.chain - 1
+    self._controller.musicManager.onPlayAudio(0 //self._game._score.chain - 1
     );
 
     if (this._itemType != 0) {

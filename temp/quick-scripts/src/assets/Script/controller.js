@@ -11,7 +11,7 @@ cc._RF.push(module, 'feefcb/VXtFp4L+Zqa6CrBZ', 'controller');
 cc.Class({
   "extends": cc.Component,
   properties: {
-    musicMgr: require('musicMgr'),
+    musicManager: require('musicManager'),
     //音乐控制组件
     game: require('game'),
     //主游戏控制器
@@ -39,7 +39,7 @@ cc.Class({
       this.social.init(this);
     }
 
-    this.musicMgr.init();
+    this.musicManager.init();
     this.lateStart();
   },
   lateStart: function lateStart() {

@@ -26,7 +26,7 @@ cc.Class({
       }
     }
   },
-  check(g) { //该函数主要用于检测一个区块能否形成道具等
+  elementCheck(g) { //该函数主要用于检测一个区块能否形成道具等
     let propConfig = g._controller.config.json.propConfig
     this._game = g
     this.map = g.map

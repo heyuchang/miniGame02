@@ -11,7 +11,7 @@ cc.Class({
     blockSprite: [cc.SpriteFrame], //todo: 换成动态生成 暂不处理
     warningSpriteFrame: [cc.SpriteFrame],
     propSpriteFrame: [cc.SpriteFrame],
-    checkMgr: require("check"),
+    checkMgr: require("elementCheck"),
     revivePage: cc.Node,
   },
   start() {
@@ -77,7 +77,7 @@ cc.Class({
       this.checkMgr.init(this)
       setTimeout(() => {
           resolve('200 OK');
-          this.checkMgr.check(this)
+          this.checkMgr.elementCheck(this)
         }, self._controller.config.json.startAnimationTime * num / 2 / 1
         //  (cc.game.getFrameRate() / 60)
       )
@@ -137,7 +137,7 @@ cc.Class({
       }
       setTimeout(() => {
         this.checkMgr.init(this)
-        this.checkMgr.check(this)
+        this.checkMgr.elementCheck(this)
         this._status = 1
       }, 250)
     })
@@ -258,7 +258,7 @@ cc.Class({
         // 分数翻倍 最高八倍
         this._score.tipBox.init(this._score, 1)
         this._score.addMult(color, pos)
-        this._controller.musicMgr.onDouble()
+        this._controller.musicManager.onDouble()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
@@ -279,7 +279,7 @@ cc.Class({
           this._controller.social.onShakePhone()
         }
         this.isPropChain = true
-        this._controller.musicMgr.onBoom()
+        this._controller.musicManager.onBoom()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element').color == color && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
@@ -293,7 +293,7 @@ cc.Class({
         break
       case 3: //:  加步数
         this._score.tipBox.init(this._score, 4)
-        this._controller.musicMgr.onDouble()
+        this._controller.musicManager.onDouble()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
@@ -309,7 +309,7 @@ cc.Class({
       case 4: // : 消除全部单身的方块
         this._score.tipBox.init(this._score, 5)
         this.isPropChain = true
-        this._controller.musicMgr.onMagic()
+        this._controller.musicManager.onMagic()
         for (let i = 0; i < this.rowNum; i++) { //行
           for (let j = 0; j < this.rowNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element').isSingle && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {

@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'a3721/aOY1GFrIWHHBzYGsi', 'check');
-// Script/check.js
+cc._RF.push(module, 'a3721/aOY1GFrIWHHBzYGsi', 'elementCheck');
+// Script/elementCheck.js
 
 "use strict";
 
@@ -36,7 +36,7 @@ cc.Class({
       }
     }
   },
-  check: function check(g) {
+  elementCheck: function elementCheck(g) {
     //该函数主要用于检测一个区块能否形成道具等
     var propConfig = g._controller.config.json.propConfig;
     this._game = g;

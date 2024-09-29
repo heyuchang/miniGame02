@@ -32,8 +32,8 @@ cc.Class({
     }); // 监听
 
     wx.onAudioInterruptionEnd(function () {
-      c.musicMgr.pauseBg();
-      c.musicMgr.resumeBg();
+      c.musicManager.pauseBg();
+      c.musicManager.resumeBg();
     });
     wx.onShow(function (options) {
       if (options.scene == 1044) {

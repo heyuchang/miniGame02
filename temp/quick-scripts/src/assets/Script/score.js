@@ -269,7 +269,7 @@ cc.Class({
 
     this._controller.pageMgr.addPage(3);
 
-    this._controller.musicMgr.onWin();
+    this._controller.musicManager.onWin();
 
     this.successDialog.init(this, this.level, this.levelData, this.score); //升级之后的等级
 

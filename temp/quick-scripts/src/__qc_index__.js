@@ -2,11 +2,11 @@
 require('./assets/Script/GameAct');
 require('./assets/Script/building');
 require('./assets/Script/character');
-require('./assets/Script/check');
 require('./assets/Script/controller');
 require('./assets/Script/element');
+require('./assets/Script/elementCheck');
 require('./assets/Script/game');
-require('./assets/Script/musicMgr');
+require('./assets/Script/musicManager');
 require('./assets/Script/pageMgr');
 require('./assets/Script/pictorial');
 require('./assets/Script/progress');

@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '0fd3emgDv1Pc6rR7NiVJ4q/', 'musicMgr');
-// Script/musicMgr.js
+cc._RF.push(module, '0fd3emgDv1Pc6rR7NiVJ4q/', 'musicManager');
+// Script/musicManager.js
 
 "use strict";
 

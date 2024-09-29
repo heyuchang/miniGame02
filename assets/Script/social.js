@@ -25,8 +25,8 @@ cc.Class({
     })
     // 监听
     wx.onAudioInterruptionEnd(() => {
-      c.musicMgr.pauseBg()
-      c.musicMgr.resumeBg()
+      c.musicManager.pauseBg()
+      c.musicManager.resumeBg()
     })
     wx.onShow((options) => {
       if (options.scene == 1044) {

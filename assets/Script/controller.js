@@ -5,7 +5,7 @@
 cc.Class({
   extends: cc.Component,
   properties: {
-    musicMgr: require('musicMgr'), //音乐控制组件
+    musicManager: require('musicManager'), //音乐控制组件
     game: require('game'), //主游戏控制器
     pageMgr: require('pageMgr'), //页面控制器
     social: require('social'), //排行榜、广告控制器
@@ -26,7 +26,7 @@ cc.Class({
     if (this.social.node.active) {
       this.social.init(this)
     }
-    this.musicMgr.init()
+    this.musicManager.init()
     this.lateStart()
   },
   lateStart() {
