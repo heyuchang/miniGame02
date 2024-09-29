@@ -7,7 +7,7 @@ require('./assets/Script/element');
 require('./assets/Script/elementCheck');
 require('./assets/Script/game');
 require('./assets/Script/musicManager');
-require('./assets/Script/pageMgr');
+require('./assets/Script/pageManager');
 require('./assets/Script/pictorial');
 require('./assets/Script/progress');
 require('./assets/Script/score');

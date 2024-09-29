@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'a1bb7xaDvtHXLTuIo0MRIEu', 'pageMgr');
-// Script/pageMgr.js
+cc._RF.push(module, 'a1bb7xaDvtHXLTuIo0MRIEu', 'pageManager');
+// Script/pageManager.js
 
 "use strict";
 

@@ -135,8 +135,8 @@
     "relativePath": "Scene"
   },
   "34a6e269-c4a1-4b06-b283-a25d10e81155": {
-    "asset": 1723380379449,
-    "meta": 1723380379464,
+    "asset": 1727599548386,
+    "meta": 1727599548408,
     "relativePath": "Scene\\scene.fire"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
@@ -1666,37 +1666,37 @@
   },
   "a1bb7c5a-0efb-475c-b4ee-228d0c44812e": {
     "asset": 1727596796606,
-    "meta": 1727596799354,
-    "relativePath": "Script\\pageMgr.js"
+    "meta": 1727598140537,
+    "relativePath": "Script\\pageManager.js"
   },
   "a3721fda-398d-4616-b216-1c7073606b22": {
     "asset": 1727597556538,
     "meta": 1727597561361,
     "relativePath": "Script\\elementCheck.js"
   },
-  "feefc6ff-557b-45a7-82fe-66a6ba0ab059": {
-    "asset": 1727597849390,
-    "meta": 1727597851610,
-    "relativePath": "Script\\controller.js"
-  },
   "dbc3c431-b47a-4f8f-bed3-9dcc81d7c810": {
     "asset": 1727597849396,
     "meta": 1727597851733,
     "relativePath": "Script\\element.js"
   },
-  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
-    "asset": 1727597849388,
-    "meta": 1727597851851,
-    "relativePath": "Script\\game.js"
-  },
-  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
-    "asset": 1727597849390,
-    "meta": 1727597851920,
-    "relativePath": "Script\\score.js"
-  },
   "53b05733-0f8c-4681-9f03-d292e9523f4c": {
     "asset": 1727597849391,
     "meta": 1727597851977,
     "relativePath": "Script\\social.js"
+  },
+  "feefc6ff-557b-45a7-82fe-66a6ba0ab059": {
+    "asset": 1727598194544,
+    "meta": 1727599260262,
+    "relativePath": "Script\\controller.js"
+  },
+  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
+    "asset": 1727598194543,
+    "meta": 1727599260462,
+    "relativePath": "Script\\game.js"
+  },
+  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
+    "asset": 1727598194544,
+    "meta": 1727599260572,
+    "relativePath": "Script\\score.js"
   }
 }

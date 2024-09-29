@@ -171,9 +171,9 @@ cc.Class({
   gameOver: function gameOver() {
     this._status = 3;
 
-    this._controller.pageMgr.addPage(2);
+    this._controller.pageManager.addPage(2);
 
-    this._controller.pageMgr.addPage(4);
+    this._controller.pageManager.addPage(4);
 
     if (this._controller.social.node.active) {
       this._controller.social.closeBannerAdv();
@@ -183,9 +183,9 @@ cc.Class({
   askRevive: function askRevive() {
     var _this5 = this;
 
-    this._controller.pageMgr.addPage(2);
+    this._controller.pageManager.addPage(2);
 
-    this._controller.pageMgr.addPage(5);
+    this._controller.pageManager.addPage(5);
 
     this.revivePage.active = true;
     this.revivePage.getChildByName('askRevive').active = true;
@@ -225,7 +225,7 @@ cc.Class({
     this.revivePage.getChildByName('successRevive').active = true;
   },
   onReviveCertainBtn: function onReviveCertainBtn() {
-    this._controller.pageMgr.removePage(2);
+    this._controller.pageManager.removePage(2);
 
     this.revivePage.active = false;
     this._status = 1;
@@ -239,7 +239,7 @@ cc.Class({
   },
   onSkipRevive: function onSkipRevive() {
     clearInterval(this.reviveTimer);
-    this._controller.pageMgr.pages[5].active = false;
+    this._controller.pageManager.pages[5].active = false;
 
     this._score.onGameOver(true);
 
@@ -248,7 +248,7 @@ cc.Class({
   restart: function restart() {
     var _this6 = this;
 
-    this._controller.pageMgr.onOpenPage(1);
+    this._controller.pageManager.onOpenPage(1);
 
     this.recoveryAllBlocks().then(function () {
       _this6.gameStart();

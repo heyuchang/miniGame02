@@ -7,7 +7,7 @@ cc.Class({
   properties: {
     musicManager: require('musicManager'), //音乐控制组件
     game: require('game'), //主游戏控制器
-    pageMgr: require('pageMgr'), //页面控制器
+    pageManager: require('pageManager'), //页面控制器
     social: require('social'), //排行榜、广告控制器
     config: cc.JsonAsset,
     gameData: cc.JsonAsset,
@@ -35,7 +35,7 @@ cc.Class({
     }
     this.pictorial.getComponent('pictorial').init(this)
     this.startPage.bannerNode.scale = 1
-    this.pageMgr.onOpenPage(0)
+    this.pageManager.onOpenPage(0)
   },
   onGameStartButton() {
     // TODO:  增加一个动画
@@ -47,7 +47,7 @@ cc.Class({
     })
   },
   gameStart() {
-    this.pageMgr.onOpenPage(1)
+    this.pageManager.onOpenPage(1)
     this.game.gameStart()
   },
   closeRank() {
@@ -68,7 +68,7 @@ cc.Class({
     this.groupRank.active = true
     if (this.social.node.active) {
       this.social.showGroupRank()
-      this.pageMgr.addPage(6)
+      this.pageManager.addPage(6)
     }
   },
   closeGroupRank() {
@@ -76,7 +76,7 @@ cc.Class({
     this.navNode.active = true
     if (this.social.node.active) {
       this.social.closeGroupRank()
-      this.pageMgr.removePage(6)
+      this.pageManager.removePage(6)
     }
   },
   openPictorial() {

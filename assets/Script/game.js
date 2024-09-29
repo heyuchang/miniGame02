@@ -144,16 +144,16 @@ cc.Class({
   },
   gameOver() {
     this._status = 3
-    this._controller.pageMgr.addPage(2)
-    this._controller.pageMgr.addPage(4)
+    this._controller.pageManager.addPage(2)
+    this._controller.pageManager.addPage(4)
     if (this._controller.social.node.active) {
       this._controller.social.closeBannerAdv()
     }
   },
   // todo 复活
   askRevive() {
-    this._controller.pageMgr.addPage(2)
-    this._controller.pageMgr.addPage(5)
+    this._controller.pageManager.addPage(2)
+    this._controller.pageManager.addPage(5)
     this.revivePage.active = true
     this.revivePage.getChildByName('askRevive').active = true
     this.revivePage.getChildByName('successRevive').active = false
@@ -190,7 +190,7 @@ cc.Class({
     this.revivePage.getChildByName('successRevive').active = true
   },
   onReviveCertainBtn() {
-    this._controller.pageMgr.removePage(2)
+    this._controller.pageManager.removePage(2)
     this.revivePage.active = false
     this._status = 1
     this._score.onRevive()
@@ -202,12 +202,12 @@ cc.Class({
   },
   onSkipRevive() {
     clearInterval(this.reviveTimer)
-    this._controller.pageMgr.pages[5].active = false
+    this._controller.pageManager.pages[5].active = false
     this._score.onGameOver(true)
     this.isRangeAction = false
   },
   restart() {
-    this._controller.pageMgr.onOpenPage(1)
+    this._controller.pageManager.onOpenPage(1)
     this.recoveryAllBlocks().then(() => {
       this.gameStart()
     })

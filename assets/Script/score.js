@@ -233,8 +233,8 @@ cc.Class({
   },
   // 升级
   onLevelUp() {
-    this._controller.pageMgr.addPage(2)
-    this._controller.pageMgr.addPage(3)
+    this._controller.pageManager.addPage(2)
+    this._controller.pageManager.addPage(3)
     this._controller.musicManager.onWin()
     this.successDialog.init(this, this.level, this.levelData, this.score) //升级之后的等级
     this.characterMgr.onLevelUp()
@@ -265,7 +265,7 @@ cc.Class({
     } else {
       double = double || 1
     }
-    this._controller.pageMgr.onOpenPage(1)
+    this._controller.pageManager.onOpenPage(1)
     this.initCurrentScoreLabel()
     this.mainScoreLabel.string = this.levelData[this.level - 2].step * double
     this.characterMgr.onLevelUpBtn(this.level)

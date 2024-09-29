@@ -265,9 +265,9 @@ cc.Class({
   },
   // 升级
   onLevelUp: function onLevelUp() {
-    this._controller.pageMgr.addPage(2);
+    this._controller.pageManager.addPage(2);
 
-    this._controller.pageMgr.addPage(3);
+    this._controller.pageManager.addPage(3);
 
     this._controller.musicManager.onWin();
 
@@ -308,7 +308,7 @@ cc.Class({
       _double = _double || 1;
     }
 
-    this._controller.pageMgr.onOpenPage(1);
+    this._controller.pageManager.onOpenPage(1);
 
     this.initCurrentScoreLabel();
     this.mainScoreLabel.string = this.levelData[this.level - 2].step * _double;

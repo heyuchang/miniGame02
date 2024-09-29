@@ -15,7 +15,7 @@ cc.Class({
     //音乐控制组件
     game: require('game'),
     //主游戏控制器
-    pageMgr: require('pageMgr'),
+    pageManager: require('pageManager'),
     //页面控制器
     social: require('social'),
     //排行榜、广告控制器
@@ -49,7 +49,7 @@ cc.Class({
 
     this.pictorial.getComponent('pictorial').init(this);
     this.startPage.bannerNode.scale = 1;
-    this.pageMgr.onOpenPage(0);
+    this.pageManager.onOpenPage(0);
   },
   onGameStartButton: function onGameStartButton() {
     var _this = this;
@@ -64,7 +64,7 @@ cc.Class({
     });
   },
   gameStart: function gameStart() {
-    this.pageMgr.onOpenPage(1);
+    this.pageManager.onOpenPage(1);
     this.game.gameStart();
   },
   closeRank: function closeRank() {
@@ -88,7 +88,7 @@ cc.Class({
 
     if (this.social.node.active) {
       this.social.showGroupRank();
-      this.pageMgr.addPage(6);
+      this.pageManager.addPage(6);
     }
   },
   closeGroupRank: function closeGroupRank() {
@@ -97,7 +97,7 @@ cc.Class({
 
     if (this.social.node.active) {
       this.social.closeGroupRank();
-      this.pageMgr.removePage(6);
+      this.pageManager.removePage(6);
     }
   },
   openPictorial: function openPictorial() {

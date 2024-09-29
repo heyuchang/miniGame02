@@ -202,7 +202,7 @@
       "array": [
         0,
         0,
-        343.8120853024222,
+        338.61593287971556,
         0,
         0,
         0,
@@ -983,13 +983,13 @@
       "__id__": 18
     },
     "_enabled": true,
-    "musicMgr": {
+    "musicManager": {
       "__id__": 20
     },
     "game": {
       "__id__": 35
     },
-    "pageMgr": {
+    "pageManager": {
       "__id__": 260
     },
     "social": {
@@ -12961,9 +12961,7 @@
     "avatar": {
       "__id__": 277
     },
-    "prefab": {
-      "__uuid__": "3c9ed32c-2c78-4ed5-9f70-2b34814055e5"
-    },
+    "prefab": null,
     "_id": "c0DZh+jiFJl4Ryxd5T6v4z"
   },
   {
