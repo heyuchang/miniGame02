@@ -6,7 +6,7 @@ var AC = require('GameAct')
 cc.Class({
   extends: cc.Component,
   properties: {
-    _status: 0, //0 未开始 1 游戏开始 2 游戏暂停 3 游戏结束 4 下落状态 5无法触摸状态
+    statusType: 0, //0 未开始 1 游戏开始 2 游戏暂停 3 游戏结束 4 下落状态 5无法触摸状态
     blockPrefab: cc.Prefab,
     blockSprite: [cc.SpriteFrame], //todo: 换成动态生成 暂不处理
     warningSpriteFrame: [cc.SpriteFrame],
@@ -30,8 +30,6 @@ cc.Class({
     this.animaCfgSpeed = c.config.json.gapCfgNum
     this.blockClsWidth = (730 - (this.rowCfgNum + 1) * this.gapCfgNum) / this.rowCfgNum
     this.reviveTimer = null
-    //console.log(this.gapCfgNum)
-    //console.log(this.blockClsWidth)
   },
   // 动态获取需要动态控制的组件
   bindNode() {
@@ -42,87 +40,93 @@ cc.Class({
   gameStart() {
     this.recoveryAllBlocks().then()
     this._gameScore.init(this)
-    this.mapSet(this.rowCfgNum).then((result) => {
-      // console.log('游戏状态改变', result)
-      this._status = 1
+    this.gameMapInit(this.rowCfgNum).then((result) => {
+      this.statusType = 1
     })
 
   },
   // 初始化地图
-  mapSet(num) {
-    this.map = new Array()
-    let self = this
+  gameMapInit(num) {
+    this.map = [];
+    const self = this;
+
     // 生成两个随机的对象数组
-    let a = Math.floor(Math.random() * num)
-    let b = Math.floor(Math.random() * num)
-
-    let c = Math.floor(1 + Math.random() * (num - 1)) - 1
-    a == c ? c++ : ''
-    let d = Math.floor(Math.random() * num)
-
+    let a, b, c, d;
+    do {
+      a = Math.floor(Math.random() * num);
+      b = Math.floor(Math.random() * num);
+      c = Math.floor(1 + Math.random() * (num - 1)) - 1;
+      d = Math.floor(Math.random() * num);
+    } while (a === c && b === d);
 
     return new Promise((resolve, reject) => {
-      for (let i = 0; i < num; i++) { //行
-        this.map[i] = new Array()
-        for (let j = 0; j < num; j++) { //列
-          let itemType = (i == a && j == b) ? 1 : (i == c && j == d) ? 2 : 0
+      for (let i = 0; i < num; i++) {
+        this.map[i] = [];
+        for (let j = 0; j < num; j++) {
+          let itemType = (i === a && j === b) ? 1 : (i === c && j === d) ? 2 : 0;
           self.map[i][j] = self.instantiateBlock(self, {
             x: j,
             y: i,
             width: self.blockClsWidth,
             startTime: (i + j + 1) * self._gameController.config.json.startAnimationTime / num * 2
-          }, self.blocksContainer, itemType)
+          }, self.blocksContainer, itemType);
         }
       }
-      this.checkMgr.init(this)
+      this.checkMgr.init(self);
       setTimeout(() => {
-          resolve('200 OK');
-          this.checkMgr.elementCheck(this)
-        }, self._gameController.config.json.startAnimationTime * num / 2 / 1
-        //  (cc.game.getFrameRate() / 60)
-      )
-    })
+        resolve('200 OK');
+        this.checkMgr.elementCheck(self);
+      }, self._gameController.config.json.startAnimationTime * num / 2 / 1);
+    });
   },
+
   //防抖动 判断是否需要检测下落
   checkNeedFall() {
     if (this.checkNeedFallTimer) {
       clearTimeout(this.checkNeedFallTimer)
     }
     this.checkNeedFallTimer = setTimeout(() => {
-        if (this._status == 5) {
-          this._status = 4
-          this.onFall()
-        }
-      }, 300 / 1
+      if (this.statusType == 5) {
+        this.statusType = 4
+        this.onFall()
+      }
+    }, 300 / 1
       // (cc.game.getFrameRate() / 60)
     )
   },
-  //方块下落
   onFall() {
-    this.checkGenerateProp(this._gameScore.chain).then(() => {
-      let self = this
-      let canFall = 0
-      //从每一列的最下面一个开始往上判断
-      //如果有空 就判断有几个空 然后让最上方的方块掉落下来
+    // 调用 checkGenerateProp 方法并返回 Promise，然后在 Promise 成功时执行后续操作
+    return this.checkGenerateProp(this._gameScore.chain).then(() => {
+      // 用于记录每列可下落的方块数量
+      let canFall;
+      // 从每一列的最下面开始往上遍历
       for (let j = this.rowCfgNum - 1; j >= 0; j--) {
-        canFall = 0
+        canFall = 0;
+        // 从每一列的底部往上遍历每一行
         for (let i = this.rowCfgNum - 1; i >= 0; i--) {
-          if (this.map[i][j].getComponent('element')._status == 2) {
-            this.blockPool.put(this.map[i][j])
-            this.map[i][j] = null
-            canFall++
-          } else {
-            if (canFall != 0) {
-              this.map[i + canFall][j] = this.map[i][j]
-              this.map[i][j] = null
-              this.map[i + canFall][j].getComponent('element').playFallAction(canFall, {
-                x: j,
-                y: i + canFall,
-              })
-            }
+          // 如果当前方块状态类型为 2
+          if (this.map[i][j].getComponent('element').statusType === 2) {
+            // 将当前方块放入方块池中
+            this.blockPool.put(this.map[i][j]);
+            // 将当前位置的方块设置为 null
+            this.map[i][j] = null;
+            // 增加可下落的方块数量
+            canFall++;
+          } else if (canFall !== 0) {
+            // 如果有可下落的方块且当前方块不是状态类型为 2 的方块
+            // 将当前方块移动到下方的空位
+            this.map[i + canFall][j] = this.map[i][j];
+            // 将当前位置的方块设置为 null
+            this.map[i][j] = null;
+            // 让当前方块执行下落动作，传入下落的距离和新位置
+            this.map[i + canFall][j].getComponent('element').playFallAction(canFall, {
+              x: j,
+              y: i + canFall,
+            });
           }
         }
-        for (var k = 0; k < canFall; k++) {
+        // 对于每一列中可下落的空位，生成新的方块并执行下落动作
+        for (let k = 0; k < canFall; k++) {
           this.map[k][j] = this.instantiateBlock(this, {
             x: j,
             y: k,
@@ -131,19 +135,20 @@ cc.Class({
           }, this.blocksContainer, '', {
             x: j,
             y: -canFall + k
-          })
-          this.map[k][j].getComponent('element').playFallAction(canFall, null)
+          });
+          this.map[k][j].getComponent('element').playFallAction(canFall, null);
         }
       }
+      // 设置超时，超时后执行检查和元素检查，并设置状态类型
       setTimeout(() => {
-        this.checkMgr.init(this)
-        this.checkMgr.elementCheck(this)
-        this._status = 1
-      }, 250)
-    })
+        this.checkMgr.init(this);
+        this.checkMgr.elementCheck(this);
+        this.statusType = 1;
+      }, 250);
+    });
   },
   gameOver() {
-    this._status = 3
+    this.statusType = 3
     this._gameController.pageManager.addPage(2)
     this._gameController.pageManager.addPage(4)
     if (this._gameController.social.node.active) {
@@ -192,7 +197,7 @@ cc.Class({
   onReviveCertainBtn() {
     this._gameController.pageManager.removePage(2)
     this.revivePage.active = false
-    this._status = 1
+    this.statusType = 1
     this._gameScore.onRevive()
   },
   update() {
@@ -261,7 +266,7 @@ cc.Class({
         this._gameController.musicManager.onDouble()
         for (let i = 0; i < this.rowCfgNum; i++) { //行
           for (let j = 0; j < this.rowCfgNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element').statusType == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
                 this.map[i][j].getComponent('element').surfaceAction(distance)
@@ -282,7 +287,7 @@ cc.Class({
         this._gameController.musicManager.onBoom()
         for (let i = 0; i < this.rowCfgNum; i++) { //行
           for (let j = 0; j < this.rowCfgNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('element').color == color && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element').color == color && this.map[i][j] && this.map[i][j].getComponent('element').statusType != 2) {
               this.map[i][j].getComponent('element').onTouched(color, false, true)
             }
             else {
@@ -296,7 +301,7 @@ cc.Class({
         this._gameController.musicManager.onDouble()
         for (let i = 0; i < this.rowCfgNum; i++) { //行
           for (let j = 0; j < this.rowCfgNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element').statusType == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
                 this.map[i][j].getComponent('element').surfaceAction(distance)
@@ -312,10 +317,10 @@ cc.Class({
         this._gameController.musicManager.onMagic()
         for (let i = 0; i < this.rowCfgNum; i++) { //行
           for (let j = 0; j < this.rowCfgNum; j++) { //列
-            if (this.map[i][j] && this.map[i][j].getComponent('element').isSingle && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
+            if (this.map[i][j] && this.map[i][j].getComponent('element').isSingle && this.map[i][j] && this.map[i][j].getComponent('element').statusType != 2) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               this.map[i][j].getComponent('element').onTouched(color, false, true, distance)
-              console.log("魔法棒触发的点", i,j,this.map[i][j].getComponent('element').color, this.map[i][j].getComponent('element').isSingle)
+              console.log("魔法棒触发的点", i, j, this.map[i][j].getComponent('element').color, this.map[i][j].getComponent('element').isSingle)
             }
           }
         }

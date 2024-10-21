@@ -5,7 +5,7 @@
 
 // 震动动作 0.1效果比较好
 function shackAction(time, range) {
-  let action1 = cc.moveBy(time, range, range)
+  let tween1 = cc.moveBy(time, range, range)
   let action2 = cc.moveBy(time, -range, -range)
   let action3 = cc.moveBy(time * 0.8, range * 0.8, range * 0.8)
   let action4 = cc.moveBy(time * 0.8, -range * 0.8, -range * 0.8)
@@ -15,7 +15,7 @@ function shackAction(time, range) {
   let action8 = cc.moveBy(time * 0.4, -range * 0.4, -range * 0.4)
   let action9 = cc.moveBy(time * 0.2, range * 0.2, range * 0.2)
   let action10 = cc.moveBy(time * 0.2, -range * 0.2, -range * 0.2)
-  let sq = cc.sequence(action1, action2, action3, action4, action5, action6, action7, action8, action9, action10)
+  let sq = cc.sequence(tween1, action2, action3, action4, action5, action6, action7, action8, action9, action10)
   return sq
 }
 
@@ -38,13 +38,13 @@ const createZeroRotationTween = (duration) => {
 
 // 晃动动作
 function rockAction(time, range) {
-  let action1 = cc.rotateBy(time, range, range)
+  let tween1 = cc.rotateBy(time, range, range)
   let action2 = cc.rotateBy(time, -2 * range, -2 * range)
   let action3 = cc.rotateBy(time * 0.8, 2 * range * 0.8, 2 * range * 0.8)
   let action6 = cc.rotateBy(time * 0.6, -2 * range * 0.6, -2 * range * 0.6)
   let action7 = cc.rotateBy(time * 0.4, 2 * range * 0.4, 2 * range * 0.4)
   let action10 = cc.rotateTo(time * 0.2, 0, 0)
-  let sq = cc.sequence(action1, action2, action3, action6, action7, action10)
+  let sq = cc.sequence(tween1, action2, action3, action6, action7, action10)
   return sq
 }
 
@@ -58,7 +58,7 @@ function popIn(time) {
 }
 
 function heartBeat() {
-  let action1 = cc.scaleTo(0.2, 1.2).easing(cc.easeElasticInOut())
+  let tween1 = cc.scaleTo(0.2, 1.2).easing(cc.easeElasticInOut())
   let action2 = cc.scaleTo(0.2, 1).easing(cc.easeElasticInOut())
   let action3 = cc.rotateTo(0.1, 45)
   let action4 = cc.rotateTo(0.2, -45)

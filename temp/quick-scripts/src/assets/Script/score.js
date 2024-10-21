@@ -275,7 +275,7 @@ cc.Class({
 
     this.characterMgr.onLevelUp();
     this.characterMgr.onSuccessDialog(this.level);
-    this._game._status = 2;
+    this._game.statusType = 2;
 
     if (this._gameController.social.node.active) {
       this._gameController.social.openBannerAdv();
@@ -322,7 +322,7 @@ cc.Class({
         // this.tipBox.init(this) 每次升级就咏诗
         _this4.onStep(_this4.levelData[_this4.level - 2].step * _double).then();
 
-        _this4._game._status = 1;
+        _this4._game.statusType = 1;
         _this4.mainScoreLabel.node.active = false;
       }));
     }, 300);
@@ -343,7 +343,7 @@ cc.Class({
   onGameOver: function onGameOver(isTrue) {
     isTrue = isTrue || 0;
 
-    if (this._game._status != 3 && (isTrue || this.reviveTime >= 3)) {
+    if (this._game.statusType != 3 && (isTrue || this.reviveTime >= 3)) {
       this._game.gameOver();
 
       this.updateFailPage();

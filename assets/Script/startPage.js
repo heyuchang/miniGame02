@@ -17,9 +17,9 @@ cc.Class({
   },
   showAnimation() {
     return new Promise((resolve, rejects) => {
-      let action1 = cc.scaleTo(0.5, 0, 0).easing(cc.easeBackIn())
+      let tween1 = cc.scaleTo(0.5, 0, 0).easing(cc.easeBackIn())
       let action2 = cc.blink(0.5, 3)
-      this.bannerNode.runAction(action1)
+      this.bannerNode.runAction(tween1)
       let action = cc.sequence(action2, cc.callFunc(() => {
         resolve()
       }))

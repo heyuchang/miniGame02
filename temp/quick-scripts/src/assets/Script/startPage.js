@@ -20,10 +20,10 @@ cc.Class({
     var _this = this;
 
     return new Promise(function (resolve, rejects) {
-      var action1 = cc.scaleTo(0.5, 0, 0).easing(cc.easeBackIn());
+      var tween1 = cc.scaleTo(0.5, 0, 0).easing(cc.easeBackIn());
       var action2 = cc.blink(0.5, 3);
 
-      _this.bannerNode.runAction(action1);
+      _this.bannerNode.runAction(tween1);
 
       var action = cc.sequence(action2, cc.callFunc(function () {
         resolve();

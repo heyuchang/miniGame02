@@ -12,7 +12,7 @@ var _this = void 0;
  */
 // 震动动作 0.1效果比较好
 function shackAction(time, range) {
-  var action1 = cc.moveBy(time, range, range);
+  var tween1 = cc.moveBy(time, range, range);
   var action2 = cc.moveBy(time, -range, -range);
   var action3 = cc.moveBy(time * 0.8, range * 0.8, range * 0.8);
   var action4 = cc.moveBy(time * 0.8, -range * 0.8, -range * 0.8);
@@ -22,7 +22,7 @@ function shackAction(time, range) {
   var action8 = cc.moveBy(time * 0.4, -range * 0.4, -range * 0.4);
   var action9 = cc.moveBy(time * 0.2, range * 0.2, range * 0.2);
   var action10 = cc.moveBy(time * 0.2, -range * 0.2, -range * 0.2);
-  var sq = cc.sequence(action1, action2, action3, action4, action5, action6, action7, action8, action9, action10);
+  var sq = cc.sequence(tween1, action2, action3, action4, action5, action6, action7, action8, action9, action10);
   return sq;
 } // Helper function to create a rotation tween
 
@@ -47,13 +47,13 @@ var createZeroRotationTween = function createZeroRotationTween(duration) {
 
 
 function rockAction(time, range) {
-  var action1 = cc.rotateBy(time, range, range);
+  var tween1 = cc.rotateBy(time, range, range);
   var action2 = cc.rotateBy(time, -2 * range, -2 * range);
   var action3 = cc.rotateBy(time * 0.8, 2 * range * 0.8, 2 * range * 0.8);
   var action6 = cc.rotateBy(time * 0.6, -2 * range * 0.6, -2 * range * 0.6);
   var action7 = cc.rotateBy(time * 0.4, 2 * range * 0.4, 2 * range * 0.4);
   var action10 = cc.rotateTo(time * 0.2, 0, 0);
-  var sq = cc.sequence(action1, action2, action3, action6, action7, action10);
+  var sq = cc.sequence(tween1, action2, action3, action6, action7, action10);
   return sq;
 } // 弹出效果
 
@@ -68,7 +68,7 @@ function popIn(time) {
 }
 
 function heartBeat() {
-  var action1 = cc.scaleTo(0.2, 1.2).easing(cc.easeElasticInOut());
+  var tween1 = cc.scaleTo(0.2, 1.2).easing(cc.easeElasticInOut());
   var action2 = cc.scaleTo(0.2, 1).easing(cc.easeElasticInOut());
   var action3 = cc.rotateTo(0.1, 45);
   var action4 = cc.rotateTo(0.2, -45);

@@ -24,10 +24,10 @@ cc.Class({
     this.label.node.x = 0;
     this.label.node.y = 0;
     this.label.node.scale = 1;
-    var action1 = cc.scaleTo(0.1, 1.2, 1.2);
+    var tween1 = cc.scaleTo(0.1, 1.2, 1.2);
     var action2 = cc.moveBy(0.1, 0, 30);
     var action3 = cc.moveTo(0.2, 0, 0);
-    var action4 = cc.scaleTo(0.2, 0.5, 0.5); // let seq = cc.sequence(action1, cc.callFunc(() => {
+    var action4 = cc.scaleTo(0.2, 0.5, 0.5); // let seq = cc.sequence(tween1, cc.callFunc(() => {
     //   let seq2 = cc.sequence(action3, cc.moveBy(0.1, 0, 0), action4, cc.callFunc(() => {
     //     s.scorePool.put(this.node)
     //   }, this))
@@ -35,7 +35,7 @@ cc.Class({
     // }, this))
     // this.label.node.runAction(seq)
 
-    var spa1 = cc.spawn(action1, action2);
+    var spa1 = cc.spawn(tween1, action2);
     var spa2 = cc.spawn(action3, action4);
     var seq = cc.sequence(spa1, spa2, cc.callFunc(function () {
       s.scorePool.put(_this.node);

@@ -11,7 +11,7 @@ cc._RF.push(module, 'dbc3cQxtHpPj77TncyB18gQ', 'element');
 cc.Class({
   "extends": cc.Component,
   properties: {
-    _status: 0,
+    statusType: 0,
     //1为可触发点击 2为已经消失
     _itemType: 0,
     //新增道具功能 1为双倍倍数 2为炸弹
@@ -20,7 +20,7 @@ cc.Class({
   },
   init: function init(g, data, width, itemType, pos) {
     this._game = g;
-    this._status = 1;
+    this.statusType = 1;
 
     if (pos) {//cc.log('生成的方块', pos)
     }
@@ -56,7 +56,7 @@ cc.Class({
     this.warningSprite.spriteFrame = this._game.warningSpriteFrame[type - 1] || '';
     this.warningType = type; //   this.lightSprite.node.active = true
 
-    var action1 = cc.blink(1, 10); //   this.lightSprite.node.runAction(action1)
+    var tween1 = cc.blink(1, 10); //   this.lightSprite.node.runAction(tween1)
   },
   warningInit: function warningInit() {
     this.warningSprite.spriteFrame = ''; //  this.lightSprite.node.active = false
@@ -127,8 +127,8 @@ cc.Class({
     isBomb = isBomb ? isBomb : false;
     var self = this; // 爆炸触发
 
-    if (this._status == 1 && isBomb == true) {
-      this._status = 2;
+    if (this.statusType == 1 && isBomb == true) {
+      this.statusType = 2;
       this.playDieAction().then(function () {
         _this.onBlockPop(color, isChain, isBomb);
       });
@@ -142,9 +142,9 @@ cc.Class({
 
         this._game._gameScore.tipBox.init(this._game._gameScore, 3);
 
-        var action1 = cc.scaleTo(0.1, 1.1, 0.9);
+        var tween1 = cc.scaleTo(0.1, 1.1, 0.9);
         var action2 = cc.scaleTo(0.3, 1).easing(cc.easeBackOut(2.0));
-        var action = cc.sequence(action1, action2);
+        var action = cc.sequence(tween1, action2);
         this.node.runAction(action);
         return;
       } // console.log('方块位置', this.iid, this.jid, this._itemType)
@@ -152,7 +152,7 @@ cc.Class({
 
       color = this.color;
 
-      if (this._status == 1 && this._game._status == 1 && this.color == color) {
+      if (this.statusType == 1 && this._game.statusType == 1 && this.color == color) {
         this._game.onUserTouched(this.iid, this.jid, this._itemType, this.color, this.warningType, {
           x: this.node.x,
           y: this.node.y
@@ -168,7 +168,7 @@ cc.Class({
       }
     } else {
       // 由其他方块触发
-      if (this._status == 1 && this._game._status == 5 && this.color == color) {
+      if (this.statusType == 1 && this._game.statusType == 5 && this.color == color) {
         this.playDieAction().then(function () {
           _this.onBlockPop(color, null, null);
         });
@@ -182,10 +182,9 @@ cc.Class({
 
     self._game.checkNeedFall();
 
-    self._game._status = 5;
+    self._game.statusType = 5;
 
-    self._gameController.musicManager.onPlayAudio(0 //self._game._gameScore.chain - 1
-    );
+    self._gameController.musicManager.onPlayAudio(0);
 
     if (this._itemType != 0) {
       // console.log("触发了道具", this._itemType)
@@ -220,7 +219,7 @@ cc.Class({
     var _this2 = this;
 
     //下降了几个格子
-    this._status = 0;
+    this.statusType = 0;
 
     if (data) {
       this.iid = data.y;
@@ -230,7 +229,7 @@ cc.Class({
     var action = cc.moveBy(0.25, 0, -y * (this._game.gapCfgNum + this._game.blockClsWidth)).easing(cc.easeBounceOut(5 / y)); //1 * y / this._game.animaCfgSpeed
 
     var seq = cc.sequence(action, cc.callFunc(function () {
-      _this2._status = 1; //  this._game.checkNeedGenerator()
+      _this2.statusType = 1; //  this._game.checkNeedGenerator()
     }, this));
     this.node.runAction(seq);
   },
@@ -241,7 +240,7 @@ cc.Class({
     this.node.scaleY = 0;
     var action = cc.scaleTo(0.8 / this._game.animaCfgSpeed, 1, 1).easing(cc.easeBackOut());
     var seq = cc.sequence(action, cc.callFunc(function () {
-      _this3._status = 1;
+      _this3.statusType = 1;
     }, this)); // 如果有延迟时间就用延迟时间
 
     if (this.startTime) {
@@ -259,7 +258,7 @@ cc.Class({
     var self = this;
     clearTimeout(this.surfaceTimer);
     this.node.stopAllActions();
-    this._status = 2;
+    this.statusType = 2;
     this.node.scaleX = 1;
     this.node.scaleY = 1;
     return new Promise(function (resolve, reject) {
@@ -267,10 +266,10 @@ cc.Class({
 
       if (_this4.warningSprite.spriteFrame) {
         //有道具预警
-        var action1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1);
+        var tween1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1);
         var action2 = cc.moveTo(0.2 / self._game.animaCfgSpeed, _this4._game.target.x, _this4._game.target.y);
         var action3 = cc.scaleTo(0.2, 0);
-        var seq = cc.sequence(action1, cc.callFunc(function () {
+        var seq = cc.sequence(tween1, cc.callFunc(function () {
           resolve('');
         }, _this4), cc.spawn(action2, action3));
       } else {
@@ -288,9 +287,9 @@ cc.Class({
 
     this.surfaceTimer = setTimeout(function () {
       var action = cc.scaleTo(0.4 / _this5._game.animaCfgSpeed, 0.8, 0.8);
-      var action1 = cc.scaleTo(0.4 / _this5._game.animaCfgSpeed, 1, 1);
+      var tween1 = cc.scaleTo(0.4 / _this5._game.animaCfgSpeed, 1, 1);
 
-      _this5.node.runAction(cc.sequence(action, action1));
+      _this5.node.runAction(cc.sequence(action, tween1));
     }, dela);
   },
   generatePropAction: function generatePropAction() {},

@@ -239,7 +239,7 @@ cc.Class({
     this.successDialog.init(this, this.level, this.levelData, this.score) //升级之后的等级
     this.characterMgr.onLevelUp()
     this.characterMgr.onSuccessDialog(this.level)
-    this._game._status = 2
+    this._game.statusType = 2
     if (this._gameController.social.node.active) {
       this._gameController.social.openBannerAdv()
     }
@@ -277,7 +277,7 @@ cc.Class({
       }, cc.callFunc(() => {
         // this.tipBox.init(this) 每次升级就咏诗
         this.onStep(this.levelData[this.level - 2].step * double).then()
-        this._game._status = 1
+        this._game.statusType = 1
         this.mainScoreLabel.node.active = false
       }))
     }, 300);
@@ -297,7 +297,7 @@ cc.Class({
   // todo 复活
   onGameOver(isTrue) {
     isTrue = isTrue || 0
-    if (this._game._status != 3 && (isTrue || this.reviveTime >= 3)) {
+    if (this._game.statusType != 3 && (isTrue || this.reviveTime >= 3)) {
       this._game.gameOver()
       this.updateFailPage()
       if (this._gameController.social.node.active) {

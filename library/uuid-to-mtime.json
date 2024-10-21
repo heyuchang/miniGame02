@@ -574,16 +574,6 @@
     "meta": 1727597754571,
     "relativePath": "Script\\musicManager.js"
   },
-  "b55a7d96-04f8-41a2-bbe7-496e0a4f9b6e": {
-    "asset": 1721653690591,
-    "meta": 1721659953686,
-    "relativePath": "Script\\startPage.js"
-  },
-  "0c8da211-50cb-445e-a707-3b66e274c878": {
-    "asset": 1729527776619,
-    "meta": 1729527993005,
-    "relativePath": "Script\\scoreCell.js"
-  },
   "398fc653-8fd7-438a-86f8-fb3055e28c2b": {
     "asset": 1722069247501,
     "meta": 1722164345178,
@@ -1149,11 +1139,6 @@
     "meta": 1723373618373,
     "relativePath": "gameData.json"
   },
-  "0e40bc4a-1b2b-4b88-9c10-6e2dec09c07a": {
-    "asset": 1729527741710,
-    "meta": 1729527992904,
-    "relativePath": "Script\\illustrative.js"
-  },
   "33cd2dee-67a2-43e2-94cb-a4ab608db6d2": {
     "asset": 1723379964234,
     "meta": 1723379971220,
@@ -1659,40 +1644,15 @@
     "meta": 1727574653352,
     "relativePath": "model\\primitives.fbx"
   },
-  "9d371d4a-1551-4267-a6bf-f3a063539794": {
-    "asset": 1727577086361,
-    "meta": 1727596652519,
-    "relativePath": "Script\\GameAct.js"
-  },
   "a1bb7c5a-0efb-475c-b4ee-228d0c44812e": {
     "asset": 1727596796606,
     "meta": 1727598140537,
     "relativePath": "Script\\pageManager.js"
   },
-  "a3721fda-398d-4616-b216-1c7073606b22": {
-    "asset": 1729527815747,
-    "meta": 1729527992673,
-    "relativePath": "Script\\elementCheck.js"
-  },
-  "dbc3c431-b47a-4f8f-bed3-9dcc81d7c810": {
-    "asset": 1729527895235,
-    "meta": 1729527992581,
-    "relativePath": "Script\\element.js"
-  },
   "53b05733-0f8c-4681-9f03-d292e9523f4c": {
     "asset": 1729527741711,
     "meta": 1729527993084,
     "relativePath": "Script\\social.js"
-  },
-  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
-    "asset": 1729527959722,
-    "meta": 1729527992855,
-    "relativePath": "Script\\game.js"
-  },
-  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
-    "asset": 1729527959739,
-    "meta": 1729527992985,
-    "relativePath": "Script\\score.js"
   },
   "feefc6ff-557b-45a7-82fe-66a6ba0ab059": {
     "asset": 1727599744766,
@@ -1703,5 +1663,45 @@
     "asset": 1723372333027,
     "meta": 1727599900646,
     "relativePath": "Prefab\\card.prefab"
+  },
+  "0e40bc4a-1b2b-4b88-9c10-6e2dec09c07a": {
+    "asset": 1729529902764,
+    "meta": 1729529932057,
+    "relativePath": "Script\\illustrative.js"
+  },
+  "72f7a701-c11d-48e3-be29-7a3a9f2d5d23": {
+    "asset": 1729530119585,
+    "meta": 1729530124487,
+    "relativePath": "Script\\score.js"
+  },
+  "a3721fda-398d-4616-b216-1c7073606b22": {
+    "asset": 1729530943656,
+    "meta": 1729531142850,
+    "relativePath": "Script\\elementCheck.js"
+  },
+  "dbc3c431-b47a-4f8f-bed3-9dcc81d7c810": {
+    "asset": 1729531411635,
+    "meta": 1729531418668,
+    "relativePath": "Script\\element.js"
+  },
+  "47c77c8e-78aa-4f88-9548-3578a91e886c": {
+    "asset": 1729531242359,
+    "meta": 1729531418806,
+    "relativePath": "Script\\game.js"
+  },
+  "9d371d4a-1551-4267-a6bf-f3a063539794": {
+    "asset": 1729531411653,
+    "meta": 1729531418866,
+    "relativePath": "Script\\GameAct.js"
+  },
+  "0c8da211-50cb-445e-a707-3b66e274c878": {
+    "asset": 1729531411647,
+    "meta": 1729531418886,
+    "relativePath": "Script\\scoreCell.js"
+  },
+  "b55a7d96-04f8-41a2-bbe7-496e0a4f9b6e": {
+    "asset": 1729531411648,
+    "meta": 1729531418916,
+    "relativePath": "Script\\startPage.js"
   }
 }

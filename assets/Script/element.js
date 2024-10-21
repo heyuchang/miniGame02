@@ -5,14 +5,14 @@
 cc.Class({
   extends: cc.Component,
   properties: {
-    _status: 0, //1为可触发点击 2为已经消失
+    statusType: 0, //1为可触发点击 2为已经消失
     _itemType: 0, //新增道具功能 1为双倍倍数 2为炸弹
     warningSprite: cc.Sprite,
     lightSprite: cc.Sprite,
   },
   init(g, data, width, itemType, pos) {
     this._game = g
-    this._status = 1
+    this.statusType = 1
     if (pos) {
       //cc.log('生成的方块', pos)
     }
@@ -47,8 +47,8 @@ cc.Class({
     this.warningSprite.spriteFrame = this._game.warningSpriteFrame[type - 1] || ''
     this.warningType = type
     //   this.lightSprite.node.active = true
-    let action1 = cc.blink(1, 10)
-    //   this.lightSprite.node.runAction(action1)
+    let tween1 = cc.blink(1, 10)
+    //   this.lightSprite.node.runAction(tween1)
   },
   warningInit() {
     this.warningSprite.spriteFrame = ''
@@ -107,8 +107,8 @@ cc.Class({
     isBomb = isBomb ? isBomb : false
     let self = this
     // 爆炸触发
-    if (this._status == 1 && isBomb == true) {
-      this._status = 2
+    if (this.statusType == 1 && isBomb == true) {
+      this.statusType = 2
       this.playDieAction().then(() => {
         this.onBlockPop(color, isChain, isBomb)
       })
@@ -120,15 +120,15 @@ cc.Class({
       if (this.isSingle && this._itemType <= 1) {
         this.node.scale = 1
         this._game._gameScore.tipBox.init(this._game._gameScore, 3)
-        let action1 = cc.scaleTo(0.1, 1.1, 0.9)
+        let tween1 = cc.scaleTo(0.1, 1.1, 0.9)
         let action2 = cc.scaleTo(0.3, 1).easing(cc.easeBackOut(2.0))
-        let action = cc.sequence(action1, action2)
+        let action = cc.sequence(tween1, action2)
         this.node.runAction(action)
         return
       }
       // console.log('方块位置', this.iid, this.jid, this._itemType)
       color = this.color
-      if (this._status == 1 && this._game._status == 1 && this.color == color) {
+      if (this.statusType == 1 && this._game.statusType == 1 && this.color == color) {
         this._game.onUserTouched(this.iid, this.jid, this._itemType, this.color, this.warningType, {
           x: this.node.x,
           y: this.node.y
@@ -143,7 +143,7 @@ cc.Class({
       }
     } else {
       // 由其他方块触发
-      if (this._status == 1 && this._game._status == 5 && this.color == color) {
+      if (this.statusType == 1 && this._game.statusType == 5 && this.color == color) {
         this.playDieAction().then(() => {
           this.onBlockPop(color, null, null)
         })
@@ -155,9 +155,8 @@ cc.Class({
     isChain = JSON.stringify(isChain) == 'null' ? true : isChain
     isBomb = isBomb ? isBomb : false
     self._game.checkNeedFall()
-    self._game._status = 5
+    self._game.statusType = 5
     self._gameController.musicManager.onPlayAudio(0
-      //self._game._gameScore.chain - 1
     )
     if (this._itemType != 0) {
       // console.log("触发了道具", this._itemType)
@@ -186,14 +185,14 @@ cc.Class({
     }
   },
   playFallAction(y, data) { //下降了几个格子
-    this._status = 0
+    this.statusType = 0
     if (data) {
       this.iid = data.y
       this.jid = data.x
     }
     let action = cc.moveBy(0.25, 0, -y * (this._game.gapCfgNum + this._game.blockClsWidth)).easing(cc.easeBounceOut(5 / y)) //1 * y / this._game.animaCfgSpeed
     let seq = cc.sequence(action, cc.callFunc(() => {
-      this._status = 1
+      this.statusType = 1
       //  this._game.checkNeedGenerator()
     }, this))
     this.node.runAction(seq)
@@ -203,7 +202,7 @@ cc.Class({
     this.node.scaleY = 0
     let action = cc.scaleTo(0.8 / this._game.animaCfgSpeed, 1, 1).easing(cc.easeBackOut())
     let seq = cc.sequence(action, cc.callFunc(() => {
-      this._status = 1
+      this.statusType = 1
     }, this))
     // 如果有延迟时间就用延迟时间
     if (this.startTime) {
@@ -220,16 +219,16 @@ cc.Class({
     let self = this
     clearTimeout(this.surfaceTimer)
     this.node.stopAllActions()
-    this._status = 2
+    this.statusType = 2
     this.node.scaleX = 1
     this.node.scaleY = 1
     return new Promise((resolve, reject) => {
       let action
       if (this.warningSprite.spriteFrame) { //有道具预警
-        let action1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1)
+        let tween1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1)
         let action2 = cc.moveTo(0.2 / self._game.animaCfgSpeed, this._game.target.x, this._game.target.y)
         let action3 = cc.scaleTo(0.2, 0)
-        var seq = cc.sequence(action1, cc.callFunc(() => {
+        var seq = cc.sequence(tween1, cc.callFunc(() => {
           resolve('')
         }, this), cc.spawn(action2, action3))
       } else {
@@ -244,8 +243,8 @@ cc.Class({
   surfaceAction(dela) {
     this.surfaceTimer = setTimeout(() => {
       let action = cc.scaleTo(0.4 / this._game.animaCfgSpeed, 0.8, 0.8)
-      let action1 = cc.scaleTo(0.4 / this._game.animaCfgSpeed, 1, 1)
-      this.node.runAction(cc.sequence(action, action1))
+      let tween1 = cc.scaleTo(0.4 / this._game.animaCfgSpeed, 1, 1)
+      this.node.runAction(cc.sequence(action, tween1))
     }, dela)
   },
   generatePropAction() {
