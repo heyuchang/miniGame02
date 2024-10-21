@@ -12,7 +12,7 @@ cc.Class({
   init(g) {
     this._game = g
     this.map = g.map
-    this.mapLength = g.rowNum
+    this.mapLength = g.rowCfgNum
     for (let i = 0; i < this.mapLength; i++) { //行
       this.groups[i] = []
       for (let j = 0; j < this.mapLength; j++) { //列
@@ -27,10 +27,10 @@ cc.Class({
     }
   },
   elementCheck(g) { //该函数主要用于检测一个区块能否形成道具等
-    let propConfig = g._controller.config.json.propConfig
+    let propConfig = g._gameController.config.json.propConfig
     this._game = g
     this.map = g.map
-    this.mapLength = g.rowNum
+    this.mapLength = g.rowCfgNum
     let min = 999
     for (let i = 0; i < propConfig.length; i++) {
       min = propConfig[i].min < min ? propConfig[i].min : min

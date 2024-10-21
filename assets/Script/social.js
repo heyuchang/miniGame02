@@ -13,7 +13,7 @@ cc.Class({
   },
   init(c) {
 
-    this._controller = c
+    this._gameController = c
     wx.showShareMenu({
       withShareTicket: true
     })
@@ -58,7 +58,7 @@ cc.Class({
   onShareButton() {
     var self = this;
     wx.shareAppMessage({
-      title: "我终于成为了" + this._controller.scoreMgr.levelData[this._controller.scoreMgr.level - 1].name + ",真是开心",
+      title: "我终于成为了" + this._gameController.scoreMgr.levelData[this._gameController.scoreMgr.level - 1].name + ",真是开心",
       // imageUrlId: 'oxEwGvClT0uldQ470pM84w',
       imageUrl: 'https://mmocgame.qpic.cn/wechatgame/LtJZOjH6Z9ibiaMlpqzldsOf46Q7TZiaysI1fwc4Oj1L3CkbCaJMAMoicibbHu2HUQkOib/0'
     })
@@ -102,10 +102,10 @@ cc.Class({
     } else {
       highScore = score
     }
-    var highLevelName = this._controller.gameData.json.levelData[highLevel - 1].name
+    var highLevelName = this._gameController.gameData.json.levelData[highLevel - 1].name
     wx.setStorageSync('highLevel', highLevel + '')
     wx.setStorageSync('highScore', highScore + '')
-    self._controller.scoreMgr.failHighScore.string = "您的最高分:" + (highScore + '')
+    self._gameController.scoreMgr.failHighScore.string = "您的最高分:" + (highScore + '')
     var kvDataList = new Array()
     kvDataList.push({
       key: "highLevel",
@@ -184,9 +184,9 @@ cc.Class({
           .catch(err => {
             console.log('激励视频 广告显示失败', err.errMsg)
             if (self.adType) {
-              self._controller.game.onSkipRevive()
+              self._gameController.game.onSkipRevive()
             } else {
-              self._controller.scoreMgr.onLevelUpButton()
+              self._gameController.scoreMgr.onLevelUpButton()
             }
           })
       })
@@ -209,13 +209,13 @@ cc.Class({
     this.audioAd.onClose((res) => {
       if (self.adType) {
         if (res && res.isEnded || res === undefined) {
-          self._controller.game.showReviveSuccess()
+          self._gameController.game.showReviveSuccess()
         } else {
-          self._controller.game.askRevive()
+          self._gameController.game.askRevive()
         }
       } else {
         if (res && res.isEnded || res === undefined) {
-          self._controller.scoreMgr.onLevelUpButton(2)
+          self._gameController.scoreMgr.onLevelUpButton(2)
         }
       }
     })
@@ -223,14 +223,14 @@ cc.Class({
   fakeShare() {
     let self = this
     wx.shareAppMessage({
-      title: "我已经玩到" + this._controller.scoreMgr.score + "分了，邀请你来挑战",
+      title: "我已经玩到" + this._gameController.scoreMgr.score + "分了，邀请你来挑战",
       // imageUrlId: 'oxEwGvClT0uldQ470pM84w',
       imageUrl: 'https://mmocgame.qpic.cn/wechatgame/LtJZOjH6Z9ibiaMlpqzldsOf46Q7TZiaysI1fwc4Oj1L3CkbCaJMAMoicibbHu2HUQkOib/0'
     })
     if (this.adType) {
-      self._controller.game.showReviveSuccess()
+      self._gameController.game.showReviveSuccess()
     } else {
-      self._controller.scoreMgr.onLevelUpButton(2)
+      self._gameController.scoreMgr.onLevelUpButton(2)
     }
   },
   openBannerAdv() {

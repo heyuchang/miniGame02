@@ -24,14 +24,14 @@ cc.Class({
   },
   init(g) {
     this._game = g
-    this._controller = g._controller
+    this._gameController = g._gameController
     this.score = 0
-    this.leftStep = this._controller.config.json.originStep
+    this.leftStep = this._gameController.config.json.originStep
     this.chain = 1
     this.level = 1
     this.reviveTime = 0
     this.closeMultLabel()
-    this.levelData = g._controller.gameData.json.levelData
+    this.levelData = g._gameController.gameData.json.levelData
     this.nameLabel.string = "萌心悦"
     this.progressBar.init(0, this.levelData[this.level - 1], this.level)
     this.leftStepLabel.string = this.leftStep
@@ -43,18 +43,18 @@ cc.Class({
     this.hideChainSprite()
 
     this.tipBox.init(this, 0)
-    if (this._controller.social.node.active) {
-      let height = this._controller.social.getHighestLevel()
+    if (this._gameController.social.node.active) {
+      let height = this._gameController.social.getHighestLevel()
       if (height) {
         this.onStep(this.levelData[+height - 1].giftStep)
       }
     }
   },
   start() {
-    this.generatePool()
+    this.generatePrefabPool()
     this.bindNode()
   },
-  generatePool() {
+  generatePrefabPool() {
     this.scorePool = new cc.NodePool()
     for (let i = 0; i < 20; i++) {
       let score = cc.instantiate(this.scorePrefab)
@@ -89,7 +89,7 @@ cc.Class({
       scoreParticle = cc.instantiate(self.scoreParticlePrefab)
     }
     scoreParticle.parent = this.scoreContainer
-    scoreParticle.getComponent('scoreParticle').init(self, pos, this._controller.config.json.scoreParticleTime)
+    scoreParticle.getComponent('scoreParticle').init(self, pos, this._gameController.config.json.scoreParticleTime)
   },
   bindNode() {
     this.leftStepLabel = this.node.getChildByName('UI').getChildByName('leftStepNode').getChildByName('Label').getComponent(cc.Label)
@@ -125,7 +125,7 @@ cc.Class({
 
   //增加分数总控制 获取连击
   addScore(pos, score) {
-    score = score || this._controller.config.json.scoreBase
+    score = score || this._gameController.config.json.scoreBase
     // 一次消除可以叠chain
     if (this.chainTimer) {
       clearTimeout(this.chainTimer)
@@ -147,7 +147,7 @@ cc.Class({
       }, 500 / 1
       // (cc.game.getFrameRate() / 60)
     )
-    let addScore = score == this._controller.config.json.scoreBase ? (score + (this.chain > 16 ? 16 : (this.chain - 1)) * 10) : score
+    let addScore = score == this._gameController.config.json.scoreBase ? (score + (this.chain > 16 ? 16 : (this.chain - 1)) * 10) : score
     // let addScore = score == 10 ? score * (this.chain > 10 ? 10 : this.chain) : score
     this.currentAddedScore += addScore
     this.mainScoreLabel.string = this.currentAddedScore
@@ -161,7 +161,7 @@ cc.Class({
       clearTimeout(this.checkChainTimer)
     }
     this.checkChainTimer = setTimeout(() => {
-      let config = this._controller.config.json.chainConfig
+      let config = this._gameController.config.json.chainConfig
       for (let i = 0; i < config.length; i++) {
         if (this.chain <= config[i].max && this.chain >= config[i].min) {
           //  console.log(config[i].text)
@@ -200,7 +200,7 @@ cc.Class({
     //     this.multPropPool.put(multProp)
     //   })))
     // }
-    if (this.multiple < this._controller.config.json.maxMultiple) {
+    if (this.multiple < this._gameController.config.json.maxMultiple) {
       this.multiple *= 2
       this.showMultLabel()
     }
@@ -233,15 +233,15 @@ cc.Class({
   },
   // 升级
   onLevelUp() {
-    this._controller.pageManager.addPage(2)
-    this._controller.pageManager.addPage(3)
-    this._controller.musicManager.onWin()
+    this._gameController.pageManager.addPage(2)
+    this._gameController.pageManager.addPage(3)
+    this._gameController.musicManager.onWin()
     this.successDialog.init(this, this.level, this.levelData, this.score) //升级之后的等级
     this.characterMgr.onLevelUp()
     this.characterMgr.onSuccessDialog(this.level)
     this._game._status = 2
-    if (this._controller.social.node.active) {
-      this._controller.social.openBannerAdv()
+    if (this._gameController.social.node.active) {
+      this._gameController.social.openBannerAdv()
     }
   },
   // 等级限制
@@ -265,7 +265,7 @@ cc.Class({
     } else {
       double = double || 1
     }
-    this._controller.pageManager.onOpenPage(1)
+    this._gameController.pageManager.onOpenPage(1)
     this.initCurrentScoreLabel()
     this.mainScoreLabel.string = this.levelData[this.level - 2].step * double
     this.characterMgr.onLevelUpBtn(this.level)
@@ -300,17 +300,17 @@ cc.Class({
     if (this._game._status != 3 && (isTrue || this.reviveTime >= 3)) {
       this._game.gameOver()
       this.updateFailPage()
-      if (this._controller.social.node.active) {
+      if (this._gameController.social.node.active) {
         // 仅上传分数
-        this._controller.social.onGameOver(this.level, this.score)
+        this._gameController.social.onGameOver(this.level, this.score)
       }
     } else if (!isTrue) {
       this._game.askRevive()
     }
   },
   onDoubleStepBtn() {
-    if (this._controller.social.node.active) {
-      this._controller.social.onReviveButton(0)
+    if (this._gameController.social.node.active) {
+      this._gameController.social.onReviveButton(0)
     } else {
       this.onLevelUpButton(2)
     }

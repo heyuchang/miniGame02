@@ -29,7 +29,7 @@ cc.Class({
     this.colorSprite.spriteFrame = itemType ? g.propSpriteFrame[(itemType - 1) * 4 + this.color - 1] : this._game.blockSprite[this.color - 1]
     this.warningSprite.spriteFrame = ''
     this._width = width
-    this._controller = g._controller
+    this._gameController = g._gameController
     // 计算宽
     this.lightSprite.node.active = false
     //  this.lightSprite.spriteFrame = this._game.blockSprite[this.color - 1]
@@ -38,8 +38,8 @@ cc.Class({
     this.iid = data.y
     this.jid = data.x
     // console.log('生成方块位置', data.y, data.x)
-    this.node.x = -(730 / 2 - g.gap - width / 2) + pos.x * (width + g.gap)
-    this.node.y = (730 / 2 - g.gap - width / 2) - pos.y * (width + g.gap)
+    this.node.x = -(730 / 2 - g.gapCfgNum - width / 2) + pos.x * (width + g.gapCfgNum)
+    this.node.y = (730 / 2 - g.gapCfgNum - width / 2) - pos.y * (width + g.gapCfgNum)
     this.node.angle = 0
     this.playStartAction()
   },
@@ -64,29 +64,29 @@ cc.Class({
     switch (type) {
       case 1:
         if (this.growType != 2) {
-          this.colorSprite.node.height += this._game.gap * 2
-          this.colorSprite.node.y += this._game.gap
+          this.colorSprite.node.height += this._game.gapCfgNum * 2
+          this.colorSprite.node.y += this._game.gapCfgNum
           this.growType = 1
         }
         break
       case 2:
         if (this.growType != 2) {
-          this.colorSprite.node.height += this._game.gap * 2
-          this.colorSprite.node.y -= this._game.gap
+          this.colorSprite.node.height += this._game.gapCfgNum * 2
+          this.colorSprite.node.y -= this._game.gapCfgNum
           this.growType = 1
         }
         break
       case 3:
         if (this.growType != 1) {
-          this.colorSprite.node.width += this._game.gap * 2
-          this.colorSprite.node.x -= this._game.gap
+          this.colorSprite.node.width += this._game.gapCfgNum * 2
+          this.colorSprite.node.x -= this._game.gapCfgNum
           this.growType = 2
         }
         break
       case 4:
         if (this.growType != 1) {
-          this.colorSprite.node.width += this._game.gap * 2
-          this.colorSprite.node.x += this._game.gap
+          this.colorSprite.node.width += this._game.gapCfgNum * 2
+          this.colorSprite.node.x += this._game.gapCfgNum
           this.growType = 2
         }
         break
@@ -94,7 +94,6 @@ cc.Class({
   },
   bindEvent() {
     this.node.on(cc.Node.EventType.TOUCH_START, this.onTouched, this)
-
   },
   // 用户点击 或者被其他方块触发
   onTouched(color, isChain, isBomb, time) { //道具新增参数 isChain是否连锁 isBomb是否强制消除
@@ -120,7 +119,7 @@ cc.Class({
       // 一定是用户主动触发 保存这个坐标给game
       if (this.isSingle && this._itemType <= 1) {
         this.node.scale = 1
-        this._game._score.tipBox.init(this._game._score, 3)
+        this._game._gameScore.tipBox.init(this._game._gameScore, 3)
         let action1 = cc.scaleTo(0.1, 1.1, 0.9)
         let action2 = cc.scaleTo(0.3, 1).easing(cc.easeBackOut(2.0))
         let action = cc.sequence(action1, action2)
@@ -134,7 +133,7 @@ cc.Class({
           x: this.node.x,
           y: this.node.y
         })
-        this._game._score.onStep(-1).then((res) => {
+        this._game._gameScore.onStep(-1).then((res) => {
           if (res) {
             this.playDieAction().then(() => {
               this.onBlockPop(color, null, null)
@@ -157,8 +156,8 @@ cc.Class({
     isBomb = isBomb ? isBomb : false
     self._game.checkNeedFall()
     self._game._status = 5
-    self._controller.musicManager.onPlayAudio(0
-      //self._game._score.chain - 1
+    self._gameController.musicManager.onPlayAudio(0
+      //self._game._gameScore.chain - 1
     )
     if (this._itemType != 0) {
       // console.log("触发了道具", this._itemType)
@@ -168,20 +167,20 @@ cc.Class({
         y: this.node.y
       })
     }
-    self._game._score.addScore(cc.v2(this.node.x, this.node.y - this.node.width + this._game.gap), this._itemType == 3 ? this._game._controller.config.json.propConfig[2].score : null)
+    self._game._gameScore.addScore(cc.v2(this.node.x, this.node.y - this.node.width + this._game.gapCfgNum), this._itemType == 3 ? this._game._gameController.config.json.propConfig[2].score : null)
 
     // 连锁状态
     if (isChain) {
       if ((self.iid - 1) >= 0) {
         self._game.map[self.iid - 1][self.jid].getComponent('element').onTouched(color)
       }
-      if ((self.iid + 1) < this._game.rowNum) {
+      if ((self.iid + 1) < this._game.rowCfgNum) {
         self._game.map[self.iid + 1][self.jid].getComponent('element').onTouched(color)
       }
       if ((self.jid - 1) >= 0) {
         self._game.map[self.iid][self.jid - 1].getComponent('element').onTouched(color)
       }
-      if ((self.jid + 1) < this._game.rowNum) {
+      if ((self.jid + 1) < this._game.rowCfgNum) {
         self._game.map[self.iid][self.jid + 1].getComponent('element').onTouched(color)
       }
     }
@@ -192,7 +191,7 @@ cc.Class({
       this.iid = data.y
       this.jid = data.x
     }
-    let action = cc.moveBy(0.25, 0, -y * (this._game.gap + this._game.blockWidth)).easing(cc.easeBounceOut(5 / y)) //1 * y / this._game.animationSpeed
+    let action = cc.moveBy(0.25, 0, -y * (this._game.gapCfgNum + this._game.blockClsWidth)).easing(cc.easeBounceOut(5 / y)) //1 * y / this._game.animaCfgSpeed
     let seq = cc.sequence(action, cc.callFunc(() => {
       this._status = 1
       //  this._game.checkNeedGenerator()
@@ -202,7 +201,7 @@ cc.Class({
   playStartAction() {
     this.node.scaleX = 0
     this.node.scaleY = 0
-    let action = cc.scaleTo(0.8 / this._game.animationSpeed, 1, 1).easing(cc.easeBackOut())
+    let action = cc.scaleTo(0.8 / this._game.animaCfgSpeed, 1, 1).easing(cc.easeBackOut())
     let seq = cc.sequence(action, cc.callFunc(() => {
       this._status = 1
     }, this))
@@ -227,14 +226,14 @@ cc.Class({
     return new Promise((resolve, reject) => {
       let action
       if (this.warningSprite.spriteFrame) { //有道具预警
-        let action1 = cc.scaleTo(0.2 / self._game.animationSpeed, 1.1)
-        let action2 = cc.moveTo(0.2 / self._game.animationSpeed, this._game.target.x, this._game.target.y)
+        let action1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1)
+        let action2 = cc.moveTo(0.2 / self._game.animaCfgSpeed, this._game.target.x, this._game.target.y)
         let action3 = cc.scaleTo(0.2, 0)
         var seq = cc.sequence(action1, cc.callFunc(() => {
           resolve('')
         }, this), cc.spawn(action2, action3))
       } else {
-        action = cc.scaleTo(0.2 / self._game.animationSpeed, 0, 0)
+        action = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 0, 0)
         var seq = cc.sequence(action, cc.callFunc(() => {
           resolve('')
         }, this))
@@ -244,8 +243,8 @@ cc.Class({
   },
   surfaceAction(dela) {
     this.surfaceTimer = setTimeout(() => {
-      let action = cc.scaleTo(0.4 / this._game.animationSpeed, 0.8, 0.8)
-      let action1 = cc.scaleTo(0.4 / this._game.animationSpeed, 1, 1)
+      let action = cc.scaleTo(0.4 / this._game.animaCfgSpeed, 0.8, 0.8)
+      let action1 = cc.scaleTo(0.4 / this._game.animaCfgSpeed, 1, 1)
       this.node.runAction(cc.sequence(action, action1))
     }, dela)
   },

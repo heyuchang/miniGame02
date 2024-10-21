@@ -18,7 +18,7 @@ cc.Class({
     var _this = this;
 
     //传type是道具触发 不传是随机触发
-    this._score = s;
+    this._gameScore = s;
 
     if (type > 0) {
       this.label.string = this.tip[type];
@@ -33,7 +33,7 @@ cc.Class({
     }
 
     this.gapTimer = setInterval(function () {
-      _this.init(_this._score, -1);
+      _this.init(_this._gameScore, -1);
     }, 5000);
   },
   openTipBox: function openTipBox() {
@@ -66,7 +66,7 @@ cc.Class({
     this.node.runAction(sq); // if (this.openTimer) {
     //   clearTimeout(this.closeTimer)
     // }
-    //this.openTimer = setTimeout(this.init(this._score, null), this._score.level * 2000)
+    //this.openTimer = setTimeout(this.init(this._gameScore, null), this._gameScore.level * 2000)
   } // update (dt) {},
 
 });

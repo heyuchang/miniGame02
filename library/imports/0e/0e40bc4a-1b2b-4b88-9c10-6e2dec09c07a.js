@@ -15,7 +15,7 @@ cc.Class({
     prefab: cc.Prefab
   },
   init: function init(c) {
-    this._controller = c;
+    this._gameController = c;
 
     if (c.social.node.active) {
       var highLevel = c.social.getHighestLevel();
@@ -35,20 +35,20 @@ cc.Class({
     var _this = this;
 
     this.avatar.active = true;
-    var data = this._controller.gameData.json.levelData[+level - 1];
+    var data = this._gameController.gameData.json.levelData[+level - 1];
 
-    var heightScore = this._controller.social.getHighestScore();
+    var heightScore = this._gameController.social.getHighestScore();
 
     this.avatar.getChildByName('name').getComponent(cc.Label).string = '历史最高:' + data.name;
     this.avatar.getChildByName('score').getComponent(cc.Label).string = '分数' + heightScore;
     setTimeout(function () {
-      _this._controller.scoreMgr.characterMgr.showAvatarCharacter(+level, _this.avatar.getChildByName('db'));
+      _this._gameController.scoreMgr.characterMgr.showAvatarCharacter(+level, _this.avatar.getChildByName('db'));
     }, 1000);
   },
   loadContainer: function loadContainer(level) {
     var _this2 = this;
 
-    var data = this._controller.gameData.json.levelData;
+    var data = this._gameController.gameData.json.levelData;
     this.clearContainer();
     setTimeout(function () {
       for (var i = 0; i < data.length; i++) {
@@ -71,14 +71,14 @@ cc.Class({
       card.getChildByName('db').color = cc.Color.WHITE;
       card.getChildByName('giftStep').getComponent(cc.Label).string = "开局奖励" + info.giftStep + "步";
 
-      this._controller.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'));
+      this._gameController.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'));
     } else {
       card.getChildByName('name').getComponent(cc.Label).string = '???';
       card.getChildByName('giftStep').getComponent(cc.Label).string = "开局奖励???步";
       card.getChildByName('db').color = cc.Color.BLACK;
 
-      this._controller.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'), cc.Color.BLACK);
-    } // this._controller.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'), 0)
+      this._gameController.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'), cc.Color.BLACK);
+    } // this._gameController.scoreMgr.characterMgr.showCharacter(level + 1, card.getChildByName('db'), 0)
 
   }
 });

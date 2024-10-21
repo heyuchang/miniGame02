@@ -38,7 +38,7 @@ cc.Class({
     this.colorSprite.spriteFrame = itemType ? g.propSpriteFrame[(itemType - 1) * 4 + this.color - 1] : this._game.blockSprite[this.color - 1];
     this.warningSprite.spriteFrame = '';
     this._width = width;
-    this._controller = g._controller; // 计算宽
+    this._gameController = g._gameController; // 计算宽
 
     this.lightSprite.node.active = false; //  this.lightSprite.spriteFrame = this._game.blockSprite[this.color - 1]
 
@@ -47,8 +47,8 @@ cc.Class({
     this.iid = data.y;
     this.jid = data.x; // console.log('生成方块位置', data.y, data.x)
 
-    this.node.x = -(730 / 2 - g.gap - width / 2) + pos.x * (width + g.gap);
-    this.node.y = 730 / 2 - g.gap - width / 2 - pos.y * (width + g.gap);
+    this.node.x = -(730 / 2 - g.gapCfgNum - width / 2) + pos.x * (width + g.gapCfgNum);
+    this.node.y = 730 / 2 - g.gapCfgNum - width / 2 - pos.y * (width + g.gapCfgNum);
     this.node.angle = 0;
     this.playStartAction();
   },
@@ -73,8 +73,8 @@ cc.Class({
     switch (type) {
       case 1:
         if (this.growType != 2) {
-          this.colorSprite.node.height += this._game.gap * 2;
-          this.colorSprite.node.y += this._game.gap;
+          this.colorSprite.node.height += this._game.gapCfgNum * 2;
+          this.colorSprite.node.y += this._game.gapCfgNum;
           this.growType = 1;
         }
 
@@ -82,8 +82,8 @@ cc.Class({
 
       case 2:
         if (this.growType != 2) {
-          this.colorSprite.node.height += this._game.gap * 2;
-          this.colorSprite.node.y -= this._game.gap;
+          this.colorSprite.node.height += this._game.gapCfgNum * 2;
+          this.colorSprite.node.y -= this._game.gapCfgNum;
           this.growType = 1;
         }
 
@@ -91,8 +91,8 @@ cc.Class({
 
       case 3:
         if (this.growType != 1) {
-          this.colorSprite.node.width += this._game.gap * 2;
-          this.colorSprite.node.x -= this._game.gap;
+          this.colorSprite.node.width += this._game.gapCfgNum * 2;
+          this.colorSprite.node.x -= this._game.gapCfgNum;
           this.growType = 2;
         }
 
@@ -100,8 +100,8 @@ cc.Class({
 
       case 4:
         if (this.growType != 1) {
-          this.colorSprite.node.width += this._game.gap * 2;
-          this.colorSprite.node.x += this._game.gap;
+          this.colorSprite.node.width += this._game.gapCfgNum * 2;
+          this.colorSprite.node.x += this._game.gapCfgNum;
           this.growType = 2;
         }
 
@@ -140,7 +140,7 @@ cc.Class({
       if (this.isSingle && this._itemType <= 1) {
         this.node.scale = 1;
 
-        this._game._score.tipBox.init(this._game._score, 3);
+        this._game._gameScore.tipBox.init(this._game._gameScore, 3);
 
         var action1 = cc.scaleTo(0.1, 1.1, 0.9);
         var action2 = cc.scaleTo(0.3, 1).easing(cc.easeBackOut(2.0));
@@ -158,7 +158,7 @@ cc.Class({
           y: this.node.y
         });
 
-        this._game._score.onStep(-1).then(function (res) {
+        this._game._gameScore.onStep(-1).then(function (res) {
           if (res) {
             _this.playDieAction().then(function () {
               _this.onBlockPop(color, null, null);
@@ -184,7 +184,7 @@ cc.Class({
 
     self._game._status = 5;
 
-    self._controller.musicManager.onPlayAudio(0 //self._game._score.chain - 1
+    self._gameController.musicManager.onPlayAudio(0 //self._game._gameScore.chain - 1
     );
 
     if (this._itemType != 0) {
@@ -195,7 +195,7 @@ cc.Class({
       });
     }
 
-    self._game._score.addScore(cc.v2(this.node.x, this.node.y - this.node.width + this._game.gap), this._itemType == 3 ? this._game._controller.config.json.propConfig[2].score : null); // 连锁状态
+    self._game._gameScore.addScore(cc.v2(this.node.x, this.node.y - this.node.width + this._game.gapCfgNum), this._itemType == 3 ? this._game._gameController.config.json.propConfig[2].score : null); // 连锁状态
 
 
     if (isChain) {
@@ -203,7 +203,7 @@ cc.Class({
         self._game.map[self.iid - 1][self.jid].getComponent('element').onTouched(color);
       }
 
-      if (self.iid + 1 < this._game.rowNum) {
+      if (self.iid + 1 < this._game.rowCfgNum) {
         self._game.map[self.iid + 1][self.jid].getComponent('element').onTouched(color);
       }
 
@@ -211,7 +211,7 @@ cc.Class({
         self._game.map[self.iid][self.jid - 1].getComponent('element').onTouched(color);
       }
 
-      if (self.jid + 1 < this._game.rowNum) {
+      if (self.jid + 1 < this._game.rowCfgNum) {
         self._game.map[self.iid][self.jid + 1].getComponent('element').onTouched(color);
       }
     }
@@ -227,7 +227,7 @@ cc.Class({
       this.jid = data.x;
     }
 
-    var action = cc.moveBy(0.25, 0, -y * (this._game.gap + this._game.blockWidth)).easing(cc.easeBounceOut(5 / y)); //1 * y / this._game.animationSpeed
+    var action = cc.moveBy(0.25, 0, -y * (this._game.gapCfgNum + this._game.blockClsWidth)).easing(cc.easeBounceOut(5 / y)); //1 * y / this._game.animaCfgSpeed
 
     var seq = cc.sequence(action, cc.callFunc(function () {
       _this2._status = 1; //  this._game.checkNeedGenerator()
@@ -239,7 +239,7 @@ cc.Class({
 
     this.node.scaleX = 0;
     this.node.scaleY = 0;
-    var action = cc.scaleTo(0.8 / this._game.animationSpeed, 1, 1).easing(cc.easeBackOut());
+    var action = cc.scaleTo(0.8 / this._game.animaCfgSpeed, 1, 1).easing(cc.easeBackOut());
     var seq = cc.sequence(action, cc.callFunc(function () {
       _this3._status = 1;
     }, this)); // 如果有延迟时间就用延迟时间
@@ -267,14 +267,14 @@ cc.Class({
 
       if (_this4.warningSprite.spriteFrame) {
         //有道具预警
-        var action1 = cc.scaleTo(0.2 / self._game.animationSpeed, 1.1);
-        var action2 = cc.moveTo(0.2 / self._game.animationSpeed, _this4._game.target.x, _this4._game.target.y);
+        var action1 = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 1.1);
+        var action2 = cc.moveTo(0.2 / self._game.animaCfgSpeed, _this4._game.target.x, _this4._game.target.y);
         var action3 = cc.scaleTo(0.2, 0);
         var seq = cc.sequence(action1, cc.callFunc(function () {
           resolve('');
         }, _this4), cc.spawn(action2, action3));
       } else {
-        action = cc.scaleTo(0.2 / self._game.animationSpeed, 0, 0);
+        action = cc.scaleTo(0.2 / self._game.animaCfgSpeed, 0, 0);
         var seq = cc.sequence(action, cc.callFunc(function () {
           resolve('');
         }, _this4));
@@ -287,8 +287,8 @@ cc.Class({
     var _this5 = this;
 
     this.surfaceTimer = setTimeout(function () {
-      var action = cc.scaleTo(0.4 / _this5._game.animationSpeed, 0.8, 0.8);
-      var action1 = cc.scaleTo(0.4 / _this5._game.animationSpeed, 1, 1);
+      var action = cc.scaleTo(0.4 / _this5._game.animaCfgSpeed, 0.8, 0.8);
+      var action1 = cc.scaleTo(0.4 / _this5._game.animaCfgSpeed, 1, 1);
 
       _this5.node.runAction(cc.sequence(action, action1));
     }, dela);

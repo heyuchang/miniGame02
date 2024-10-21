@@ -31,7 +31,7 @@ cc.Class({
     ]
   },
   init(s, type) { //传type是道具触发 不传是随机触发
-    this._score = s
+    this._gameScore = s
     if (type > 0) {
       this.label.string = this.tip[type]
     } else {
@@ -42,7 +42,7 @@ cc.Class({
       clearInterval(this.gapTimer)
     }
     this.gapTimer = setInterval(() => {
-      this.init(this._score, -1)
+      this.init(this._gameScore, -1)
     }, 5000)
   },
   openTipBox() {
@@ -70,7 +70,7 @@ cc.Class({
     // if (this.openTimer) {
     //   clearTimeout(this.closeTimer)
     // }
-    //this.openTimer = setTimeout(this.init(this._score, null), this._score.level * 2000)
+    //this.openTimer = setTimeout(this.init(this._gameScore, null), this._gameScore.level * 2000)
   },
   // update (dt) {},
 });

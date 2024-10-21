@@ -25,19 +25,19 @@ cc.Class({
   },
   start: function start() {
     this.bindNode();
-    this.generatePool();
+    this.generatePrefabPool();
     this.loadRes();
   },
   loadRes: function loadRes() {},
   init: function init(c) {
-    this._controller = c;
-    this._score = c.scoreMgr;
-    this.rowNum = c.config.json.rowNum;
-    this.gap = c.config.json.gap;
-    this.animationSpeed = c.config.json.gap;
-    this.blockWidth = (730 - (this.rowNum + 1) * this.gap) / this.rowNum;
-    this.reviveTimer = null; //console.log(this.gap)
-    //console.log(this.blockWidth)
+    this._gameController = c;
+    this._gameScore = c.scoreMgr;
+    this.rowCfgNum = c.config.json.rowCfgNum;
+    this.gapCfgNum = c.config.json.gapCfgNum;
+    this.animaCfgSpeed = c.config.json.gapCfgNum;
+    this.blockClsWidth = (730 - (this.rowCfgNum + 1) * this.gapCfgNum) / this.rowCfgNum;
+    this.reviveTimer = null; //console.log(this.gapCfgNum)
+    //console.log(this.blockClsWidth)
   },
   // 动态获取需要动态控制的组件
   bindNode: function bindNode() {
@@ -50,9 +50,9 @@ cc.Class({
 
     this.recoveryAllBlocks().then();
 
-    this._score.init(this);
+    this._gameScore.init(this);
 
-    this.mapSet(this.rowNum).then(function (result) {
+    this.mapSet(this.rowCfgNum).then(function (result) {
       // console.log('游戏状态改变', result)
       _this._status = 1;
     });
@@ -80,8 +80,8 @@ cc.Class({
           self.map[i][j] = self.instantiateBlock(self, {
             x: j,
             y: i,
-            width: self.blockWidth,
-            startTime: (i + j + 1) * self._controller.config.json.startAnimationTime / num * 2
+            width: self.blockClsWidth,
+            startTime: (i + j + 1) * self._gameController.config.json.startAnimationTime / num * 2
           }, self.blocksContainer, itemType);
         }
       }
@@ -92,7 +92,7 @@ cc.Class({
         resolve('200 OK');
 
         _this2.checkMgr.elementCheck(_this2);
-      }, self._controller.config.json.startAnimationTime * num / 2 / 1 //  (cc.game.getFrameRate() / 60)
+      }, self._gameController.config.json.startAnimationTime * num / 2 / 1 //  (cc.game.getFrameRate() / 60)
       );
     });
   },
@@ -117,15 +117,15 @@ cc.Class({
   onFall: function onFall() {
     var _this4 = this;
 
-    this.checkGenerateProp(this._score.chain).then(function () {
+    this.checkGenerateProp(this._gameScore.chain).then(function () {
       var self = _this4;
       var canFall = 0; //从每一列的最下面一个开始往上判断
       //如果有空 就判断有几个空 然后让最上方的方块掉落下来
 
-      for (var j = _this4.rowNum - 1; j >= 0; j--) {
+      for (var j = _this4.rowCfgNum - 1; j >= 0; j--) {
         canFall = 0;
 
-        for (var i = _this4.rowNum - 1; i >= 0; i--) {
+        for (var i = _this4.rowCfgNum - 1; i >= 0; i--) {
           if (_this4.map[i][j].getComponent('element')._status == 2) {
             _this4.blockPool.put(_this4.map[i][j]);
 
@@ -148,7 +148,7 @@ cc.Class({
           _this4.map[k][j] = _this4.instantiateBlock(_this4, {
             x: j,
             y: k,
-            width: _this4.blockWidth,
+            width: _this4.blockClsWidth,
             startTime: null
           }, _this4.blocksContainer, '', {
             x: j,
@@ -171,21 +171,21 @@ cc.Class({
   gameOver: function gameOver() {
     this._status = 3;
 
-    this._controller.pageManager.addPage(2);
+    this._gameController.pageManager.addPage(2);
 
-    this._controller.pageManager.addPage(4);
+    this._gameController.pageManager.addPage(4);
 
-    if (this._controller.social.node.active) {
-      this._controller.social.closeBannerAdv();
+    if (this._gameController.social.node.active) {
+      this._gameController.social.closeBannerAdv();
     }
   },
   // todo 复活
   askRevive: function askRevive() {
     var _this5 = this;
 
-    this._controller.pageManager.addPage(2);
+    this._gameController.pageManager.addPage(2);
 
-    this._controller.pageManager.addPage(5);
+    this._gameController.pageManager.addPage(5);
 
     this.revivePage.active = true;
     this.revivePage.getChildByName('askRevive').active = true;
@@ -213,8 +213,8 @@ cc.Class({
     clearInterval(this.reviveTimer);
     this.isRangeAction = false;
 
-    if (this._controller.social.node.active) {
-      this._controller.social.onReviveButton(1);
+    if (this._gameController.social.node.active) {
+      this._gameController.social.onReviveButton(1);
     } else {
       this.showReviveSuccess();
     }
@@ -225,12 +225,12 @@ cc.Class({
     this.revivePage.getChildByName('successRevive').active = true;
   },
   onReviveCertainBtn: function onReviveCertainBtn() {
-    this._controller.pageManager.removePage(2);
+    this._gameController.pageManager.removePage(2);
 
     this.revivePage.active = false;
     this._status = 1;
 
-    this._score.onRevive();
+    this._gameScore.onRevive();
   },
   update: function update() {
     if (this.isRangeAction) {
@@ -239,16 +239,16 @@ cc.Class({
   },
   onSkipRevive: function onSkipRevive() {
     clearInterval(this.reviveTimer);
-    this._controller.pageManager.pages[5].active = false;
+    this._gameController.pageManager.pages[5].active = false;
 
-    this._score.onGameOver(true);
+    this._gameScore.onGameOver(true);
 
     this.isRangeAction = false;
   },
   restart: function restart() {
     var _this6 = this;
 
-    this._controller.pageManager.onOpenPage(1);
+    this._gameController.pageManager.onOpenPage(1);
 
     this.recoveryAllBlocks().then(function () {
       _this6.gameStart();
@@ -277,7 +277,7 @@ cc.Class({
         x: _this7.target.j,
         y: _this7.target.i,
         color: _this7.target.color,
-        width: _this7.blockWidth,
+        width: _this7.blockClsWidth,
         startTime: null
       }, _this7.blocksContainer, type);
       setTimeout(function () {
@@ -303,15 +303,15 @@ cc.Class({
     switch (type) {
       case 1:
         // 分数翻倍 最高八倍
-        this._score.tipBox.init(this._score, 1);
+        this._gameScore.tipBox.init(this._gameScore, 1);
 
-        this._score.addMult(color, pos);
+        this._gameScore.addMult(color, pos);
 
-        this._controller.musicManager.onDouble();
+        this._gameController.musicManager.onDouble();
 
-        for (var i = 0; i < this.rowNum; i++) {
+        for (var i = 0; i < this.rowCfgNum; i++) {
           //行
-          for (var j = 0; j < this.rowNum; j++) {
+          for (var j = 0; j < this.rowCfgNum; j++) {
             //列
             if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               var distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2));
@@ -327,21 +327,21 @@ cc.Class({
 
       case 2:
         // 炸弹 消除同种颜色的
-        this._score.tipBox.init(this._score, 2);
+        this._gameScore.tipBox.init(this._gameScore, 2);
 
         this.node.runAction(AC.shackAction(0.1, 10));
 
-        if (this._controller.social.node.active) {
-          this._controller.social.onShakePhone();
+        if (this._gameController.social.node.active) {
+          this._gameController.social.onShakePhone();
         }
 
         this.isPropChain = true;
 
-        this._controller.musicManager.onBoom();
+        this._gameController.musicManager.onBoom();
 
-        for (var _i = 0; _i < this.rowNum; _i++) {
+        for (var _i = 0; _i < this.rowCfgNum; _i++) {
           //行
-          for (var _j = 0; _j < this.rowNum; _j++) {
+          for (var _j = 0; _j < this.rowCfgNum; _j++) {
             //列
             if (this.map[_i][_j] && this.map[_i][_j].getComponent('element').color == color && this.map[_i][_j] && this.map[_i][_j].getComponent('element')._status != 2) {
               this.map[_i][_j].getComponent('element').onTouched(color, false, true);
@@ -355,13 +355,13 @@ cc.Class({
 
       case 3:
         //:  加步数
-        this._score.tipBox.init(this._score, 4);
+        this._gameScore.tipBox.init(this._gameScore, 4);
 
-        this._controller.musicManager.onDouble();
+        this._gameController.musicManager.onDouble();
 
-        for (var _i2 = 0; _i2 < this.rowNum; _i2++) {
+        for (var _i2 = 0; _i2 < this.rowCfgNum; _i2++) {
           //行
-          for (var _j2 = 0; _j2 < this.rowNum; _j2++) {
+          for (var _j2 = 0; _j2 < this.rowCfgNum; _j2++) {
             //列
             if (this.map[_i2][_j2] && this.map[_i2][_j2].getComponent('element')._status == 1) {
               var _distance = Math.sqrt(Math.pow(pos.x - this.map[_i2][_j2].x, 2) + Math.pow(pos.y - this.map[_i2][_j2].y, 2));
@@ -373,21 +373,21 @@ cc.Class({
           }
         }
 
-        this._score.onStep(3).then();
+        this._gameScore.onStep(3).then();
 
         break;
 
       case 4:
         // : 消除全部单身的方块
-        this._score.tipBox.init(this._score, 5);
+        this._gameScore.tipBox.init(this._gameScore, 5);
 
         this.isPropChain = true;
 
-        this._controller.musicManager.onMagic();
+        this._gameController.musicManager.onMagic();
 
-        for (var _i3 = 0; _i3 < this.rowNum; _i3++) {
+        for (var _i3 = 0; _i3 < this.rowCfgNum; _i3++) {
           //行
-          for (var _j3 = 0; _j3 < this.rowNum; _j3++) {
+          for (var _j3 = 0; _j3 < this.rowCfgNum; _j3++) {
             //列
             if (this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('element').isSingle && this.map[_i3][_j3] && this.map[_i3][_j3].getComponent('element')._status != 2) {
               var _distance2 = Math.sqrt(Math.pow(pos.x - this.map[_i3][_j3].x, 2) + Math.pow(pos.y - this.map[_i3][_j3].y, 2));
@@ -404,10 +404,10 @@ cc.Class({
   },
   //--------------------- 预制体实例化---------------------
   // 生成对象池
-  generatePool: function generatePool() {
+  generatePrefabPool: function generatePrefabPool() {
     this.blockPool = new cc.NodePool();
 
-    for (var i = 0; i < Math.pow(this.rowNum, 2); i++) {
+    for (var i = 0; i < Math.pow(this.rowCfgNum, 2); i++) {
       var block = cc.instantiate(this.blockPrefab);
       this.blockPool.put(block);
     }
@@ -431,7 +431,7 @@ cc.Class({
     block.scale = 1;
     block.x = 0;
     block.y = 0;
-    block.getComponent('element').init(self, data, this.blockWidth, itemType, pos);
+    block.getComponent('element').init(self, data, this.blockClsWidth, itemType, pos);
     return block;
   },
   // 回收所有节点
@@ -448,8 +448,8 @@ cc.Class({
           _this9.blockPool.put(children[0]);
         }
 
-        for (var _i4 = 0; _i4 < _this9.rowNum; _i4++) {
-          for (var j = 0; j < _this9.rowNum; j++) {
+        for (var _i4 = 0; _i4 < _this9.rowCfgNum; _i4++) {
+          for (var j = 0; j < _this9.rowCfgNum; j++) {
             _this9.map[_i4][j] = null;
           }
         }

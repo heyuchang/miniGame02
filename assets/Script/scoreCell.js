@@ -9,7 +9,7 @@ cc.Class({
 
   // onLoad () {},
   init(s, num, pos) {
-    this._score = s
+    this._gameScore = s
     this.node.x = pos.x
     this.node.y = pos.y
     this.label.string = num

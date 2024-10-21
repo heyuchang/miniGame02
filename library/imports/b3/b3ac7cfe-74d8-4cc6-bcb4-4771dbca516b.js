@@ -14,7 +14,7 @@ cc.Class({
   init: function init(s, pos, time) {
     var _this = this;
 
-    this._score = s;
+    this._gameScore = s;
     this.node.x = pos.x;
     this.node.y = pos.y;
     this.node.active = true; // this.particle.resetSystem()

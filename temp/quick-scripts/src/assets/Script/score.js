@@ -29,14 +29,14 @@ cc.Class({
   },
   init: function init(g) {
     this._game = g;
-    this._controller = g._controller;
+    this._gameController = g._gameController;
     this.score = 0;
-    this.leftStep = this._controller.config.json.originStep;
+    this.leftStep = this._gameController.config.json.originStep;
     this.chain = 1;
     this.level = 1;
     this.reviveTime = 0;
     this.closeMultLabel();
-    this.levelData = g._controller.gameData.json.levelData;
+    this.levelData = g._gameController.gameData.json.levelData;
     this.nameLabel.string = "萌心悦";
     this.progressBar.init(0, this.levelData[this.level - 1], this.level);
     this.leftStepLabel.string = this.leftStep;
@@ -48,8 +48,8 @@ cc.Class({
     this.hideChainSprite();
     this.tipBox.init(this, 0);
 
-    if (this._controller.social.node.active) {
-      var height = this._controller.social.getHighestLevel();
+    if (this._gameController.social.node.active) {
+      var height = this._gameController.social.getHighestLevel();
 
       if (height) {
         this.onStep(this.levelData[+height - 1].giftStep);
@@ -57,10 +57,10 @@ cc.Class({
     }
   },
   start: function start() {
-    this.generatePool();
+    this.generatePrefabPool();
     this.bindNode();
   },
-  generatePool: function generatePool() {
+  generatePrefabPool: function generatePrefabPool() {
     this.scorePool = new cc.NodePool();
 
     for (var i = 0; i < 20; i++) {
@@ -103,7 +103,7 @@ cc.Class({
     }
 
     scoreParticle.parent = this.scoreContainer;
-    scoreParticle.getComponent('scoreParticle').init(self, pos, this._controller.config.json.scoreParticleTime);
+    scoreParticle.getComponent('scoreParticle').init(self, pos, this._gameController.config.json.scoreParticleTime);
   },
   bindNode: function bindNode() {
     this.leftStepLabel = this.node.getChildByName('UI').getChildByName('leftStepNode').getChildByName('Label').getComponent(cc.Label);
@@ -146,7 +146,7 @@ cc.Class({
   addScore: function addScore(pos, score) {
     var _this2 = this;
 
-    score = score || this._controller.config.json.scoreBase; // 一次消除可以叠chain
+    score = score || this._gameController.config.json.scoreBase; // 一次消除可以叠chain
 
     if (this.chainTimer) {
       clearTimeout(this.chainTimer);
@@ -173,7 +173,7 @@ cc.Class({
       }, _this2));
     }, 500 / 1 // (cc.game.getFrameRate() / 60)
     );
-    var addScore = score == this._controller.config.json.scoreBase ? score + (this.chain > 16 ? 16 : this.chain - 1) * 10 : score; // let addScore = score == 10 ? score * (this.chain > 10 ? 10 : this.chain) : score
+    var addScore = score == this._gameController.config.json.scoreBase ? score + (this.chain > 16 ? 16 : this.chain - 1) * 10 : score; // let addScore = score == 10 ? score * (this.chain > 10 ? 10 : this.chain) : score
 
     this.currentAddedScore += addScore;
     this.mainScoreLabel.string = this.currentAddedScore;
@@ -190,7 +190,7 @@ cc.Class({
     }
 
     this.checkChainTimer = setTimeout(function () {
-      var config = _this3._controller.config.json.chainConfig;
+      var config = _this3._gameController.config.json.chainConfig;
 
       for (var i = 0; i < config.length; i++) {
         if (_this3.chain <= config[i].max && _this3.chain >= config[i].min) {
@@ -232,7 +232,7 @@ cc.Class({
     //     this.multPropPool.put(multProp)
     //   })))
     // }
-    if (this.multiple < this._controller.config.json.maxMultiple) {
+    if (this.multiple < this._gameController.config.json.maxMultiple) {
       this.multiple *= 2;
       this.showMultLabel();
     }
@@ -265,11 +265,11 @@ cc.Class({
   },
   // 升级
   onLevelUp: function onLevelUp() {
-    this._controller.pageManager.addPage(2);
+    this._gameController.pageManager.addPage(2);
 
-    this._controller.pageManager.addPage(3);
+    this._gameController.pageManager.addPage(3);
 
-    this._controller.musicManager.onWin();
+    this._gameController.musicManager.onWin();
 
     this.successDialog.init(this, this.level, this.levelData, this.score); //升级之后的等级
 
@@ -277,8 +277,8 @@ cc.Class({
     this.characterMgr.onSuccessDialog(this.level);
     this._game._status = 2;
 
-    if (this._controller.social.node.active) {
-      this._controller.social.openBannerAdv();
+    if (this._gameController.social.node.active) {
+      this._gameController.social.openBannerAdv();
     }
   },
   // 等级限制
@@ -308,7 +308,7 @@ cc.Class({
       _double = _double || 1;
     }
 
-    this._controller.pageManager.onOpenPage(1);
+    this._gameController.pageManager.onOpenPage(1);
 
     this.initCurrentScoreLabel();
     this.mainScoreLabel.string = this.levelData[this.level - 2].step * _double;
@@ -348,17 +348,17 @@ cc.Class({
 
       this.updateFailPage();
 
-      if (this._controller.social.node.active) {
+      if (this._gameController.social.node.active) {
         // 仅上传分数
-        this._controller.social.onGameOver(this.level, this.score);
+        this._gameController.social.onGameOver(this.level, this.score);
       }
     } else if (!isTrue) {
       this._game.askRevive();
     }
   },
   onDoubleStepBtn: function onDoubleStepBtn() {
-    if (this._controller.social.node.active) {
-      this._controller.social.onReviveButton(0);
+    if (this._gameController.social.node.active) {
+      this._gameController.social.onReviveButton(0);
     } else {
       this.onLevelUpButton(2);
     }

@@ -18,7 +18,7 @@ cc.Class({
   init: function init(g) {
     this._game = g;
     this.map = g.map;
-    this.mapLength = g.rowNum;
+    this.mapLength = g.rowCfgNum;
 
     for (var i = 0; i < this.mapLength; i++) {
       //行
@@ -38,10 +38,10 @@ cc.Class({
   },
   elementCheck: function elementCheck(g) {
     //该函数主要用于检测一个区块能否形成道具等
-    var propConfig = g._controller.config.json.propConfig;
+    var propConfig = g._gameController.config.json.propConfig;
     this._game = g;
     this.map = g.map;
-    this.mapLength = g.rowNum;
+    this.mapLength = g.rowCfgNum;
     var min = 999;
 
     for (var i = 0; i < propConfig.length; i++) {

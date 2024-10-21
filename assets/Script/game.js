@@ -16,22 +16,22 @@ cc.Class({
   },
   start() {
     this.bindNode()
-    this.generatePool()
+    this.generatePrefabPool()
     this.loadRes()
   },
   loadRes() {
 
   },
   init(c) {
-    this._controller = c
-    this._score = c.scoreMgr
-    this.rowNum = c.config.json.rowNum
-    this.gap = c.config.json.gap
-    this.animationSpeed = c.config.json.gap
-    this.blockWidth = (730 - (this.rowNum + 1) * this.gap) / this.rowNum
+    this._gameController = c
+    this._gameScore = c.scoreMgr
+    this.rowCfgNum = c.config.json.rowCfgNum
+    this.gapCfgNum = c.config.json.gapCfgNum
+    this.animaCfgSpeed = c.config.json.gapCfgNum
+    this.blockClsWidth = (730 - (this.rowCfgNum + 1) * this.gapCfgNum) / this.rowCfgNum
     this.reviveTimer = null
-    //console.log(this.gap)
-    //console.log(this.blockWidth)
+    //console.log(this.gapCfgNum)
+    //console.log(this.blockClsWidth)
   },
   // 动态获取需要动态控制的组件
   bindNode() {
@@ -41,8 +41,8 @@ cc.Class({
   // 游戏开始
   gameStart() {
     this.recoveryAllBlocks().then()
-    this._score.init(this)
-    this.mapSet(this.rowNum).then((result) => {
+    this._gameScore.init(this)
+    this.mapSet(this.rowCfgNum).then((result) => {
       // console.log('游戏状态改变', result)
       this._status = 1
     })
@@ -69,8 +69,8 @@ cc.Class({
           self.map[i][j] = self.instantiateBlock(self, {
             x: j,
             y: i,
-            width: self.blockWidth,
-            startTime: (i + j + 1) * self._controller.config.json.startAnimationTime / num * 2
+            width: self.blockClsWidth,
+            startTime: (i + j + 1) * self._gameController.config.json.startAnimationTime / num * 2
           }, self.blocksContainer, itemType)
         }
       }
@@ -78,7 +78,7 @@ cc.Class({
       setTimeout(() => {
           resolve('200 OK');
           this.checkMgr.elementCheck(this)
-        }, self._controller.config.json.startAnimationTime * num / 2 / 1
+        }, self._gameController.config.json.startAnimationTime * num / 2 / 1
         //  (cc.game.getFrameRate() / 60)
       )
     })
@@ -99,14 +99,14 @@ cc.Class({
   },
   //方块下落
   onFall() {
-    this.checkGenerateProp(this._score.chain).then(() => {
+    this.checkGenerateProp(this._gameScore.chain).then(() => {
       let self = this
       let canFall = 0
       //从每一列的最下面一个开始往上判断
       //如果有空 就判断有几个空 然后让最上方的方块掉落下来
-      for (let j = this.rowNum - 1; j >= 0; j--) {
+      for (let j = this.rowCfgNum - 1; j >= 0; j--) {
         canFall = 0
-        for (let i = this.rowNum - 1; i >= 0; i--) {
+        for (let i = this.rowCfgNum - 1; i >= 0; i--) {
           if (this.map[i][j].getComponent('element')._status == 2) {
             this.blockPool.put(this.map[i][j])
             this.map[i][j] = null
@@ -126,7 +126,7 @@ cc.Class({
           this.map[k][j] = this.instantiateBlock(this, {
             x: j,
             y: k,
-            width: this.blockWidth,
+            width: this.blockClsWidth,
             startTime: null
           }, this.blocksContainer, '', {
             x: j,
@@ -144,16 +144,16 @@ cc.Class({
   },
   gameOver() {
     this._status = 3
-    this._controller.pageManager.addPage(2)
-    this._controller.pageManager.addPage(4)
-    if (this._controller.social.node.active) {
-      this._controller.social.closeBannerAdv()
+    this._gameController.pageManager.addPage(2)
+    this._gameController.pageManager.addPage(4)
+    if (this._gameController.social.node.active) {
+      this._gameController.social.closeBannerAdv()
     }
   },
   // todo 复活
   askRevive() {
-    this._controller.pageManager.addPage(2)
-    this._controller.pageManager.addPage(5)
+    this._gameController.pageManager.addPage(2)
+    this._gameController.pageManager.addPage(5)
     this.revivePage.active = true
     this.revivePage.getChildByName('askRevive').active = true
     this.revivePage.getChildByName('successRevive').active = false
@@ -178,8 +178,8 @@ cc.Class({
   onReviveButton() {
     clearInterval(this.reviveTimer)
     this.isRangeAction = false
-    if (this._controller.social.node.active) {
-      this._controller.social.onReviveButton(1)
+    if (this._gameController.social.node.active) {
+      this._gameController.social.onReviveButton(1)
     } else {
       this.showReviveSuccess()
     }
@@ -190,10 +190,10 @@ cc.Class({
     this.revivePage.getChildByName('successRevive').active = true
   },
   onReviveCertainBtn() {
-    this._controller.pageManager.removePage(2)
+    this._gameController.pageManager.removePage(2)
     this.revivePage.active = false
     this._status = 1
-    this._score.onRevive()
+    this._gameScore.onRevive()
   },
   update() {
     if (this.isRangeAction) {
@@ -202,12 +202,12 @@ cc.Class({
   },
   onSkipRevive() {
     clearInterval(this.reviveTimer)
-    this._controller.pageManager.pages[5].active = false
-    this._score.onGameOver(true)
+    this._gameController.pageManager.pages[5].active = false
+    this._gameScore.onGameOver(true)
     this.isRangeAction = false
   },
   restart() {
-    this._controller.pageManager.onOpenPage(1)
+    this._gameController.pageManager.onOpenPage(1)
     this.recoveryAllBlocks().then(() => {
       this.gameStart()
     })
@@ -233,7 +233,7 @@ cc.Class({
         x: this.target.j,
         y: this.target.i,
         color: this.target.color,
-        width: this.blockWidth,
+        width: this.blockClsWidth,
         startTime: null
       }, this.blocksContainer, type)
       setTimeout(() => {
@@ -256,11 +256,11 @@ cc.Class({
     switch (type) {
       case 1:
         // 分数翻倍 最高八倍
-        this._score.tipBox.init(this._score, 1)
-        this._score.addMult(color, pos)
-        this._controller.musicManager.onDouble()
-        for (let i = 0; i < this.rowNum; i++) { //行
-          for (let j = 0; j < this.rowNum; j++) { //列
+        this._gameScore.tipBox.init(this._gameScore, 1)
+        this._gameScore.addMult(color, pos)
+        this._gameController.musicManager.onDouble()
+        for (let i = 0; i < this.rowCfgNum; i++) { //行
+          for (let j = 0; j < this.rowCfgNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
@@ -273,15 +273,15 @@ cc.Class({
         break
       case 2:
         // 炸弹 消除同种颜色的
-        this._score.tipBox.init(this._score, 2)
+        this._gameScore.tipBox.init(this._gameScore, 2)
         this.node.runAction(AC.shackAction(0.1, 10))
-        if (this._controller.social.node.active) {
-          this._controller.social.onShakePhone()
+        if (this._gameController.social.node.active) {
+          this._gameController.social.onShakePhone()
         }
         this.isPropChain = true
-        this._controller.musicManager.onBoom()
-        for (let i = 0; i < this.rowNum; i++) { //行
-          for (let j = 0; j < this.rowNum; j++) { //列
+        this._gameController.musicManager.onBoom()
+        for (let i = 0; i < this.rowCfgNum; i++) { //行
+          for (let j = 0; j < this.rowCfgNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element').color == color && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
               this.map[i][j].getComponent('element').onTouched(color, false, true)
             }
@@ -292,10 +292,10 @@ cc.Class({
         }
         break
       case 3: //:  加步数
-        this._score.tipBox.init(this._score, 4)
-        this._controller.musicManager.onDouble()
-        for (let i = 0; i < this.rowNum; i++) { //行
-          for (let j = 0; j < this.rowNum; j++) { //列
+        this._gameScore.tipBox.init(this._gameScore, 4)
+        this._gameController.musicManager.onDouble()
+        for (let i = 0; i < this.rowCfgNum; i++) { //行
+          for (let j = 0; j < this.rowCfgNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element')._status == 1) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               if (distance != 0) {
@@ -304,14 +304,14 @@ cc.Class({
             }
           }
         }
-        this._score.onStep(3).then()
+        this._gameScore.onStep(3).then()
         break;
       case 4: // : 消除全部单身的方块
-        this._score.tipBox.init(this._score, 5)
+        this._gameScore.tipBox.init(this._gameScore, 5)
         this.isPropChain = true
-        this._controller.musicManager.onMagic()
-        for (let i = 0; i < this.rowNum; i++) { //行
-          for (let j = 0; j < this.rowNum; j++) { //列
+        this._gameController.musicManager.onMagic()
+        for (let i = 0; i < this.rowCfgNum; i++) { //行
+          for (let j = 0; j < this.rowCfgNum; j++) { //列
             if (this.map[i][j] && this.map[i][j].getComponent('element').isSingle && this.map[i][j] && this.map[i][j].getComponent('element')._status != 2) {
               let distance = Math.sqrt(Math.pow(pos.x - this.map[i][j].x, 2) + Math.pow(pos.y - this.map[i][j].y, 2))
               this.map[i][j].getComponent('element').onTouched(color, false, true, distance)
@@ -324,9 +324,9 @@ cc.Class({
   },
   //--------------------- 预制体实例化---------------------
   // 生成对象池
-  generatePool() {
+  generatePrefabPool() {
     this.blockPool = new cc.NodePool()
-    for (let i = 0; i < Math.pow(this.rowNum, 2); i++) {
+    for (let i = 0; i < Math.pow(this.rowCfgNum, 2); i++) {
       let block = cc.instantiate(this.blockPrefab)
       this.blockPool.put(block)
     }
@@ -347,7 +347,7 @@ cc.Class({
     block.scale = 1
     block.x = 0
     block.y = 0
-    block.getComponent('element').init(self, data, this.blockWidth, itemType, pos)
+    block.getComponent('element').init(self, data, this.blockClsWidth, itemType, pos)
     return block
   },
   // 回收所有节点
@@ -360,8 +360,8 @@ cc.Class({
         for (let i = 0; i < length; i++) {
           this.blockPool.put(children[0])
         }
-        for (let i = 0; i < this.rowNum; i++) {
-          for (let j = 0; j < this.rowNum; j++) {
+        for (let i = 0; i < this.rowCfgNum; i++) {
+          for (let j = 0; j < this.rowCfgNum; j++) {
             this.map[i][j] = null
           }
         }
